@@ -135,7 +135,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .popular-link:first-of-type{padding-top:0}
 .popular-link:hover{color:var(--blue)}
 .tag-cloud{display:flex;flex-wrap:wrap;gap:.4rem}
-.topic-tag{background:var(--offwhite);border:1px solid var(--card-border);border-radius:20px;padding:4px 12px;font-size:12px;color:#666;cursor:default}
+.topic-tag{background:var(--offwhite);border:1px solid var(--card-border);border-radius:20px;padding:4px 12px;font-size:12px;color:#666;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}.topic-tag:hover{border-color:var(--navy);color:var(--navy)}
 
 /* FOOTER */
 footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-align:center}
@@ -210,7 +210,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <p>Every guide and article across all six content categories.</p>
       <span class="cat-count">
         <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="rgba(255,255,255,.7)" stroke-width="1.6" stroke-linecap="round"/></svg>
-        7 articles →
+        9 articles →
       </span>
     </a>
     <a href="#" class="cat-card" data-filter="consultant-fractional-guides">
@@ -218,7 +218,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <p>LinkedIn strategy written specifically for consultants, fractional leaders and executive coaches.</p>
       <span class="cat-count">
         <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        2 articles →
+        4 articles →
       </span>
     </a>
     <a href="#" class="cat-card" data-filter="linkedin-strategy">
@@ -258,7 +258,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <p>Tailored guides for founders, B2B advisors, leadership trainers and sales leaders.</p>
       <span class="cat-count">
         <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        1 article →
+        2 articles →
       </span>
     </a>
   </div>
@@ -288,17 +288,19 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
         <p>Most consultants post about their services. The ones who win clients post about their thinking.</p>
         <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
       </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
+      <div class="cluster-post">
+        <a href="blog/linkedin-fractional-executives.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
         <span class="cp-pill">Fractional leaders</span>
-        <h3>LinkedIn for fractional executives: how to build visibility without looking like you are job hunting</h3>
+        <h3><a href="blog/linkedin-fractional-executives.html" style="color:inherit;text-decoration:none">LinkedIn for fractional executives: how to build visibility without looking like you are job hunting</a></h3>
         <p>The availability paradox every fractional leader faces and the content strategy that resolves it.</p>
-        <div class="cp-foot"><span>6 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
+        <div class="cp-foot"><span>6 min read</span><a href="blog/linkedin-fractional-executives.html" class="cp-read">Read →</a></div>
       </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
+      <div class="cluster-post">
+        <a href="blog/linkedin-executive-coaches.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
         <span class="cp-pill">Executive coaches</span>
-        <h3>LinkedIn for executive coaches: building authority that converts followers into discovery calls</h3>
+        <h3><a href="blog/linkedin-executive-coaches.html" style="color:inherit;text-decoration:none">LinkedIn for executive coaches: building authority that converts followers into discovery calls</a></h3>
         <p>Your methodology is your differentiator. Here's how to make it visible without giving everything away.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
+        <div class="cp-foot"><span>5 min read</span><a href="blog/linkedin-executive-coaches.html" class="cp-read">Read →</a></div>
       </div>
     </div>
   </div>
@@ -463,6 +465,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
         <p>Founders with an active LinkedIn presence raise 23% more in funding rounds. Here's the content strategy behind it.</p>
         <div class="cp-foot"><span>6 min read</span><a href="blog/linkedin-for-founders.html" class="cp-read">Read →</a></div>
       </div>
+      <div class="cluster-post">
+        <a href="blog/linkedin-agency-owners.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
+        <span class="cp-pill">Agency owners</span>
+        <h3><a href="blog/linkedin-agency-owners.html" style="color:inherit;text-decoration:none">LinkedIn for agency owners: how to build the personal brand that wins retainers</a></h3>
+        <p>Agencies win retainers on trust and reputation. Here's how agency owners use LinkedIn content to build both without it becoming a second job.</p>
+        <div class="cp-foot"><span>6 min read</span><a href="blog/linkedin-agency-owners.html" class="cp-read">Read →</a></div>
+      </div>
       <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
         <span class="cp-pill">B2B advisors</span>
         <h3>LinkedIn for B2B advisors: how to stay credible and visible between client engagements</h3>
@@ -491,25 +500,25 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
     <span class="sb-label">Most read</span>
     <a href="blog/linkedin-for-consultants.html" class="popular-link">LinkedIn for consultants: the complete guide</a>
     <a href="blog/taplio-alternatives-2026.html" class="popular-link">Taplio alternatives in 2026</a>
-    <span class="popular-link" style="opacity:.5;color:var(--warmgrey)">How to write a LinkedIn hook (coming soon)</span>
-    <span class="popular-link" style="opacity:.5;color:var(--warmgrey)">LinkedIn for fractional executives (coming soon)</span>
+    <a href="blog/linkedin-fractional-executives.html" class="popular-link">LinkedIn for fractional executives</a>
+    <a href="blog/linkedin-executive-coaches.html" class="popular-link">LinkedIn for executive coaches</a>
     <a href="blog/linkedin-algorithm-2026.html" class="popular-link">The LinkedIn algorithm in 2026 explained</a>
   </div>
   <div class="sidebar-box">
     <span class="sb-label">Browse by topic</span>
     <div class="tag-cloud">
-      <span class="topic-tag">LinkedIn strategy</span>
-      <span class="topic-tag">Personal brand</span>
-      <span class="topic-tag">Content writing</span>
-      <span class="topic-tag">Consultants</span>
-      <span class="topic-tag">Fractional leaders</span>
-      <span class="topic-tag">Executive coaches</span>
-      <span class="topic-tag">B2B advisors</span>
-      <span class="topic-tag">Post frameworks</span>
-      <span class="topic-tag">LinkedIn tools</span>
-      <span class="topic-tag">Founder content</span>
-      <span class="topic-tag">Leadership trainers</span>
-      <span class="topic-tag">2026 guides</span>
+      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-strategy');return false;">LinkedIn strategy</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('personal-brand');return false;">Personal brand</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('content-writing');return false;">Content writing</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('consultant-fractional-guides');return false;">Consultants</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('consultant-fractional-guides');return false;">Fractional leaders</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('consultant-fractional-guides');return false;">Executive coaches</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-by-role');return false;">B2B advisors</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('content-writing');return false;">Post frameworks</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('tools-workflows');return false;">LinkedIn tools</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-by-role');return false;">Founder content</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-by-role');return false;">Leadership trainers</a>
+      <a href="#" class="topic-tag" onclick="applyFilter('all');return false;">2026 guides</a>
     </div>
   </div>
 </aside>
