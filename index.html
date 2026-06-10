@@ -80,8 +80,6 @@ h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;line-height:1.15;letter-sp
 .hero-sub{font-size:18px;color:#555;max-width:540px;margin:0 auto 2rem;line-height:1.55}
 .hero-sub strong{color:var(--ink);font-weight:600}
 .hero-microcopy{display:block;font-size:13px;color:var(--warmgrey);margin-top:.75rem}
-.hero-speed-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(216,90,48,.08);border:1px solid rgba(216,90,48,.25);border-radius:20px;padding:6px 16px;font-size:12px;color:var(--warmgrey);margin-top:12px}
-.hero-speed-dot{width:7px;height:7px;border-radius:50%;background:var(--coral);flex-shrink:0}
 
 /* BUILT FOR STRIP */
 .built-for-strip{background:#fff;border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border);padding:14px 2rem;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px}
@@ -110,6 +108,30 @@ h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;line-height:1.2;letter-spa
 .pain-card p{font-size:15px;color:#666}
 
 /* HOW */
+/* VOICE */
+#voice{background:#fff;border-top:1px solid var(--card-border)}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.voice-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:.75rem}
+.voice-h3{font-size:clamp(1.4rem,3vw,1.75rem);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:.75rem;letter-spacing:-.02em}
+.voice-sub{font-size:15px;color:#666;line-height:1.65;margin-bottom:1.75rem}
+.feature-list{display:flex;flex-direction:column;gap:0}
+.feature-item{padding:1rem 0;border-bottom:1px solid var(--card-border)}
+.feature-item:last-child{border-bottom:none;padding-bottom:0}
+.feature-title{font-size:15px;font-weight:600;color:var(--ink);display:block;margin-bottom:.2rem}
+.feature-sub{font-size:13px;color:var(--warmgrey);line-height:1.5}
+.voice-demo{background:var(--navy);border-radius:16px;padding:1.5rem}
+.voice-demo-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:.75rem}
+.waveform{display:flex;align-items:flex-end;gap:3px;height:28px;margin-bottom:.65rem}
+.waveform span{background:var(--coral);border-radius:2px;flex-shrink:0}
+.voice-input{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.75rem 1rem;font-size:13px;color:rgba(255,255,255,.55);font-style:italic;line-height:1.6;margin-bottom:.6rem}
+.voice-arrow{text-align:center;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.25);margin:.4rem 0}
+.voice-output{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.75rem 1rem}
+.voice-output-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:#E88C74;display:block;margin-bottom:.4rem}
+.voice-tag{display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;background:rgba(216,90,48,.2);color:#E88C74;margin-bottom:.3rem}
+.voice-tag-line{font-size:12px;color:rgba(255,255,255,.6);line-height:1.6;margin-bottom:.5rem}
+.voice-tag-line:last-child{margin-bottom:0}
+@media(max-width:768px){.voice-grid{grid-template-columns:1fr}.voice-demo{display:none}}
+
 #how{background:#fff}
 .steps-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;margin-top:2rem}
 .step{text-align:center;padding:0 1.5rem;position:relative}
@@ -266,10 +288,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:2rem 2rem 2.5re
     <p class="hero-sub">Signal asks you three questions per day, based on what your industry is asking. <strong>Answer one. Post it. Simple.</strong></p>
     <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Start posting with clarity →</a>
     <span class="hero-microcopy">14-day free trial. No credit card required. Cancel anytime.</span>
-    <div class="hero-speed-pill">
-      <span class="hero-speed-dot"></span>
-      Most users go from morning question to published post in under 10 minutes
-    </div>
   </div>
 </section>
 
@@ -324,7 +342,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:2rem 2rem 2.5re
   <div class="section-inner">
     <div class="section-header">
       <span class="section-label">The problem</span>
-      <h2 id="problem-heading">You know being visible is <span class="italic-accent">important</span>.<br>You're just not sure what to say.</h2>
+      <h2 id="problem-heading">You know LinkedIn matters.<br>You just never find the <span class="italic-accent">right thing</span> to say.</h2>
     </div>
     <div class="pain-grid">
       <article class="card pain-card">
@@ -339,6 +357,49 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:2rem 2rem 2.5re
         <h3>The generic post</h3>
         <p>You write something vague because you couldn't think of anything specific. It gets three likes. Two of them are your own connections.</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="voice" aria-labelledby="voice-heading">
+  <div class="section-inner">
+    <div class="voice-grid">
+      <div>
+        <span class="voice-label">Voice your expertise</span>
+        <h2 id="voice-heading" class="voice-h3">Have a thought?<br><span class="italic-accent">Voice it.</span><br>Signal does the rest.</h2>
+        <p class="voice-sub">Answer a question with a voice note or rough idea. Signal pulls out the insight and builds a structured post based on your voice, ready in minutes.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-title">Voice note to post</span>
+            <span class="feature-sub">Record a thought on your commute. Get a structured post back.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Questions your clients are already asking</span>
+            <span class="feature-sub">Every prompt is pulled from real search and conversation data in your market.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Posts written in your voice, not AI's</span>
+            <span class="feature-sub">Signal learns how you write. Output sounds like you, not a generator.</span>
+          </div>
+        </div>
+      </div>
+      <div class="voice-demo">
+        <div class="voice-demo-label">Voice note input</div>
+        <div class="waveform">
+          <span style="width:3px;height:8px"></span><span style="width:3px;height:16px"></span><span style="width:3px;height:22px"></span><span style="width:3px;height:12px"></span><span style="width:3px;height:26px"></span><span style="width:3px;height:18px"></span><span style="width:3px;height:28px"></span><span style="width:3px;height:14px"></span><span style="width:3px;height:20px"></span><span style="width:3px;height:10px"></span><span style="width:3px;height:24px"></span><span style="width:3px;height:16px"></span><span style="width:3px;height:22px"></span><span style="width:3px;height:8px"></span><span style="width:3px;height:18px"></span><span style="width:3px;height:12px"></span><span style="width:3px;height:26px"></span><span style="width:3px;height:20px"></span><span style="width:3px;height:14px"></span><span style="width:3px;height:28px"></span>
+        </div>
+        <div class="voice-input">"Had a client call this morning. They were surprised our onboarding takes 3 days. Their last agency took 6 weeks..."</div>
+        <div class="voice-arrow">&#8595; Signal builds your post &#8595;</div>
+        <div class="voice-output">
+          <span class="voice-output-label">Post outline</span>
+          <span class="voice-tag">Hook</span>
+          <p class="voice-tag-line">Most agency onboardings take 6 weeks. Ours takes 3 days. Here's why that gap exists...</p>
+          <span class="voice-tag">Body</span>
+          <p class="voice-tag-line">What we changed in our process and the client's reaction</p>
+          <span class="voice-tag">Close</span>
+          <p class="voice-tag-line">What it says about what clients are quietly accepting as normal.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
