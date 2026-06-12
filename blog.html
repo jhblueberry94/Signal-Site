@@ -135,7 +135,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .popular-link:first-of-type{padding-top:0}
 .popular-link:hover{color:var(--blue)}
 .tag-cloud{display:flex;flex-wrap:wrap;gap:.4rem}
-.topic-tag{background:var(--offwhite);border:1px solid var(--card-border);border-radius:20px;padding:4px 12px;font-size:12px;color:#666;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}.topic-tag:hover{border-color:var(--navy);color:var(--navy)}
+.topic-tag{background:var(--offwhite);border:1px solid var(--card-border);border-radius:20px;padding:4px 12px;font-size:12px;color:#666;cursor:default}
 
 /* FOOTER */
 footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-align:center}
@@ -177,8 +177,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <li><a href="blog.html" class="nav-active">Blog</a></li>
       <li><a href="pricing.html">Pricing</a></li>
     </ul>
-    <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
-    <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="font-size:14px;padding:9px 18px;flex-shrink:0">Get started free</a>
+    <a href="https://app.postsignal.co/login" class="nav-signin">Sign in</a>
+    <a href="https://app.postsignal.co" class="btn-primary" style="font-size:14px;padding:9px 18px;flex-shrink:0">Get started free</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -190,8 +190,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
     <a href="index.html#research">The research</a>
     <a href="blog.html">Blog</a>
     <a href="pricing.html">Pricing</a>
-    <a href="https://app.postsignal.co/auth">Sign in</a>
-    <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Get started free</a>
+    <a href="https://app.postsignal.co/login">Sign in</a>
+    <a href="https://app.postsignal.co" class="btn-primary">Get started free</a>
   </div>
 </nav>
 
@@ -218,7 +218,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <p>LinkedIn strategy written specifically for consultants, fractional leaders and executive coaches.</p>
       <span class="cat-count">
         <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        4 articles →
+        3 articles →
       </span>
     </a>
     <a href="#" class="cat-card" data-filter="linkedin-strategy">
@@ -276,18 +276,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <div>
         <span class="pillar-badge">Pillar guide</span>
         <h2><a href="blog/linkedin-for-consultants.html" style="color:inherit;text-decoration:none">LinkedIn for Consultants: The Complete Guide to Building a Personal Brand and Attracting Clients (2026)</a></h2>
-        <p>How independent consultants, executive coaches, and B2B advisors build LinkedIn visibility that turns followers into inbound client enquiries ,  without sounding like they're selling.</p>
+        <p>How independent consultants, executive coaches, and B2B advisors build LinkedIn visibility that turns followers into inbound client enquiries, without sounding like they're selling.</p>
         <div class="pillar-meta"><span>18 min read</span><span>·</span><span>Target: "LinkedIn for consultants"</span></div>
       </div>
       <a href="blog/linkedin-for-consultants.html" class="pillar-cta">Read guide →</a>
     </article>
     <div class="cluster-posts">
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Consultant strategy</span>
-        <h3>What to post on LinkedIn as a consultant: the three-pillar content system that attracts clients</h3>
-        <p>Most consultants post about their services. The ones who win clients post about their thinking.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
       <div class="cluster-post">
         <a href="blog/linkedin-fractional-executives.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
         <span class="cp-pill">Fractional leaders</span>
@@ -308,15 +302,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
   <!-- CLUSTER 2: LINKEDIN STRATEGY -->
   <div class="cluster-block" data-category="linkedin-strategy">
     <div class="cluster-label-row"><span class="cl-name">LinkedIn strategy</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2>LinkedIn Content Strategy for B2B Professionals: The Complete 2026 Guide</h2>
-        <p>Everything you need to build a LinkedIn content strategy that compounds over time ,  the algorithm, the right formats, posting cadence, and what actually drives reach in 2026.</p>
-        <div class="pillar-meta"><span>20 min read</span><span>·</span><span>Target: "LinkedIn content strategy 2026"</span></div>
-      </div>
-      <span style="display:inline-block;background:#ccc;color:#fff;font-size:14px;font-weight:500;padding:11px 22px;border-radius:8px;cursor:default">Coming soon</span>
-    </article>
     <div class="cluster-posts">
       <div class="cluster-post">
         <a href="blog/linkedin-algorithm-2026.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
@@ -324,18 +309,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
         <h3><a href="blog/linkedin-algorithm-2026.html" style="color:inherit;text-decoration:none">The LinkedIn algorithm in 2026: what B2B professionals need to know about reach, saves, and AI-generated content</a></h3>
         <p>AI-generated LinkedIn posts now get 47% less reach. Here's what the algorithm rewards instead.</p>
         <div class="cp-foot"><span>7 min read</span><a href="blog/linkedin-algorithm-2026.html" class="cp-read">Read →</a></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">LinkedIn strategy</span>
-        <h3>How often should you post on LinkedIn? The data-backed answer for B2B professionals</h3>
-        <p>Frequency without quality is the fastest way to lose reach. Here's what the data says.</p>
-        <div class="cp-foot"><span>4 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">LinkedIn strategy</span>
-        <h3>The LinkedIn content ideas problem: why B2B professionals run out of things to say ,  and how to fix it permanently</h3>
-        <p>The blank page isn't a creativity problem. It's an ideation problem. Here's the fix.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
       </div>
     </div>
   </div>
@@ -348,31 +321,11 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <div>
         <span class="pillar-badge">Pillar guide</span>
         <h2><a href="blog/b2b-personal-brand-linkedin.html" style="color:inherit;text-decoration:none">How to Build a B2B Personal Brand on LinkedIn: The Complete Guide for Professionals, Consultants and Founders (2026)</a></h2>
-        <p>From zero following to recognised expert in your field. A step-by-step guide to building a LinkedIn personal brand that generates inbound pipeline ,  not just vanity metrics.</p>
+        <p>From zero following to recognised expert in your field. A step-by-step guide to building a LinkedIn personal brand that generates inbound pipeline, not just vanity metrics.</p>
         <div class="pillar-meta"><span>22 min read</span><span>·</span><span>Target: "B2B personal brand LinkedIn"</span></div>
       </div>
       <a href="blog/b2b-personal-brand-linkedin.html" class="pillar-cta">Read guide →</a>
     </article>
-    <div class="cluster-posts">
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Personal brand</span>
-        <h3>Personal profile vs company page on LinkedIn: why the 8x engagement gap means you should post personally</h3>
-        <p>Personal profiles generate 8× more engagement than company pages. The gap is widening, not closing.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Personal brand</span>
-        <h3>Why B2B professionals struggle to post consistently on LinkedIn ,  and the system that solves it</h3>
-        <p>Inconsistency isn't a discipline problem. It's a system problem. Here's the one that works.</p>
-        <div class="cp-foot"><span>4 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Personal brand</span>
-        <h3>How to find your LinkedIn niche as a B2B professional: positioning that attracts the right audience</h3>
-        <p>A scattered LinkedIn presence attracts no one. Specificity is what compounds.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-    </div>
   </div>
 
   <!-- CLUSTER 4: CONTENT WRITING -->
@@ -383,45 +336,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <div>
         <span class="pillar-badge">Pillar guide</span>
         <h2><a href="blog/how-to-write-linkedin-posts.html" style="color:inherit;text-decoration:none">How to Write LinkedIn Posts That Perform in 2026: Hooks, Structure, Frameworks and the Story Arc Method</a></h2>
-        <p>The complete guide to writing LinkedIn posts that get read, saved and shared ,  covering hooks, the five-part Story Arc structure, PAS, BAB, AIDA, and what the 2026 algorithm rewards.</p>
+        <p>The complete guide to writing LinkedIn posts that get read, saved and shared, covering hooks, the five-part Story Arc structure, PAS, BAB, AIDA, and what the 2026 algorithm rewards.</p>
         <div class="pillar-meta"><span>19 min read</span><span>·</span><span>Target: "how to write LinkedIn posts 2026"</span></div>
       </div>
       <a href="blog/how-to-write-linkedin-posts.html" class="pillar-cta">Read guide →</a>
     </article>
-    <div class="cluster-posts">
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Content writing</span>
-        <h3>How to write a LinkedIn hook that stops the scroll: 25 proven opening lines with examples</h3>
-        <p>The first line determines whether anyone reads the rest. Here's how to write one that actually works.</p>
-        <div class="cp-foot"><span>6 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Content writing</span>
-        <h3>How to write a LinkedIn post that gets saves: why saves matter more than likes in 2026</h3>
-        <p>Saves are 5× more powerful than likes in the 2026 algorithm. Here's how to engineer your posts for them.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Content writing</span>
-        <h3>Story Arc vs PAS vs BAB vs AIDA: which LinkedIn post framework should B2B professionals use?</h3>
-        <p>Four proven frameworks compared. When to use each one and which content pillar each fits best.</p>
-        <div class="cp-foot"><span>6 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-    </div>
   </div>
 
   <!-- CLUSTER 5: TOOLS & WORKFLOWS -->
   <div class="cluster-block" data-category="tools-workflows">
     <div class="cluster-label-row"><span class="cl-name">Tools &amp; workflows</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2>The Best LinkedIn Content Tools in 2026: An Honest Comparison for B2B Professionals</h2>
-        <p>Taplio, Supergrow, AuthoredUp, Kleo, and Signal compared honestly ,  what each tool does well, where it falls short, and which is right for your workflow and goals.</p>
-        <div class="pillar-meta"><span>16 min read</span><span>·</span><span>Target: "best LinkedIn content tools 2026"</span></div>
-      </div>
-      <span style="display:inline-block;background:#ccc;color:#fff;font-size:14px;font-weight:500;padding:11px 22px;border-radius:8px;cursor:default">Coming soon</span>
-    </article>
     <div class="cluster-posts">
       <div class="cluster-post">
         <a href="blog/taplio-alternatives-2026.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
@@ -430,33 +354,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
         <p>The most common complaint about Taplio: content feels robotic. Here's what to use instead.</p>
         <div class="cp-foot"><span>7 min read</span><a href="blog/taplio-alternatives-2026.html" class="cp-read">Read →</a></div>
       </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Tools</span>
-        <h3>Supergrow vs Taplio vs Signal: an honest comparison for B2B professionals building a personal brand</h3>
-        <p>Three tools, three different approaches to LinkedIn content. Here's which one fits your workflow.</p>
-        <div class="cp-foot"><span>6 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Workflow</span>
-        <h3>How to build a LinkedIn content workflow that takes 20 minutes a day as a busy B2B professional</h3>
-        <p>The minimum viable system for showing up consistently on LinkedIn without it becoming a second job.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
     </div>
   </div>
 
-  <!-- CLUSTER 6: SPECIFIC ROLES -->
+  <!-- CLUSTER 6: LINKEDIN BY ROLE -->
   <div class="cluster-block" data-category="linkedin-by-role">
     <div class="cluster-label-row"><span class="cl-name">LinkedIn by role</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2>LinkedIn Content Strategy by Role: Tailored Guides for Founders, B2B Advisors, Leadership Trainers and Sales Leaders (2026)</h2>
-        <p>Generic LinkedIn advice doesn't work for every professional. These role-specific guides cover what to post, how to position yourself, and how to build inbound pipeline from LinkedIn ,  depending on exactly what you do.</p>
-        <div class="pillar-meta"><span>15 min read</span><span>·</span><span>Target: "LinkedIn strategy by role B2B"</span></div>
-      </div>
-      <span style="display:inline-block;background:#ccc;color:#fff;font-size:14px;font-weight:500;padding:11px 22px;border-radius:8px;cursor:default">Coming soon</span>
-    </article>
     <div class="cluster-posts">
       <div class="cluster-post">
         <a href="blog/linkedin-for-founders.html" class="card-link" aria-hidden="true" tabindex="-1"></a>
@@ -472,53 +375,42 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
         <p>Agencies win retainers on trust and reputation. Here's how agency owners use LinkedIn content to build both without it becoming a second job.</p>
         <div class="cp-foot"><span>6 min read</span><a href="blog/linkedin-agency-owners.html" class="cp-read">Read →</a></div>
       </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">B2B advisors</span>
-        <h3>LinkedIn for B2B advisors: how to stay credible and visible between client engagements</h3>
-        <p>When you're deep in a project, posting falls away. Here's the system that keeps you consistently visible with minimal effort.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
-      <div class="cluster-post" style="opacity:.5;cursor:default;pointer-events:none">
-        <span class="cp-pill">Leadership trainers</span>
-        <h3>LinkedIn for leadership trainers: how to share the thinking behind your methodology and separate yourself from generic content</h3>
-        <p>Anyone can post leadership tips. The trainers who attract clients share the harder thinking. Here's how.</p>
-        <div class="cp-foot"><span>5 min read</span><span class="cp-read" style="color:var(--warmgrey);cursor:default">Coming soon</span></div>
-      </div>
     </div>
   </div>
 
 </div><!-- end main col -->
 
+
 <aside class="blog-sidebar" aria-label="Blog sidebar">
   <div class="sidebar-cta">
     <span class="sc-eyebrow">Free to start</span>
     <p>Stop staring at a blank page. Signal gives you three research-backed LinkedIn questions every morning.</p>
-    <a href="https://app.postsignal.co/auth?signup=true" class="sc-btn">Start posting for free →</a>
+    <a href="https://app.postsignal.co" class="sc-btn">Start posting for free →</a>
     <span class="sc-note">No credit card required.</span>
   </div>
   <div class="sidebar-box">
     <span class="sb-label">Most read</span>
     <a href="blog/linkedin-for-consultants.html" class="popular-link">LinkedIn for consultants: the complete guide</a>
-    <a href="blog/taplio-alternatives-2026.html" class="popular-link">Taplio alternatives in 2026</a>
     <a href="blog/linkedin-fractional-executives.html" class="popular-link">LinkedIn for fractional executives</a>
     <a href="blog/linkedin-executive-coaches.html" class="popular-link">LinkedIn for executive coaches</a>
+    <a href="blog/taplio-alternatives-2026.html" class="popular-link">Taplio alternatives in 2026</a>
     <a href="blog/linkedin-algorithm-2026.html" class="popular-link">The LinkedIn algorithm in 2026 explained</a>
   </div>
   <div class="sidebar-box">
     <span class="sb-label">Browse by topic</span>
     <div class="tag-cloud">
-      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-strategy');return false;">LinkedIn strategy</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('personal-brand');return false;">Personal brand</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('content-writing');return false;">Content writing</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('consultant-fractional-guides');return false;">Consultants</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('consultant-fractional-guides');return false;">Fractional leaders</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('consultant-fractional-guides');return false;">Executive coaches</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-by-role');return false;">B2B advisors</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('content-writing');return false;">Post frameworks</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('tools-workflows');return false;">LinkedIn tools</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-by-role');return false;">Founder content</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('linkedin-by-role');return false;">Leadership trainers</a>
-      <a href="#" class="topic-tag" onclick="applyFilter('all');return false;">2026 guides</a>
+      <span class="topic-tag">LinkedIn strategy</span>
+      <span class="topic-tag">Personal brand</span>
+      <span class="topic-tag">Content writing</span>
+      <span class="topic-tag">Consultants</span>
+      <span class="topic-tag">Fractional leaders</span>
+      <span class="topic-tag">Executive coaches</span>
+      <span class="topic-tag">B2B advisors</span>
+      <span class="topic-tag">Post frameworks</span>
+      <span class="topic-tag">LinkedIn tools</span>
+      <span class="topic-tag">Founder content</span>
+      <span class="topic-tag">Leadership trainers</span>
+      <span class="topic-tag">2026 guides</span>
     </div>
   </div>
 </aside>
