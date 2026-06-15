@@ -12,17 +12,19 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signal Pricing ,  Free, Pro & Team Plans | postsignal.co</title>
-<meta name="description" content="Signal pricing: start free, upgrade to Pro at £22/month for unlimited LinkedIn content prompts across all three pillars. Team plans from £18/seat/month.">
+<title>Signal Pricing — One plan. Full access. Try free for 7 days.</title>
+<meta name="description" content="Signal gives B2B professionals daily LinkedIn prompts and AI-drafted posts. One plan at £22/month, everything included. 7-day free trial, cancel anytime.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://postsignal.co/pricing.html">
-<meta property="og:title" content="Signal Pricing ,  Free, Pro & Team Plans">
-<meta property="og:description" content="Start free. Upgrade to Pro at £22/month for unlimited LinkedIn prompts across all three content pillars.">
+<meta property="og:title" content="Signal Pricing — One plan. Full access.">
+<meta property="og:description" content="One plan, everything included. Try Signal free for 7 days — daily prompts, Story Arc drafts, Tone of Voice calibration.">
 <meta property="og:url" content="https://postsignal.co/pricing">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://postsignal.co/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -56,8 +58,11 @@ nav{position:sticky;top:0;z-index:100;background:rgba(245,244,241,.95);backdrop-
 .nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none;flex:1}
 .nav-links a{font-size:14px;font-weight:500;color:var(--ink);text-decoration:none;transition:color .15s}
 .nav-links a:hover,.nav-links a.nav-active{color:var(--blue)}
-.nav-signin{margin-left:auto;font-size:14px;font-weight:500;color:var(--ink);text-decoration:none;flex-shrink:0}
+.nav-cta-group{display:flex;align-items:center;gap:1rem;margin-left:auto;flex-shrink:0}
+.nav-signin{font-size:14px;font-weight:500;color:var(--ink);text-decoration:none}
 .nav-signin:hover{color:var(--blue)}
+.nav-btn{display:inline-block;background:var(--coral);color:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;padding:8px 18px;border-radius:8px;text-decoration:none;transition:opacity .15s}
+.nav-btn:hover{opacity:.88}
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;margin-left:auto;flex-direction:column;gap:5px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px}
 .mobile-menu{display:none;flex-direction:column;padding:1rem 2rem;border-top:1px solid var(--card-border);background:var(--offwhite)}
@@ -65,78 +70,80 @@ nav{position:sticky;top:0;z-index:100;background:rgba(245,244,241,.95);backdrop-
 .mobile-menu .btn-primary{margin-top:1rem;text-align:center;display:block}
 .mobile-menu.open{display:flex}
 
+/* BETA BANNER */
+.beta-banner{background:var(--navy);color:rgba(255,255,255,.85);text-align:center;padding:.6rem 2rem;font-size:13px;font-weight:500}
+.beta-banner a{color:var(--coral);text-decoration:underline}
+
 /* PAGE HEADER */
-.page-header{padding:4rem 2rem 3rem;text-align:center;background:var(--offwhite)}
+.page-header{padding:4.5rem 2rem 1rem;text-align:center}
 .page-header h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;margin-bottom:1rem}
-.page-header p{font-size:17px;color:#555;max-width:560px;margin:0 auto}
+.page-header .sub{font-size:17px;color:#555;max-width:500px;margin:0 auto 2rem}
 
-/* TOGGLE */
-.toggle-wrap{display:flex;justify-content:center;margin:2rem 0}
-.toggle-pill{display:flex;background:#e4e4e4;border-radius:50px;padding:4px;gap:0}
-.toggle-btn{padding:9px 22px;border-radius:50px;border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;background:transparent;color:#888;transition:all .2s;display:flex;align-items:center;gap:8px}
-.toggle-btn.active{background:var(--navy);color:#fff}
-.save-badge{background:var(--coral);color:#fff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px}
+/* DISCREET COUNTDOWN */
+.countdown-strip{display:flex;justify-content:center;margin-bottom:2.5rem}
+.countdown-inner{display:inline-flex;align-items:center;gap:.6rem;background:#fff;border:1px solid var(--card-border);border-radius:100px;padding:.45rem 1.1rem}
+.cd-pill-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);margin-right:.25rem}
+.cd-unit{display:flex;align-items:baseline;gap:2px}
+.cd-num{font-size:13px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;min-width:18px;text-align:right}
+.cd-sub{font-size:11px;color:var(--warmgrey);font-weight:400}
+.cd-sep{font-size:11px;color:var(--card-border);margin:0 1px}
+.countdown-footnote{text-align:center;font-size:12px;color:var(--warmgrey);margin-top:.5rem;margin-bottom:.5rem}
 
-/* PRICING CARDS */
-.pricing-section{padding:0 2rem 4rem}
-.cards-grid{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;align-items:start}
-.plan-wrapper{display:flex;flex-direction:column;gap:.5rem}
-.coming-soon-label{text-align:center;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgrey);background:#eee;border-radius:20px;padding:4px 14px;width:fit-content;margin:0 auto}
-.plan-card{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:2rem;display:flex;flex-direction:column}
-.plan-card.dark{background:var(--navy);border-color:var(--navy);color:#fff}
-.plan-tier{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--warmgrey);margin-bottom:1rem}
-.plan-card.dark .plan-tier{color:rgba(255,255,255,.45)}
-.plan-price{font-size:3rem;font-weight:700;line-height:1;margin-bottom:.25rem;color:var(--ink)}
-.plan-card.dark .plan-price{color:#fff}
-.plan-price span{font-size:15px;font-weight:400;color:var(--warmgrey)}
-.plan-card.dark .plan-price span{color:rgba(255,255,255,.5)}
-.plan-annual-note{font-size:13px;color:var(--warmgrey);margin-bottom:1rem}
-.plan-card.dark .plan-annual-note{color:rgba(255,255,255,.5)}
-.plan-desc{font-size:14px;color:#666;line-height:1.55;margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid var(--card-border)}
-.plan-card.dark .plan-desc{color:rgba(255,255,255,.55);border-bottom-color:rgba(255,255,255,.12)}
-.plan-features{list-style:none;flex:1;margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.6rem}
-.plan-features li{font-size:14px;color:#555;display:flex;align-items:flex-start;gap:.5rem;line-height:1.4}
-.plan-card.dark .plan-features li{color:rgba(255,255,255,.7)}
-.plan-features li.locked{color:var(--warmgrey)}
-.plan-card.dark .plan-features li.locked{color:rgba(255,255,255,.3)}
-.feat-icon{flex-shrink:0;margin-top:1px}
-.feat-none{color:var(--warmgrey);font-size:14px;padding-left:1.4rem;font-style:italic}
-.plan-card.dark .feat-none{color:rgba(255,255,255,.3)}
-.plan-cta{display:block;width:100%;padding:13px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;text-align:center;text-decoration:none;cursor:pointer;border:1.5px solid var(--ink);background:transparent;color:var(--ink);transition:all .2s}
-.plan-cta:hover{background:var(--ink);color:#fff}
-.plan-cta.disabled{border-color:#ccc;color:#aaa;cursor:default;display:flex;align-items:center;justify-content:center;gap:.4rem}
-.plan-cta.disabled:hover{background:transparent;color:#aaa}
-.pricing-note{text-align:center;font-size:14px;color:var(--warmgrey);font-style:italic;padding:1.5rem 2rem 3rem;max-width:700px;margin:0 auto}
-.team-annual{color:var(--blue)}
+/* PRICING CARDS — equal height two-col */
+.pricing-section{padding:1.5rem 2rem 4rem}
+.cards-row{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:stretch}
+.plan-card{background:#fff;border:1px solid var(--card-border);border-radius:20px;padding:2.25rem 2rem;display:flex;flex-direction:column}
+.plan-card.featured{border:2px solid var(--navy);position:relative}
+.featured-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 16px;border-radius:20px;white-space:nowrap}
+
+/* shared card internals */
+.plan-tier{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--warmgrey);margin-bottom:1.1rem}
+.plan-price-row{display:flex;align-items:baseline;gap:.3rem;margin-bottom:.3rem}
+.plan-price{font-size:3rem;font-weight:700;line-height:1;color:var(--ink)}
+.plan-price-suffix{font-size:15px;font-weight:400;color:var(--warmgrey)}
+.plan-trial-line{font-size:13px;font-weight:500;margin-bottom:.6rem}
+.plan-trial-line.blue{color:var(--blue)}
+.plan-trial-line.grey{color:var(--warmgrey)}
+.plan-desc{font-size:14px;color:#666;line-height:1.6;margin-bottom:1.4rem;padding-bottom:1.4rem;border-bottom:1px solid var(--card-border)}
+.plan-features{list-style:none;flex:1;margin-bottom:1.75rem;display:flex;flex-direction:column;gap:.65rem}
+.plan-features li{font-size:14px;color:#444;display:flex;align-items:flex-start;gap:.55rem;line-height:1.4}
+.feat-check{flex-shrink:0;font-size:14px;margin-top:1px;color:var(--blue)}
+.feat-soon{flex-shrink:0;font-size:10px;font-weight:700;background:#FAEEDA;color:#633806;border-radius:4px;padding:2px 5px;margin-top:2px;letter-spacing:.04em}
+.plan-cta{display:block;width:100%;padding:14px;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;text-align:center;text-decoration:none;cursor:pointer;border:none;transition:all .2s}
+.plan-cta.cta-dark{background:var(--navy);color:#fff}
+.plan-cta.cta-dark:hover{opacity:.88}
+.plan-cta.cta-outline{background:transparent;color:var(--ink);border:1.5px solid var(--card-border)}
+.plan-cta.cta-outline:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+.plan-note{font-size:12px;color:var(--warmgrey);text-align:center;margin-top:.7rem}
 
 /* FEATURE TABLE */
 .table-section{padding:0 2rem 5rem}
-.table-inner{max-width:1060px;margin:0 auto}
+.table-inner{max-width:900px;margin:0 auto}
 .table-header{text-align:center;margin-bottom:2.5rem}
-.table-header h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;margin-bottom:.5rem}
-.table-header p{font-size:16px;color:#666}
+.table-header h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.02em;margin-bottom:.5rem}
+.table-header p{font-size:15px;color:#666}
 .feature-table{width:100%;border:1px solid var(--card-border);border-radius:16px;overflow:hidden;border-collapse:collapse}
-.feature-table th{padding:1rem 1.25rem;font-size:14px;font-weight:600;text-align:left;background:#fff;border-bottom:1px solid var(--card-border)}
-.feature-table th.col-pro{color:var(--coral)}
+.feature-table th{padding:.9rem 1.25rem;font-size:13px;font-weight:600;text-align:left;background:#fff;border-bottom:1px solid var(--card-border)}
 .feature-table th:not(:first-child){text-align:center}
-.feature-table td{padding:1rem 1.25rem;font-size:14px;color:#555;border-bottom:1px solid var(--card-border)}
+.feature-table td{padding:.85rem 1.25rem;font-size:13.5px;color:#555;border-bottom:1px solid var(--card-border)}
 .feature-table tr:last-child td{border-bottom:none}
-.feature-table tr:nth-child(even) td{background:#F9F8F6}
+.feature-table tr:nth-child(even) td{background:#FAFAF8}
 .feature-table tr:nth-child(odd) td{background:#fff}
 .feature-table td:not(:first-child){text-align:center}
-.check{color:var(--blue);font-size:16px}
-.lock-icon{color:#C5C5C5;font-size:14px}
+.check{color:var(--blue);font-size:16px;font-weight:700}
 .dash{color:#C5C5C5}
+.soon-badge{display:inline-block;font-size:10px;font-weight:700;background:#FAEEDA;color:#633806;border-radius:4px;padding:2px 7px;letter-spacing:.04em}
+.category-row td{background:#F5F4F1 !important;font-weight:600;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#888;padding:.6rem 1.25rem}
 
 /* FAQ */
 .faq-section{padding:0 2rem 6rem}
-.faq-inner{max-width:720px;margin:0 auto}
+.faq-inner{max-width:680px;margin:0 auto}
 .faq-header{text-align:center;margin-bottom:3rem}
-.faq-header h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em}
+.faq-header h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.02em}
 .faq-item{padding:1.5rem 0;border-bottom:1px solid var(--card-border)}
 .faq-item:first-of-type{border-top:1px solid var(--card-border)}
-.faq-item h3{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:.5rem}
-.faq-item p{font-size:15px;color:#666;line-height:1.6}
+.faq-item h3{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:.5rem}
+.faq-item p{font-size:14px;color:#666;line-height:1.65}
 
 /* FOOTER */
 footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-align:center}
@@ -151,49 +158,30 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
 .footer-copy{font-size:13px;color:rgba(255,255,255,.3)}
 
 @media(max-width:768px){
-  .nav-links,.nav-signin{display:none}
+  .nav-links,.nav-cta-group{display:none}
   .hamburger{display:flex}
-  .cards-grid{grid-template-columns:1fr}
-  .table-section{overflow-x:auto}
-  .feature-table{min-width:560px}
+  .cards-row{grid-template-columns:1fr}
+  .plan-card.featured{margin-top:1rem}
+  .countdown-inner{flex-wrap:wrap;border-radius:16px;justify-content:center}
 }
 </style>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Signal",
+  "@type": "Product",
+  "name": "Signal — Pro Plan",
   "url": "https://postsignal.co",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "description": "Signal gives B2B professionals three research-backed LinkedIn questions every day, turning answers into structured LinkedIn posts using a Story Arc framework.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Free",
-      "price": "0",
-      "priceCurrency": "GBP",
-      "description": "3 LinkedIn questions per day, 1 content pillar, basic post drafting.",
-      "url": "https://postsignal.co/pricing.html"
-    },
-    {
-      "@type": "Offer",
-      "name": "Pro Monthly",
-      "price": "22",
-      "priceCurrency": "GBP",
-      "description": "Unlimited questions, all 3 content pillars, voice learning, full post drafting.",
-      "url": "https://postsignal.co/pricing.html"
-    },
-    {
-      "@type": "Offer",
-      "name": "Pro Annual",
-      "price": "190",
-      "priceCurrency": "GBP",
-      "description": "Pro plan billed annually. Unlimited questions, all 3 content pillars, voice learning.",
-      "url": "https://postsignal.co/pricing.html"
-    }
-  ]
+  "description": "Daily LinkedIn prompts and AI-drafted posts for B2B professionals. One plan, all three content pillars, Tone of Voice calibration.",
+  "brand": { "@type": "Brand", "name": "Signal" },
+  "offers": {
+    "@type": "Offer",
+    "name": "Pro Monthly",
+    "price": "22",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock",
+    "url": "https://postsignal.co/pricing.html"
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -203,41 +191,33 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Is Signal really free until the end of July?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. During our open testing period all users get full Pro access at no cost. The free-access period ends 31 July 2026. After that, new users start a 7-day free trial before moving to £22/month." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when the free period ends?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Existing users will receive email notice before the period ends and will be invited to start a paid plan. No automatic charges — you choose when to subscribe." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a credit card to start the free trial?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Start your 7-day trial with just an email address. You'll only be asked for payment details if you choose to continue." }
+    },
+    {
+      "@type": "Question",
       "name": "Can I cancel anytime?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Cancel from your account at any time. You will keep Pro access until the end of your billing period."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between the Market, Personal, and Product pillars?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Market prompts help you comment on your industry. Personal prompts surface your story and lessons. Product prompts help you talk about what you build or deliver, without it feeling like a sales pitch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer a free trial of Pro?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not at the moment. Start on Free, see if Signal fits your routine, then upgrade when you are ready."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does billing work for Team?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Custom invoicing, billed annually. Get in touch and we will put together a quote based on seat count."
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cancel from your account settings at any time. You keep access until the end of your current billing period." }
     }
   ]
 }
 </script>
 </head>
 <body>
+
+<div class="beta-banner">
+  🎉 <strong>Testing period active:</strong> all users have full access free until 31 July 2026 — no card needed. <a href="https://app.postsignal.co/auth?signup=true">Get started →</a>
+</div>
 
 <nav>
   <div class="nav-inner">
@@ -248,9 +228,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
       <li><a href="/#action">See it in action</a></li>
       <li><a href="/#research">The research</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="/pricing" class="nav-active">Pricing</a></li>
+      <li><a href="/pricing.html" class="nav-active">Pricing</a></li>
     </ul>
-    <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
+    <div class="nav-cta-group">
+      <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
+      <a href="https://app.postsignal.co/auth?signup=true" class="nav-btn">Get started free</a>
+    </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -261,7 +244,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
     <a href="/#action">See it in action</a>
     <a href="/#research">The research</a>
     <a href="blog.html">Blog</a>
-    <a href="/pricing">Pricing</a>
+    <a href="/pricing.html">Pricing</a>
     <a href="https://app.postsignal.co/auth">Sign in</a>
     <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Get started free</a>
   </div>
@@ -271,155 +254,161 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
 
 <header class="page-header">
   <span class="section-label">Pricing</span>
-  <h1>Pricing that scales with <span class="italic-accent">your voice</span></h1>
-  <p>Start free. Upgrade when you're ready to write across all three pillars and unlock unlimited drafts.</p>
+  <h1>One plan. <span class="italic-accent">Everything</span> included.</h1>
+  <p class="sub">No tiers, no feature gating. Full access from day one — for individuals and teams.</p>
+
+  <!-- Discreet countdown pill -->
+  <div class="countdown-strip">
+    <div class="countdown-inner">
+      <span class="cd-pill-label">Free until</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-weeks">00</span><span class="cd-sub">w</span></div>
+      <span class="cd-sep">·</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-days">00</span><span class="cd-sub">d</span></div>
+      <span class="cd-sep">·</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-hours">00</span><span class="cd-sub">h</span></div>
+      <span class="cd-sep">·</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-mins">00</span><span class="cd-sub">m</span></div>
+      <span class="cd-sep">·</span>
+      <div class="cd-unit"><span class="cd-num" id="cd-secs">00</span><span class="cd-sub">s</span></div>
+    </div>
+  </div>
+  <p class="countdown-footnote">Full access ends 31 July · After that: £22/month with a 7-day free trial</p>
 </header>
 
-<div class="toggle-wrap">
-  <div class="toggle-pill" role="group" aria-label="Billing period">
-    <button class="toggle-btn active" id="btn-monthly">Monthly</button>
-    <button class="toggle-btn" id="btn-annual">Annual <span class="save-badge">SAVE 29%</span></button>
-  </div>
-</div>
+<!-- Pricing cards -->
+<section class="pricing-section">
+  <div class="cards-row">
 
-<section class="pricing-section" aria-labelledby="pricing-heading">
-  <h2 id="pricing-heading" class="sr-only">Pricing plans</h2>
-  <div class="cards-grid">
-
-    <!-- FREE -->
-    <div class="plan-wrapper">
-      <div class="plan-card">
-        <p class="plan-tier">Free ,  Starter</p>
-        <div class="plan-price">£0</div>
-        <p class="plan-annual-note">&nbsp;</p>
-        <p class="plan-desc">3 prompts per week, Market &amp; Industry pillar only. Enough to build the habit, not the full arsenal.</p>
-        <ul class="plan-features">
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> 3 personalised prompts per week</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Market &amp; Industry pillar only</li>
-          <li class="locked"><span class="feat-icon lock-icon">🔒</span> Personal Journey pillar</li>
-          <li class="locked"><span class="feat-icon lock-icon">🔒</span> Product &amp; Service pillar</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Story Arc post generation ,  2 per week</li>
-          <li class="locked"><span class="feat-icon lock-icon">🔒</span> LinkedIn post preview</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Streak tracking ,  Mon–Fri working days</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Full 9-step onboarding calibration</li>
-        </ul>
-        <p class="feat-none">No writing profile or Tone of Voice tab</p>
-        <br>
-        <a href="https://app.postsignal.co/auth?signup=true" class="plan-cta">Get started free</a>
+    <!-- Pro / Individual -->
+    <div class="plan-card featured">
+      <div class="featured-badge">Most popular</div>
+      <p class="plan-tier">Pro — Individual</p>
+      <div class="plan-price-row">
+        <span class="plan-price">£22</span>
+        <span class="plan-price-suffix">/month</span>
       </div>
+      <p class="plan-trial-line blue">7-day free trial — no card required</p>
+      <p class="plan-desc">Everything you need to post consistently on LinkedIn. One question a day, one structured draft, one voice that sounds like you.</p>
+      <ul class="plan-features">
+        <li><span class="feat-check">✓</span><span>All three content pillars — Market, Personal, Product</span></li>
+        <li><span class="feat-check">✓</span><span>Daily research-backed prompts, Monday to Friday</span></li>
+        <li><span class="feat-check">✓</span><span>Unlimited Story Arc post drafts</span></li>
+        <li><span class="feat-check">✓</span><span>Full Tone of Voice calibration tab</span></li>
+        <li><span class="feat-check">✓</span><span>LinkedIn post preview and one-click copy</span></li>
+        <li><span class="feat-check">✓</span><span>Weekly Wildcard prompt</span></li>
+        <li><span class="feat-check">✓</span><span>7-day question history blacklist</span></li>
+        <li><span class="feat-check">✓</span><span>Monday–Friday streak system</span></li>
+        <li><span class="feat-check">✓</span><span>Full 9-step onboarding calibration</span></li>
+      </ul>
+      <a href="https://app.postsignal.co/auth?signup=true" class="plan-cta cta-dark">Start free trial</a>
+      <p class="plan-note">Cancel anytime. No commitment.</p>
     </div>
 
-    <!-- PRO -->
-    <div class="plan-wrapper">
-      <div class="coming-soon-label">Coming soon</div>
-      <div class="plan-card dark">
-        <p class="plan-tier">Pro ,  Individual</p>
-        <div class="plan-price" id="pro-price">£22<span id="pro-suffix">/month</span></div>
-        <p class="plan-annual-note" id="pro-note">or £188/year ,  save 29%</p>
-        <p class="plan-desc">Unlimited prompts across all three pillars, full Tone of Voice profile, and everything you need to post consistently.</p>
-        <ul class="plan-features">
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Unlimited personalised prompts</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> All three content pillars ,  Market, Personal, Product</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Unlimited Story Arc post generation</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> LinkedIn post preview</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Full writing profile &amp; Tone of Voice tab</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Monday–Friday streak system</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Shape today's prompts feature</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Weekly Wildcard prompt</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> 7-day question history blacklist</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Full 9-step onboarding calibration</li>
-        </ul>
-        <button class="plan-cta disabled" disabled aria-disabled="true">
-          <span>🔒</span> Coming soon
-        </button>
+    <!-- Team / Enterprise -->
+    <div class="plan-card">
+      <p class="plan-tier">Team — Enterprise</p>
+      <div class="plan-price-row">
+        <span class="plan-price">£18</span>
+        <span class="plan-price-suffix">/seat/mo</span>
       </div>
-    </div>
-
-    <!-- TEAM -->
-    <div class="plan-wrapper">
-      <div style="height:26px"></div>
-      <div class="plan-card">
-        <p class="plan-tier">Team ,  Business</p>
-        <div class="plan-price" id="team-price">£18<span id="team-suffix">/seat / month</span></div>
-        <p class="plan-annual-note" id="team-note"><span class="team-annual">or £155/seat/year ,  5 seat minimum</span></p>
-        <p class="plan-desc">For agencies, sales teams, and B2B employers enabling employee advocacy at scale.</p>
-        <ul class="plan-features">
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Everything in Pro for each seat</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> LinkedIn post preview</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Team admin dashboard ,  posting visibility across the team</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Aggregate streak and engagement tracking</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Shared topic blacklist ,  prevents team content overlap</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Onboarding managed by team admin</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Priority support and onboarding call included</li>
-          <li><span class="feat-icon" style="color:var(--coral)">→</span> Custom pillar configuration <span style="background:var(--coral);color:#fff;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px;margin-left:4px">SOON</span></li>
-        </ul>
-        <button class="plan-cta disabled" disabled aria-disabled="true">
-          <span>🔒</span> Coming soon
-        </button>
-      </div>
+      <p class="plan-trial-line grey">Billed annually · 5 seat minimum</p>
+      <p class="plan-desc">For agencies, sales teams, and B2B employers running employee advocacy at scale. Everything your team needs to post consistently — and visibly.</p>
+      <ul class="plan-features">
+        <li><span class="feat-check">✓</span><span>Everything in Pro for every seat</span></li>
+        <li><span class="feat-check">✓</span><span>Team leaderboard — streak, output, and engagement rankings</span></li>
+        <li><span class="feat-check">✓</span><span>Admin dashboard with team posting visibility</span></li>
+        <li><span class="feat-check">✓</span><span>Aggregate streak and engagement tracking</span></li>
+        <li><span class="feat-check">✓</span><span>Shared topic blacklist to prevent content overlap</span></li>
+        <li><span class="feat-check">✓</span><span>Onboarding managed by team admin</span></li>
+        <li><span class="feat-check">✓</span><span>Priority support and onboarding call included</span></li>
+        <li><span class="feat-check">✓</span><span>Consolidated billing and annual invoicing</span></li>
+        <li><span class="feat-soon">Soon</span><span>Custom pillar configuration per team</span></li>
+      </ul>
+      <a href="https://www.cal.eu/josh-huggins-mkwhu8/30min?user=josh-huggins-mkwhu8&layout=month_view" class="plan-cta cta-outline">Talk to us</a>
+      <p class="plan-note">Get a quote in 24 hours.</p>
     </div>
 
   </div>
-  <p class="pricing-note">During our testing period, all users have access to the full Signal experience ,  no restrictions apply.</p>
 </section>
 
-<!-- FEATURE TABLE -->
-<section class="table-section" aria-labelledby="table-heading">
+<!-- Feature comparison table -->
+<section class="table-section">
   <div class="table-inner">
     <div class="table-header">
-      <h2 id="table-heading">Compare every feature</h2>
-      <p>Everything you get on each plan, side by side.</p>
+      <h2>Everything in <span class="italic-accent">one plan</span></h2>
+      <p>No feature gating. If it's in Signal, it's in your plan.</p>
     </div>
-    <div style="overflow-x:auto">
-      <table class="feature-table">
-        <thead>
-          <tr>
-            <th style="width:40%">Feature</th>
-            <th>Free</th>
-            <th class="col-pro">Pro</th>
-            <th>Team</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Daily prompts</td><td>3/week (Market only)</td><td>Unlimited (all pillars)</td><td>Unlimited per seat</td></tr>
-          <tr><td>Market pillar</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Personal pillar</td><td><span class="lock-icon">🔒</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Product pillar</td><td><span class="lock-icon">🔒</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Post drafts per day</td><td>1</td><td>Unlimited</td><td>Unlimited</td></tr>
-          <tr><td>Voice profile (Writing DNA)</td><td>Basic</td><td>Full</td><td>Full + team voice</td></tr>
-          <tr><td>Streak tracking</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Microphone dictation</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Alternative hooks</td><td><span class="lock-icon">🔒</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Inline outline editing</td><td><span class="lock-icon">🔒</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>LinkedIn Preview</td><td><span class="lock-icon">🔒</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Priority support</td><td><span class="dash">, </span></td><td>Email</td><td>Dedicated CSM</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <table class="feature-table">
+      <thead>
+        <tr>
+          <th style="width:58%">Feature</th>
+          <th>Pro</th>
+          <th>Team</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="category-row"><td colspan="3">Content pillars</td></tr>
+        <tr><td>Market &amp; Industry prompts</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Personal Journey prompts</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Product &amp; Service prompts</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Weekly Wildcard prompt</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+
+        <tr class="category-row"><td colspan="3">Drafting and voice</td></tr>
+        <tr><td>Unlimited Story Arc post drafts</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Full Tone of Voice calibration</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>LinkedIn post preview</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>One-click copy to LinkedIn</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+
+        <tr class="category-row"><td colspan="3">Habit and tracking</td></tr>
+        <tr><td>Monday–Friday streak system</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>7-day question history blacklist</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>9-step onboarding calibration</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+
+        <tr class="category-row"><td colspan="3">Team features</td></tr>
+        <tr><td>Team leaderboard (streak, output, engagement)</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Admin dashboard with posting visibility</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Aggregate streak and engagement tracking</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Shared topic blacklist</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Priority support and onboarding call</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        <tr><td>Custom pillar configuration</td><td><span class="dash">—</span></td><td><span class="soon-badge">Soon</span></td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="faq-section" aria-labelledby="faq-heading">
+<section class="faq-section">
   <div class="faq-inner">
     <div class="faq-header">
-      <h2 id="faq-heading">Questions, answered</h2>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-item">
+      <h3>Is Signal really free until the end of July?</h3>
+      <p>Yes. During our open testing period all users get full Pro access at no cost. The countdown above shows exactly how long remains. After 31 July, new users start a standard 7-day free trial before moving to £22/month.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What happens to existing users when the free period ends?</h3>
+      <p>You'll receive an email before the period ends inviting you to start a paid plan. There are no automatic charges — you choose when to subscribe.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need a credit card to start the free trial?</h3>
+      <p>No. Start your 7-day trial with just an email address. You'll only be asked for payment details if you choose to continue after the trial.</p>
     </div>
     <div class="faq-item">
       <h3>Can I cancel anytime?</h3>
-      <p>Yes. Cancel from your account at any time. You'll keep Pro access until the end of your billing period.</p>
+      <p>Yes. Cancel from your account settings at any time — you keep access until the end of your current billing period.</p>
     </div>
     <div class="faq-item">
-      <h3>What's the difference between the Market, Personal, and Product pillars?</h3>
-      <p>Market prompts help you comment on your industry. Personal prompts surface your story and lessons. Product prompts help you talk about what you build or sell ,  without sounding salesy.</p>
+      <h3>What are the three content pillars?</h3>
+      <p>Market &amp; Industry prompts help you comment credibly on your sector. Personal Journey prompts surface your story, lessons, and experience. Product &amp; Service prompts help you talk about what you build or sell — without sounding like an ad.</p>
     </div>
     <div class="faq-item">
-      <h3>Do you offer a free trial of Pro?</h3>
-      <p>Not at the moment. Start on Free, see if Signal fits your routine, then upgrade when you're ready.</p>
+      <h3>How is Signal different from Taplio or Supergrow?</h3>
+      <p>Signal is a thinking tool, not a content factory. Instead of generating posts from thin air, it asks you a focused question each morning and turns your own answer into a structured draft. The result sounds like you — because it is you.</p>
     </div>
     <div class="faq-item">
-      <h3>How does billing work for Team?</h3>
-      <p>Custom invoicing, billed annually. Get in touch and we'll put together a quote based on seat count.</p>
+      <h3>How does the Team plan work?</h3>
+      <p>Team plans are billed annually with a minimum of 5 seats. Email <a href="mailto:josh@blueberry-media.co.uk" style="color:var(--blue)">josh@blueberry-media.co.uk</a> and we'll send a quote within 24 hours. Onboarding is handled by a team admin and includes a setup call.</p>
     </div>
   </div>
 </section>
@@ -428,11 +417,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">
-      <div class="logo-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-      <div class="logo-dot" aria-hidden="true"></div>
-      <span class="logo-text">Signal</span>
-    </div>
+    <div class="footer-logo"><img src="data:image/png;base64,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" alt="Signal" height="48" style="display:block;height:48px;width:auto;margin:0 auto"></div>
     <p class="footer-tagline">Daily LinkedIn prompts for B2B professionals.</p>
     <nav class="footer-links" aria-label="Footer links">
       <a href="/privacy">Privacy Policy</a>
@@ -444,45 +429,36 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem;text-
 </footer>
 
 <script>
-// Hamburger
-const hamburger=document.getElementById('hamburger');
-const mobileMenu=document.getElementById('mobilemenu');
-hamburger.addEventListener('click',function(){
-  const open=mobileMenu.classList.toggle('open');
-  hamburger.setAttribute('aria-expanded',open);
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobilemenu');
+hamburger.addEventListener('click', function() {
+  const open = mobileMenu.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', open);
 });
 
-// Billing toggle
-const btnMonthly=document.getElementById('btn-monthly');
-const btnAnnual=document.getElementById('btn-annual');
-let isAnnual=false;
-
-function updatePricing(){
-  if(isAnnual){
-    document.getElementById('pro-price').innerHTML='£15.75<span>/month</span>';
-    document.getElementById('pro-note').textContent='billed £188/year ,  save 29%';
-    document.getElementById('team-price').innerHTML='£12.91<span>/seat / month</span>';
-    document.getElementById('team-note').innerHTML='<span class="team-annual">billed £155/seat/year ,  5 seat minimum</span>';
-  } else {
-    document.getElementById('pro-price').innerHTML='£22<span>/month</span>';
-    document.getElementById('pro-note').textContent='or £188/year ,  save 29%';
-    document.getElementById('team-price').innerHTML='£18<span>/seat / month</span>';
-    document.getElementById('team-note').innerHTML='<span class="team-annual">or £155/seat/year ,  5 seat minimum</span>';
+function updateCountdown() {
+  const end = new Date('2026-07-31T23:59:59Z');
+  const now = new Date();
+  let diff = end - now;
+  if (diff <= 0) {
+    document.querySelector('.countdown-strip').style.display = 'none';
+    document.querySelector('.countdown-footnote').textContent = 'Free testing period has ended. Start your 7-day trial today.';
+    return;
   }
+  const totalSecs = Math.floor(diff / 1000);
+  const weeks  = Math.floor(totalSecs / (7 * 24 * 3600));
+  const days   = Math.floor((totalSecs % (7 * 24 * 3600)) / (24 * 3600));
+  const hours  = Math.floor((totalSecs % (24 * 3600)) / 3600);
+  const mins   = Math.floor((totalSecs % 3600) / 60);
+  const secs   = totalSecs % 60;
+  document.getElementById('cd-weeks').textContent = String(weeks).padStart(2,'0');
+  document.getElementById('cd-days').textContent  = String(days).padStart(2,'0');
+  document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+  document.getElementById('cd-mins').textContent  = String(mins).padStart(2,'0');
+  document.getElementById('cd-secs').textContent  = String(secs).padStart(2,'0');
 }
-
-btnMonthly.addEventListener('click',function(){
-  isAnnual=false;
-  btnMonthly.classList.add('active');
-  btnAnnual.classList.remove('active');
-  updatePricing();
-});
-btnAnnual.addEventListener('click',function(){
-  isAnnual=true;
-  btnAnnual.classList.add('active');
-  btnMonthly.classList.remove('active');
-  updatePricing();
-});
+updateCountdown();
+setInterval(updateCountdown, 1000);
 </script>
 </body>
 </html>
