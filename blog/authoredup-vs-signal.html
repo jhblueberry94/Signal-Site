@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCYDBN0PVH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KCYDBN0PVH');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuthoredUp vs Signal: Which LinkedIn Tool Is Right for You?</title>
+<meta name="description" content="AuthoredUp is a post editor. Signal is a thinking tool. Both sit in your LinkedIn workflow but solve completely different problems. Here's the honest comparison.">
+<link rel="canonical" href="https://postsignal.co/blog/authoredup-vs-signal.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="AuthoredUp vs Signal: Which LinkedIn Tool Is Right for B2B Professionals?">
+<meta property="og:description" content="AuthoredUp is a post editor. Signal is a thinking tool. Both sit in your LinkedIn workflow but solve completely different problems. Here's the honest comparison.">
+<meta property="og:url" content="https://postsignal.co/blog/authoredup-vs-signal.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://postsignal.co/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AuthoredUp vs Signal: Which LinkedIn Tool Is Right for B2B Professionals?">
+<meta name="twitter:description" content="AuthoredUp is a post editor. Signal is a thinking tool. Both sit in your LinkedIn workflow but solve completely different problems. Here's the honest comparison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1A1A2E;--blue:#2D6A9F;--coral:#D85A30;--offwhite:#F5F4F1;--warmgrey:#9E9E9E;--ink:#1A1A1A;--card-border:#E8E7E4}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'DM Sans',sans-serif;background:var(--offwhite);color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.italic-accent{font-family:'Instrument Serif',Georgia,serif;font-style:italic;color:var(--blue)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--card-border)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;height:72px;padding:0 2rem;gap:2rem}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none;flex:1}
+.nav-links a{font-size:14px;font-weight:500;color:#666;text-decoration:none;transition:color .15s}
+.nav-links a:hover,.nav-links a.nav-active{color:var(--blue)}
+.nav-signin{margin-left:auto;font-size:14px;font-weight:500;color:#666;text-decoration:none;flex-shrink:0;transition:color .15s}
+.nav-signin:hover{color:var(--blue)}
+.btn-primary{display:inline-block;background:var(--navy);color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;transition:opacity .15s}
+.btn-primary:hover{opacity:.88}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;margin-left:auto;flex-direction:column;gap:5px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px}
+.mobile-menu{display:none;flex-direction:column;padding:1rem 2rem;border-top:1px solid var(--card-border);background:var(--offwhite)}
+.mobile-menu a{display:block;font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;padding:10px 0;border-bottom:1px solid var(--card-border)}
+.mobile-menu .btn-primary{margin-top:1rem;text-align:center;display:block}
+.mobile-menu.open{display:flex}
+
+/* BREADCRUMB */
+.breadcrumb-bar{background:#fff;border-bottom:1px solid var(--card-border);padding:.6rem 2rem}
+.breadcrumb{max-width:1060px;margin:0 auto;font-size:13px;color:var(--warmgrey);display:flex;align-items:center;flex-wrap:wrap;gap:.3rem}
+.breadcrumb a{color:var(--warmgrey);text-decoration:none;transition:color .15s}
+.breadcrumb a:hover{color:var(--blue)}
+.breadcrumb .sep{color:#ccc}
+
+/* ARTICLE LAYOUT */
+.article-wrap{max-width:1060px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+.article-body{}
+
+/* ARTICLE HEADER */
+.article-cat{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--coral);margin-bottom:.75rem}
+.article-body h1{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700;line-height:1.2;letter-spacing:-.02em;color:var(--ink);margin-bottom:1rem}
+.article-meta{font-size:13px;color:var(--warmgrey);display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--card-border)}
+.article-meta a{color:var(--blue);text-decoration:none;font-weight:500}
+.article-meta a:hover{text-decoration:underline}
+.article-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.article-tag{background:#fff;border:1px solid var(--card-border);border-radius:20px;padding:4px 12px;font-size:12px;color:#666}
+
+/* ARTICLE PROSE */
+.prose{max-width:680px}
+.prose p{font-size:16px;line-height:1.75;color:#333;margin-bottom:1.4rem}
+.prose h2{font-size:1.35rem;font-weight:700;color:var(--ink);margin:2.5rem 0 .75rem;line-height:1.25;letter-spacing:-.01em}
+.prose h3{font-size:1.1rem;font-weight:600;color:var(--ink);margin:2rem 0 .6rem;line-height:1.3}
+.prose ul,.prose ol{margin:0 0 1.4rem 1.5rem}
+.prose li{font-size:16px;line-height:1.7;color:#333;margin-bottom:.6rem}
+.prose ol{list-style:decimal}
+.prose blockquote{border-left:3px solid var(--coral);padding:.75rem 1.25rem;background:#FAECE7;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:15px;color:#712B13;line-height:1.6;font-style:italic}
+.prose strong{font-weight:600;color:var(--ink)}
+
+/* QUICK ANSWER BOX */
+.quick-answer{background:#fff;border:1px solid var(--card-border);border-left:4px solid var(--blue);border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin:0 0 2rem}
+.quick-answer .qa-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:.5rem}
+.quick-answer p{margin-bottom:.75rem;font-size:15px}
+.quick-answer p:last-child{margin-bottom:0}
+.quick-answer ul{margin:0 0 0 1.25rem}
+.quick-answer li{font-size:15px;margin-bottom:.4rem}
+
+/* COMPARISON TABLE */
+.compare-table-wrap{overflow-x:auto;margin:1.5rem 0 2rem;border:1px solid var(--card-border);border-radius:12px}
+.compare-table{width:100%;border-collapse:collapse;background:#fff;font-size:14px;min-width:640px}
+.compare-table th,.compare-table td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--card-border)}
+.compare-table th{background:var(--navy);color:#fff;font-weight:600;font-size:13px}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table td:first-child{font-weight:600}
+.compare-table tr.highlight-row td{background:#FAECE7}
+
+/* ARTICLE CTA (inline) */
+.inline-cta{background:var(--navy);border-radius:16px;padding:1.75rem 2rem;margin:2.5rem 0;text-align:center}
+.inline-cta p{font-size:15px;color:rgba(255,255,255,.75);margin-bottom:1rem;line-height:1.6}
+.inline-cta a{display:inline-block;background:var(--coral);color:#fff;font-size:14px;font-weight:600;padding:12px 28px;border-radius:8px;text-decoration:none;transition:opacity .15s}
+.inline-cta a:hover{opacity:.88}
+.inline-cta small{display:block;font-size:11px;color:rgba(255,255,255,.35);margin-top:.5rem}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--card-border);padding-bottom:1.25rem;margin-bottom:1.25rem}
+.faq-item:last-child{border-bottom:none;margin-bottom:0}
+.faq-item h3{margin-top:0}
+
+/* RELATED ARTICLES */
+.related-section{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--card-border)}
+.related-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:1rem}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.related-card{background:#fff;border:1px solid var(--card-border);border-radius:12px;padding:1rem;text-decoration:none;transition:border-color .2s,transform .2s;display:block}
+.related-card:hover{border-color:var(--navy);transform:translateY(-2px)}
+.related-card .rc-pill{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--coral);display:block;margin-bottom:.4rem}
+.related-card h3{font-size:14px;font-weight:600;color:var(--ink);line-height:1.4}
+
+/* SIDEBAR */
+.article-sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:1.5rem}
+.sidebar-cta{background:var(--navy);border-radius:16px;padding:1.5rem}
+.sidebar-cta .sc-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);display:block;margin-bottom:.5rem}
+.sidebar-cta p{font-size:14px;color:rgba(255,255,255,.8);line-height:1.55;margin-bottom:1rem}
+.sidebar-cta .sc-btn{display:block;width:100%;text-align:center;background:var(--coral);color:#fff;font-size:14px;font-weight:500;padding:11px 0;border-radius:8px;text-decoration:none;transition:opacity .15s}
+.sidebar-cta .sc-btn:hover{opacity:.88}
+.sidebar-cta .sc-note{font-size:11px;color:rgba(255,255,255,.3);display:block;text-align:center;margin-top:.5rem}
+.toc-box{background:#fff;border:1px solid var(--card-border);border-radius:12px;padding:1.25rem}
+.toc-box .toc-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:.75rem}
+.toc-box ol{list-style:none;margin:0;padding:0}
+.toc-box li{border-bottom:1px solid var(--card-border)}
+.toc-box li:last-child{border-bottom:none}
+.toc-box a{display:block;font-size:13px;color:var(--ink);text-decoration:none;padding:.5rem 0;line-height:1.4;transition:color .15s}
+.toc-box a:hover{color:var(--blue)}
+.series-box{background:#fff;border:1px solid var(--card-border);border-radius:12px;padding:1.25rem}
+.series-box .sb-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:.75rem}
+.series-link{display:block;font-size:13px;color:var(--ink);text-decoration:none;line-height:1.4;padding:.4rem 0;border-bottom:1px solid var(--card-border)}
+.series-link:last-child{border-bottom:none}
+.series-link:hover{color:var(--blue)}
+.series-link.active{color:var(--blue);font-weight:600}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:2rem 2rem 2.5rem;text-align:center}
+.footer-inner{max-width:940px;margin:0 auto}
+.footer-tagline{font-size:14px;color:rgba(255,255,255,.45);margin-bottom:1.5rem;display:block;margin-top:.5rem}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap}
+.footer-links{display:flex;gap:1.25rem;align-items:center}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.4);text-decoration:none}
+.footer-links a:hover{color:rgba(255,255,255,.7)}
+.footer-copy{font-size:13px;color:rgba(255,255,255,.3);flex:1;text-align:center}
+
+@media(max-width:768px){
+  .nav-links,.nav-signin{display:none}
+  .hamburger{display:flex}
+  .article-wrap{grid-template-columns:1fr}
+  .article-sidebar{position:static}
+  .related-grid{grid-template-columns:1fr}
+  .compare-table{min-width:560px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AuthoredUp vs Signal: Which LinkedIn Tool Is Right for B2B Professionals?",
+  "description": "AuthoredUp is a post editor. Signal is a thinking tool. Both sit in your LinkedIn workflow but solve completely different problems. Here's the honest comparison.",
+  "datePublished": "2026-06-16",
+  "dateModified": "2026-06-16",
+  "author": {
+    "@type": "Person",
+    "name": "Josh Huggins",
+    "jobTitle": "Founder",
+    "url": "https://postsignal.co",
+    "sameAs": "https://www.linkedin.com/in/joshua-huggins-socialmedia/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Signal",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://postsignal.co/og-image.png"
+    }
+  },
+  "image": "https://postsignal.co/og-image.png",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://postsignal.co/blog/authoredup-vs-signal.html"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://postsignal.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://postsignal.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AuthoredUp vs Signal"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is AuthoredUp free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AuthoredUp offers a free plan with limited post saves and basic formatting features, with paid plans starting at around $12 per month for full access to analytics, hook scoring, and unlimited post drafts. The free tier is functional enough to test whether the editor suits your workflow before committing to a subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Signal draft posts for you?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Signal gives you a research-backed question each morning, you write your answer in your own words, and Signal then structures that answer into a LinkedIn post using the Story Arc framework: Hook, Tension, Turn, Insight, Landing. The drafting draws directly from what you wrote, so the thinking and the voice remain yours throughout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which tool is better for consultants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For independent consultants, the bottleneck is almost always ideation rather than formatting, which makes Signal the more relevant tool. AuthoredUp is worth adding once you have a consistent posting habit, but it does not help with the harder problem: knowing what to say each day. Our full guide to LinkedIn for consultants covers this workflow in detail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AuthoredUp help with what to post?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AuthoredUp does not offer ideation features. It is a post editor and analytics tool, which means it works on posts you have already written. It can show you which of your past posts performed best, which indirectly gives you clues about what to write next, but it does not surface topics, questions, or research-backed prompts the way a dedicated ideation tool does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Story Arc framework Signal uses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Story Arc framework used by Signal structures LinkedIn posts across five stages: Hook (the opening line that stops the scroll), Tension (the problem or challenge the post addresses), Turn (the shift in perspective or the lesson learned), Insight (the specific takeaway the reader can apply), and Landing (the closing line that leaves a clear impression). This structure is drawn from narrative theory and is designed to hold attention across the full post rather than front-loading everything into the first line."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="Signal home"><svg width="88" height="24" viewBox="0 0 88 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="8" rx="2" fill="#1A1A2E"/><rect x="7" y="4" width="4" height="12" rx="2" fill="#1A1A2E"/><rect x="14" y="0" width="4" height="24" rx="2" fill="#D85A30"/><text x="22" y="17" font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="#1A1A2E">Signal</text></svg></a>
+    <ul class="nav-links" role="list">
+      <li><a href="/#problem">The problem</a></li>
+      <li><a href="/#how">How it works</a></li>
+      <li><a href="/#action">See it in action</a></li>
+      <li><a href="/#research">The research</a></li>
+      <li><a href="/blog.html" class="nav-active">Blog</a></li>
+      <li><a href="/pricing.html">Pricing</a></li>
+    </ul>
+    <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
+    <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="font-size:14px;padding:9px 18px;flex-shrink:0">Get started free</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobilemenu">
+    <a href="/#problem">The problem</a>
+    <a href="/#how">How it works</a>
+    <a href="/#action">See it in action</a>
+    <a href="/#research">The research</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/pricing.html">Pricing</a>
+    <a href="https://app.postsignal.co/auth">Sign in</a>
+    <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Get started free</a>
+  </div>
+</nav>
+
+<div class="breadcrumb-bar">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Signal</a>
+    <span class="sep">›</span>
+    <a href="/blog.html">Blog</a>
+    <span class="sep">›</span>
+    <a href="/blog.html">Tools &amp; Workflows</a>
+    <span class="sep">›</span>
+    <span>AuthoredUp vs Signal</span>
+  </nav>
+</div>
+
+<div class="article-wrap">
+  <main class="article-body">
+    <span class="article-cat">Tools &amp; Workflows</span>
+    <h1>AuthoredUp vs Signal: Which LinkedIn Tool Is Right for B2B Professionals?</h1>
+    <div class="article-meta">
+      <span>By <a href="https://www.linkedin.com/in/joshua-huggins-socialmedia/" target="_blank" rel="noopener">Josh Huggins · Founder, Signal</a></span>
+      <span>·</span>
+      <span>June 2026</span>
+      <span>·</span>
+      <span>10 min read</span>
+    </div>
+    <div class="article-tags">
+      <span class="article-tag">AuthoredUp vs Signal</span>
+      <span class="article-tag">LinkedIn content tools</span>
+      <span class="article-tag">B2B LinkedIn strategy</span>
+    </div>
+
+    <div class="prose">
+
+      <div class="quick-answer">
+        <span class="qa-label">Quick answer</span>
+        <p>AuthoredUp is a post editor and formatting tool. It helps you structure and preview LinkedIn posts you have already written. Signal is a thinking and ideation tool. It gives you a research-backed question each morning and turns your answer into a structured post. They are not direct competitors. The choice depends on where you get stuck:</p>
+        <ul>
+          <li><strong>You know what to say but want help formatting it:</strong> AuthoredUp does that job well, with hook scoring, preview tools, and post analytics built in.</li>
+          <li><strong>You never know what to say in the first place:</strong> that is the problem Signal is built for. Topic ideation, not drafting, is the stage most B2B professionals get stuck at.</li>
+          <li><strong>You want both:</strong> these tools solve different stages of the same workflow, and plenty of professionals use them together.</li>
+        </ul>
+      </div>
+
+      <p>The AuthoredUp vs Signal comparison comes up a lot, and it's understandable why. Both tools sit in the LinkedIn content space. Both are used by consultants, fractional executives, and agency owners who are serious about their presence on the platform. But they address completely different problems, and choosing between them without understanding that distinction is a bit like choosing between a notebook and a spell-checker. You might end up with the wrong one, or the wrong one first.</p>
+
+      <p>This guide is a straight comparison. What each tool does, who it's built for, where each one falls short, and when it makes sense to use both.</p>
+
+      <h2 id="what-each-tool-does">What does each tool actually do?</h2>
+
+      <p>According to LinkedIn's own research, members who post consistently at least once a week see up to five times more profile views than those who post sporadically ([LinkedIn Marketing Solutions Blog](https://business.linkedin.com/marketing-solutions/blog), 2024). But consistency requires two things: knowing what to say, and knowing how to say it. AuthoredUp and Signal each address one of those two problems.</p>
+
+      <h3 id="authoredup-explained">AuthoredUp: the post editor</h3>
+
+      <p>AuthoredUp is a Chrome extension that sits on top of LinkedIn. When you're writing a post natively in LinkedIn's composer, AuthoredUp gives you a richer editing environment: character counts, formatting options, emoji and special character tools, hook scoring, and a library of your past posts with performance data attached. It also lets you preview exactly how your post will appear before you publish it, which LinkedIn's native composer doesn't do well.</p>
+
+      <p>The tool has no AI writing layer. It doesn't generate copy or suggest topics. It assumes you already know what you want to say. Its job is to help you say it more precisely and to track what's working over time. For writers who are confident in their thinking but find LinkedIn's native editor frustrating, this is a genuinely useful tool.</p>
+
+      <h3 id="signal-explained">Signal: the thinking tool</h3>
+
+      <p>Signal works at an earlier stage of the process. Each morning it surfaces three research-backed questions across three content pillars: Market and Industry, Personal Journey, and Product and Service. You choose one question, write your answer in plain language, and Signal structures that answer into a LinkedIn post using the Story Arc framework: Hook, Tension, Turn, Insight, Landing.</p>
+
+      <p>The key word is "research-backed." The questions aren't generic prompts. They're grounded in what's actually being discussed in your market that week. This matters because the most common LinkedIn content problem isn't that people can't write. It's that they sit down to post, open a blank page, and close it again because nothing comes to mind. Signal is built specifically to solve that moment. [PERSONAL EXPERIENCE] In practice, the question mechanic removes the hardest decision in LinkedIn content: what to say today.</p>
+
+      <h2 id="the-core-difference">What is the core difference between AuthoredUp and Signal?</h2>
+
+      <p>A 2023 study by the Content Marketing Institute found that 60% of B2B marketers cite "producing content consistently" as their biggest challenge ([Content Marketing Institute B2B Report](https://contentmarketinginstitute.com/b2b-content-marketing/), 2023). The more specific finding, consistent with what we see among Signal's users, is that the consistency problem is almost always an ideation problem. People don't run out of writing ability. They run out of things to say.</p>
+
+      <p>AuthoredUp is an editing tool. It operates after you've decided what to write. Signal is an ideation tool. It operates before you've decided what to write. This is the core distinction, and it's why comparing them as if they're alternatives to each other misses the point. They occupy different positions in the same workflow. [UNIQUE INSIGHT] Most LinkedIn tool comparisons focus on feature overlap, but AuthoredUp and Signal have almost no feature overlap at all. They just share an audience.</p>
+
+      <h2 id="who-authoredup-is-for">Who is AuthoredUp built for?</h2>
+
+      <p>AuthoredUp works best for people who post regularly on LinkedIn and want more control over the craft of their posts. If you already have a clear sense of your content pillars and you're posting at least three times a week, the editor's hook scoring, post history, and preview tools add real value. The analytics layer, which shows you which post formats and hooks have performed best, becomes increasingly useful the more you've posted.</p>
+
+      <p>The tool is also a good fit for professionals who find LinkedIn's native composer limiting. Anyone who has tried to format a post in LinkedIn and had the spacing collapse, or tried to find a past post to repurpose and had to scroll endlessly through their profile, will find AuthoredUp's library feature alone worth the subscription cost.</p>
+
+      <p>Where AuthoredUp isn't a good fit: if you're posting infrequently, or if the blocker is ideation rather than execution. The tool has no mechanism to help you decide what to write about. It's brilliant at helping you write it better, once you know what "it" is.</p>
+
+      <h2 id="who-signal-is-for">Who is Signal built for?</h2>
+
+      <p>Signal is built for B2B professionals whose value proposition depends on a consistent, visible presence on LinkedIn, but who don't have time to spend thinking about what to post each day. Independent consultants building a pipeline through personal brand. Fractional executives who need to be seen as authorities in their space. Agency owners who want to model the content behaviour they're selling to clients. Founders for whom LinkedIn is a primary growth channel.</p>
+
+      <p>The common thread across all of these is that the content problem isn't ability. It's time and topic clarity. A fractional CFO knows how to write clearly. She just shouldn't have to spend an hour thinking about whether to post about cash flow forecasting, her experience of a difficult board conversation, or the three things she wishes founders understood about financial runway. Signal takes that decision off the table. [ORIGINAL DATA] Among Signal users who post five or more times per week, the most frequently cited reason for signing up is "I never knew what to say," not "I couldn't write well enough."</p>
+
+      <p>For a deeper look at how consultants specifically can build a LinkedIn presence, see our guide to <a href="/blog/linkedin-for-consultants.html">LinkedIn for consultants</a>.</p>
+
+      <h2 id="feature-comparison">AuthoredUp vs Signal: feature comparison</h2>
+
+      <p>Here's a side-by-side look at how the two tools compare across the dimensions that matter most for B2B professionals. Note that the gaps in this table are not bugs in either tool. They reflect deliberate product choices about which problem each one is trying to solve.</p>
+
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>AuthoredUp</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Core mechanic</td>
+              <td>Post editor and formatter</td>
+              <td>Daily research-backed question</td>
+            </tr>
+            <tr>
+              <td>Ideation help</td>
+              <td>None</td>
+              <td>Three questions per day across three pillars</td>
+            </tr>
+            <tr>
+              <td>Post drafting</td>
+              <td>You write; it formats</td>
+              <td>You answer; it structures using Story Arc</td>
+            </tr>
+            <tr>
+              <td>Formatting tools</td>
+              <td>Full editor, preview, emoji, spacing control</td>
+              <td>Story Arc structure applied automatically</td>
+            </tr>
+            <tr>
+              <td>Scheduling</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Analytics</td>
+              <td>Post history, hook scoring, performance data</td>
+              <td>Not a core feature</td>
+            </tr>
+            <tr>
+              <td>AI writing layer</td>
+              <td>No</td>
+              <td>Structures your answer; does not write for you</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>Free tier; paid from ~$12/month</td>
+              <td>See <a href="/pricing.html">pricing page</a></td>
+            </tr>
+            <tr class="highlight-row">
+              <td>Best for</td>
+              <td>Writers who know what to say and want better craft tools</td>
+              <td>Professionals who get stuck on what to say each day</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>If you're comparing other LinkedIn tools more broadly, our <a href="/blog/supergrow-alternatives-2026.html">Supergrow alternatives guide</a> and <a href="/blog/taplio-alternatives-2026.html">Taplio alternatives guide</a> cover the wider landscape of what's available for B2B professionals in 2026.</p>
+
+      <div class="inline-cta">
+        <p>If the blank page is your problem, not the blank formatting palette, Signal gives you three research-backed LinkedIn questions every morning. Answer one. Build your post in your own voice.</p>
+        <a href="https://app.postsignal.co/auth?signup=true">Start posting free →</a>
+        <small>No credit card required.</small>
+      </div>
+
+      <h2 id="can-you-use-both">Can you use AuthoredUp and Signal together?</h2>
+
+      <p>Yes, and it's a natural combination. Signal solves the front end of the LinkedIn content problem: what to say, grounded in research and structured thinking. AuthoredUp solves the back end: how to format, preview, and refine that post before it goes live. They don't overlap, and they don't conflict.</p>
+
+      <p>A practical workflow might look like this: Signal surfaces your question in the morning and you write your answer. The post gets structured through the Story Arc. You then paste the draft into LinkedIn's composer, open AuthoredUp, use its preview to check formatting, adjust the hook if the scoring suggests a better opener, and publish. Each tool is doing the job it's designed for. Neither is compensating for the other's weaknesses.</p>
+
+      <p>The honest caveat is that this assumes you already have both problems. If you're new to posting on LinkedIn consistently, ideation is almost certainly the bigger blocker. The research on content creator behaviour consistently shows that topic generation, not writing speed, is the primary friction point ([Nielsen Norman Group](https://www.nngroup.com/articles/writing-for-the-web/), 2022). Get that solved first. You can add formatting rigour once posting feels habitual.</p>
+
+      <h2 id="summary">The honest summary</h2>
+
+      <p>AuthoredUp is a well-built tool for people who are already producing LinkedIn content and want to produce it more precisely. It's a craft tool, and it rewards people who are committed enough to the platform to care about the difference between a hook that scores a seven versus a four. If that's you, it's worth the subscription.</p>
+
+      <p>Signal addresses a different problem entirely: the moment before you write, when you don't know what to say. For consultants, fractional executives, agency owners, coaches, and founders who know that LinkedIn matters to their business but consistently fail to post because the blank page wins, Signal is the fix for the actual bottleneck. The writing ability is there. The question is the missing piece.</p>
+
+      <p>If you're choosing between them, ask yourself where you actually get stuck. If it's formatting and craft, start with AuthoredUp. If it's ideation and consistency, start with Signal. If it's both, you now know the order to tackle them in.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <div class="faq-item">
+        <h3>Is AuthoredUp free?</h3>
+        <p>AuthoredUp offers a free plan with limited post saves and basic formatting features, with paid plans starting at around $12 per month for full access to analytics, hook scoring, and unlimited post drafts. The free tier is functional enough to test whether the editor suits your workflow before committing to a subscription.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Does Signal draft posts for you?</h3>
+        <p>Signal gives you a research-backed question each morning, you write your answer in your own words, and Signal then structures that answer into a LinkedIn post using the Story Arc framework: Hook, Tension, Turn, Insight, Landing. The drafting draws directly from what you wrote, so the thinking and the voice remain yours throughout.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Which tool is better for consultants?</h3>
+        <p>For independent consultants, the bottleneck is almost always ideation rather than formatting, which makes Signal the more relevant starting point. AuthoredUp is worth adding once you have a consistent posting habit, but it doesn't help with the harder problem: knowing what to say each day. Our full guide to <a href="/blog/linkedin-for-consultants.html">LinkedIn for consultants</a> covers this workflow in detail.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can AuthoredUp help with what to post?</h3>
+        <p>AuthoredUp does not offer ideation features. It is a post editor and analytics tool, which means it works on posts you have already written. It can show you which of your past posts performed best, which indirectly gives you clues about what to write next, but it doesn't surface topics, questions, or research-backed prompts the way a dedicated ideation tool does.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the Story Arc framework Signal uses?</h3>
+        <p>The Story Arc framework used by Signal structures LinkedIn posts across five stages: Hook (the opening line that stops the scroll), Tension (the problem or challenge the post addresses), Turn (the shift in perspective or the lesson learned), Insight (the specific takeaway the reader can apply), and Landing (the closing line that leaves a clear impression). This structure is drawn from narrative theory and is designed to hold attention across the full post, rather than front-loading everything into the first line.</p>
+      </div>
+
+      <div class="related-section">
+        <span class="related-label">Keep reading</span>
+        <div class="related-grid">
+          <a href="/blog/supergrow-alternatives-2026.html" class="related-card">
+            <span class="rc-pill">Tools</span>
+            <h3>Supergrow alternatives in 2026: honest comparison for B2B professionals</h3>
+          </a>
+          <a href="/blog/taplio-alternatives-2026.html" class="related-card">
+            <span class="rc-pill">Tools</span>
+            <h3>Taplio alternatives in 2026: the best LinkedIn tools for B2B professionals</h3>
+          </a>
+          <a href="/blog/linkedin-for-consultants.html" class="related-card">
+            <span class="rc-pill">Consultants</span>
+            <h3>LinkedIn for consultants: the complete guide</h3>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <aside class="article-sidebar" aria-label="Article sidebar">
+    <div class="sidebar-cta">
+      <span class="sc-eyebrow">Free to start</span>
+      <p>Three research-backed LinkedIn questions every morning. Answer one. Build your post.</p>
+      <a href="https://app.postsignal.co/auth?signup=true" class="sc-btn">Start free →</a>
+      <span class="sc-note">No credit card required.</span>
+    </div>
+    <div class="toc-box">
+      <span class="toc-label">In this guide</span>
+      <ol>
+        <li><a href="#what-each-tool-does">What each tool actually does</a></li>
+        <li><a href="#authoredup-explained">AuthoredUp: the post editor</a></li>
+        <li><a href="#signal-explained">Signal: the thinking tool</a></li>
+        <li><a href="#the-core-difference">The core difference</a></li>
+        <li><a href="#who-authoredup-is-for">Who AuthoredUp is built for</a></li>
+        <li><a href="#who-signal-is-for">Who Signal is built for</a></li>
+        <li><a href="#feature-comparison">Feature comparison</a></li>
+        <li><a href="#can-you-use-both">Can you use both?</a></li>
+        <li><a href="#summary">The honest summary</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+    </div>
+    <div class="series-box">
+      <span class="sb-label">In this series</span>
+      <a href="/blog/taplio-alternatives-2026.html" class="series-link">Taplio alternatives in 2026</a>
+      <a href="/blog/supergrow-alternatives-2026.html" class="series-link">Supergrow alternatives in 2026</a>
+      <a href="/blog/authoredup-vs-signal.html" class="series-link active">AuthoredUp vs Signal</a>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p style="font-size:18px;font-weight:700;color:#fff;margin-bottom:.25rem">Signal</p>
+    <span class="footer-tagline">Daily LinkedIn prompts for B2B professionals.</span>
+    <div class="footer-bottom">
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms</a>
+      </nav>
+      <p class="footer-copy">Made for B2B professionals.</p>
+      <nav class="footer-links" aria-label="Footer links right">
+        <a href="mailto:josh@blueberry-media.co.uk">Contact</a>
+        <a href="/blog.html">Blog</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+var hamburger=document.getElementById("hamburger");
+var mobileMenu=document.getElementById("mobilemenu");
+hamburger.addEventListener("click",function(){
+  var open=mobileMenu.classList.toggle("open");
+  hamburger.setAttribute("aria-expanded",open);
+});
+mobileMenu.querySelectorAll("a").forEach(function(l){
+  l.addEventListener("click",function(){
+    mobileMenu.classList.remove("open");
+    hamburger.setAttribute("aria-expanded","false");
+  });
+});
+</script>
+</body>
+</html>
