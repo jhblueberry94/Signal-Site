@@ -542,6 +542,33 @@ document.querySelectorAll('.pillar-card, .cluster-post').forEach(function(card){
     if(link&&link.href){window.location.href=link.href;}
   });
 });
+
+/* ── Auto-counting category tile numbers ──
+   Counts real article cards (.pillar-card + .cluster-post) inside each
+   .cluster-block and writes the live total into its matching .cat-card.
+   The "All topics" tile gets the sum across every cluster.
+   Add or remove article cards in the HTML below and these numbers
+   update themselves on next page load — no manual editing required. */
+(function(){
+  var totalArticles=0;
+  clusters.forEach(function(cluster){
+    var category=cluster.getAttribute('data-category');
+    var count=cluster.querySelectorAll('.pillar-card, .cluster-post').length;
+    totalArticles+=count;
+    var tile=document.querySelector('.cat-card[data-filter="'+category+'"] .cat-count');
+    if(tile){
+      var svg=tile.querySelector('svg');
+      tile.textContent=count+(count===1?' article →':' articles →');
+      if(svg)tile.prepend(svg);
+    }
+  });
+  var allTile=document.querySelector('.cat-card.all-card .cat-count');
+  if(allTile){
+    var allSvg=allTile.querySelector('svg');
+    allTile.textContent=totalArticles+' articles →';
+    if(allSvg)allTile.prepend(allSvg);
+  }
+})();
 </script>
 </body>
 </html>
