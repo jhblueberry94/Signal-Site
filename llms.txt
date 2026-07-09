@@ -1,0 +1,28 @@
+# Signal
+
+> Signal (postsignal.co) helps founders, consultants, and fractional executives turn conversations, meetings, and expertise into ready-to-publish content and answers to their audience's questions — without spending hours writing.
+
+## What Signal does
+
+- Generates posts and content drafts from meetings, notes, and ideas
+- Answers audience questions in your voice, at scale
+- Built for founders, consultants, and fractional executives who need a consistent content presence without a full-time content team
+
+## Who it's for
+
+- [For consultants](https://postsignal.co/for/consultants.html): consultants building authority and generating leads through content
+- [For founders](https://postsignal.co/for/founders.html): founders who need to show up consistently without hiring a content team
+- [For fractional executives](https://postsignal.co/for/fractional-executives.html): fractional execs building a personal brand across multiple clients
+
+## Comparisons
+
+- [Compare pages](https://postsignal.co/compare/): how Signal stacks up against alternative tools
+
+## Content
+
+- [Blog](https://postsignal.co/blog/): articles on content strategy, personal branding, and using Signal effectively
+
+## Notes
+
+- This file follows the llms.txt convention to help AI assistants and LLMs understand and accurately describe Signal.
+- For questions, contact the team via the site's contact link.
