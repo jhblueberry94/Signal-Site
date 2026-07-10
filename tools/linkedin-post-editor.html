@@ -119,8 +119,8 @@ h1{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em;co
 .dev-btn.active{background:#fff;color:var(--navy);box-shadow:0 1px 2px rgba(0,0,0,.08)}
 .dev-btn svg{width:15px;height:15px}
 .preview-shell{background:#F3F2EF;border-radius:12px;padding:0 .75rem .75rem;display:flex;justify-content:center;min-height:340px}
-.li-card{width:555px;max-width:100%;background:#fff;border-radius:8px;border:1px solid #E0DFDB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1D1D1D}
-.li-card.mobile{width:352px}
+.li-card{width:445px;max-width:100%;background:#fff;border-radius:8px;border:1px solid #E0DFDB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1D1D1D}
+.li-card.mobile{width:282px}
 .li-header{display:flex;align-items:flex-start;gap:8px;padding:12px 16px 8px}
 .li-avatar{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#0A66C2;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:18px}
 .li-name-row{font-weight:600;font-size:14px;color:#1D1D1D}
@@ -271,6 +271,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       </span>
     </span>
     <div class="preview-shell">
+      <div id="probe" aria-hidden="true" style="position:absolute;visibility:hidden;pointer-events:none;top:-99999px;left:-99999px;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;padding:0;margin:0;border:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"></div>
       <div class="li-card" id="li-card">
         <div class="li-header">
           <div class="li-avatar">YN</div>
@@ -378,6 +379,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   var symbolPanel = document.getElementById('symbol-panel');
   var symbolsBtn = document.getElementById('btn-symbols');
 
+  var probe = document.getElementById('probe');
+  var MAX_VISUAL_LINES = 3;
   var device = 'desktop';
 
   /* ---------- Unicode formatting (matches the real app's approach) ---------- */
@@ -507,22 +510,45 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     var text = editor.value;
     wordCountEl.textContent = countWords(text) + ' words';
 
-    // LinkedIn's real "see more" cutoff is a character-count budget, not a
-    // precise pixel/line-height calculation to reverse-engineer. Cross-
-    // referenced across multiple independent, credible sources (AuthoredUp's
-    // published post-length research, plus several character-count tools):
-    // desktop truncates at roughly 210 characters, mobile at roughly 140.
-    var TARGET_CHARS = device === 'mobile' ? 140 : 210;
+    // Verified via direct DevTools Computed-panel inspection of Typegrow's
+    // real preview element (checked twice, at full non-squeezed browser
+    // width): content width 411px, font-size 14px, line-height 20px. Cross-
+    // checked against the observed cutoff for a real test post: 3 visual
+    // lines averaging ~45 chars each, confirming this is a visual-line wrap,
+    // not a flat character-count budget (an earlier assumption that proved
+    // wrong when tested against Typegrow's actual rendered output).
+    var cs = getComputedStyle(liBody);
+    var padL = parseFloat(cs.paddingLeft) || 0;
+    var padR = parseFloat(cs.paddingRight) || 0;
+    var contentWidth = liBody.clientWidth - padL - padR;
+    probe.style.width = contentWidth + 'px';
+    probe.style.fontFamily = cs.fontFamily;
+    probe.style.fontSize = cs.fontSize;
+    probe.style.fontWeight = cs.fontWeight;
+    probe.style.letterSpacing = cs.letterSpacing;
+    probe.style.lineHeight = cs.lineHeight;
+
+    var lh = parseFloat(cs.lineHeight);
+    var maxHeight = lh * MAX_VISUAL_LINES + 1;
 
     var cutIndex = text.length;
-    if (text.length > TARGET_CHARS) {
-      var best = TARGET_CHARS;
-      // Snap to the nearest word/line boundary rather than cutting mid-word.
-      var nextChar = text[best], prevChar = text[best - 1];
-      if (nextChar && prevChar && /\S/.test(nextChar) && /\S/.test(prevChar)) {
-        var slice = text.slice(0, best);
-        var lastBreak = Math.max(slice.lastIndexOf(' '), slice.lastIndexOf('\n'));
-        if (lastBreak > Math.floor(best * 0.5)) best = lastBreak;
+    probe.textContent = text;
+    if (probe.scrollHeight > maxHeight && text.length > 0) {
+      var tail = '…more';
+      var lo = 0, hi = text.length, best = 0;
+      while (lo <= hi) {
+        var mid = (lo + hi) >> 1;
+        probe.textContent = text.slice(0, mid) + tail;
+        if (probe.scrollHeight <= maxHeight) { best = mid; lo = mid + 1; }
+        else { hi = mid - 1; }
+      }
+      if (best > 0 && best < text.length) {
+        var nextChar = text[best], prevChar = text[best - 1];
+        if (/\S/.test(nextChar) && /\S/.test(prevChar)) {
+          var slice = text.slice(0, best);
+          var lastBreak = Math.max(slice.lastIndexOf(' '), slice.lastIndexOf('\n'));
+          if (lastBreak > Math.floor(best * 0.4)) best = lastBreak;
+        }
       }
       cutIndex = best;
     }
