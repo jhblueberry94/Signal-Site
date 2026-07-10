@@ -560,18 +560,17 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     liBody.innerHTML = '';
     liBody.appendChild(renderWithHashtags(hook));
     if (isTruncated) {
-      var moreWrap = document.createElement('div');
-      moreWrap.style.borderTop = '1px dashed #E0DFDB';
-      moreWrap.style.marginTop = '2px';
-      moreWrap.style.paddingTop = '2px';
-      moreWrap.style.textAlign = 'right';
-      moreWrap.innerHTML = '<span style="color:#666">&hellip;</span><span style="color:#0A66C2;font-weight:500;cursor:pointer"> more</span>';
-      liBody.appendChild(moreWrap);
-      var bodyDiv = document.createElement('div');
-      bodyDiv.style.color = '#00000066';
-      bodyDiv.style.marginTop = '0';
-      bodyDiv.appendChild(renderWithHashtags(body));
-      liBody.appendChild(bodyDiv);
+      liBody.appendChild(document.createTextNode(' '));
+      var more = document.createElement('span');
+      more.style.borderBottom = '1px dashed #999';
+      more.style.paddingBottom = '1px';
+      more.style.whiteSpace = 'nowrap';
+      more.innerHTML = '<span style="color:#666">&hellip;</span><span style="color:#0A66C2;font-weight:500;cursor:pointer"> more</span>';
+      liBody.appendChild(more);
+      var bodySpan = document.createElement('span');
+      bodySpan.style.color = '#00000066';
+      bodySpan.appendChild(renderWithHashtags(body));
+      liBody.appendChild(bodySpan);
     }
 
     var hookComplete = !isTruncated || endsAtSentenceBoundary(hook);
