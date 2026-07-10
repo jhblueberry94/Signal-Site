@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free LinkedIn Post Preview & Editor Tool | Signal</title>
+<meta name="description" content="Write and format your LinkedIn post, then preview exactly how it will look before you publish — including where LinkedIn cuts it off with 'see more'. Free, no sign-up.">
+<meta name="keywords" content="linkedin post preview, linkedin post editor, linkedin see more cutoff, linkedin character limit tool, free linkedin formatting tool, how will my linkedin post look">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://postsignal.co/tools/linkedin-post-editor.html">
+<meta property="og:title" content="Free LinkedIn Post Preview & Editor Tool | Signal">
+<meta property="og:description" content="Write and format your LinkedIn post, then preview exactly how it will look before you publish — including the 'see more' cutoff. Free, no sign-up.">
+<meta property="og:url" content="https://postsignal.co/tools/linkedin-post-editor.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://postsignal.co/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free LinkedIn Post Preview & Editor Tool | Signal">
+<meta name="twitter:description" content="Write and format your LinkedIn post, then preview exactly how it will look before you publish — including the 'see more' cutoff. Free, no sign-up.">
+<meta name="twitter:image" content="https://postsignal.co/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"SoftwareApplication","name":"Signal LinkedIn Post Preview Tool","applicationCategory":"BusinessApplication","operatingSystem":"Any (web-based)","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"description":"A free tool to write, format, and preview LinkedIn posts exactly as they will render, including the 'see more' cutoff point.","url":"https://postsignal.co/tools/linkedin-post-editor.html","isPartOf":{"@type":"WebSite","name":"Signal","url":"https://postsignal.co"}},
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://postsignal.co/"},
+{"@type":"ListItem","position":2,"name":"Free LinkedIn Post Preview & Editor Tool","item":"https://postsignal.co/tools/linkedin-post-editor.html"}
+]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I preview what my LinkedIn post will look like before posting?","acceptedAnswer":{"@type":"Answer","text":"Type or paste your post into the editor on the left. The preview panel on the right updates as you type, rendering your post at LinkedIn's actual feed width and font size, including where the 'see more' cutoff will appear."}},
+{"@type":"Question","name":"Why does LinkedIn cut off my post with 'see more'?", "acceptedAnswer":{"@type":"Answer","text":"LinkedIn truncates posts in the feed after roughly three visible lines of text, showing a 'see more' link so readers can expand the rest. The exact cutoff point depends on line length, line breaks, and device width, not a fixed character count."}},
+{"@type":"Question","name":"What is the LinkedIn character limit for posts?","acceptedAnswer":{"@type":"Answer","text":"LinkedIn allows up to 3,000 characters per post. The 'see more' feed cutoff happens much earlier than that, typically after around three visible lines, so most of a longer post is hidden until a reader clicks to expand it."}},
+{"@type":"Question","name":"Does this tool save or post my content to LinkedIn?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. Nothing you type is saved, stored, or sent anywhere. Use the copy button to copy your finished post, then paste it into LinkedIn yourself."}},
+{"@type":"Question","name":"Can I format bold and italic text for LinkedIn with this tool?","acceptedAnswer":{"@type":"Answer","text":"Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your formatted text into Unicode characters that display as bold or italic when pasted into LinkedIn."}}
+]}
+]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1A1A2E;
+  --blue:#2D6A9F;
+  --coral:#D85A30;
+  --offwhite:#F5F4F1;
+  --warmgrey:#9E9E9E;
+  --ink:#1A1A1A;
+  --card-border:#E8E7E4;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--offwhite);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.italic-accent{font-family:'Instrument Serif',Georgia,serif;font-style:italic;color:var(--blue)}
+.section-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:.75rem}
+.btn-primary{display:inline-block;background:var(--navy);color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;transition:opacity .15s}
+.btn-primary:hover{opacity:.88}
+.card{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:1.5rem}
+main{max-width:1180px;margin:0 auto;padding:0 2rem}
+
+/* NAV (trimmed — matches main site) */
+nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--card-border)}
+.nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;height:72px;padding:0 2rem;gap:2rem}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0;font-weight:700;color:var(--navy);font-size:18px}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none;flex:1}
+.nav-links a{font-size:14px;font-weight:500;color:#666;text-decoration:none}
+.nav-links a:hover{color:var(--blue)}
+.nav-signin{font-size:14px;font-weight:500;color:#666;text-decoration:none;margin-right:.5rem}
+@media (max-width:860px){.nav-links{display:none}}
+
+/* HERO */
+.tool-hero{padding:3rem 0 2rem;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--blue);background:#EAF1F8;border:1px solid #D6E4F0;border-radius:20px;padding:6px 14px;margin-bottom:1.25rem}
+h1{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em;color:var(--navy);line-height:1.15;margin-bottom:.9rem}
+.tool-hero p{max-width:640px;margin:0 auto;color:#555;font-size:16px}
+
+/* SOCIAL PROOF STRIP */
+.proof-strip{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:1.75rem 0 0;padding-top:1.25rem;border-top:1px solid var(--card-border)}
+.proof-item{font-size:13px;color:#666;display:inline-flex;align-items:center;gap:6px}
+.proof-item strong{color:var(--navy);font-size:15px}
+.proof-divider{width:1px;height:13px;background:var(--card-border)}
+
+/* EDITOR LAYOUT */
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2.5rem 0}
+@media (max-width:900px){.tool-grid{grid-template-columns:1fr}}
+.panel-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgrey);margin-bottom:.75rem;display:block}
+.toolbar{display:flex;align-items:center;gap:2px;border:1px solid var(--card-border);border-bottom:none;border-radius:12px 12px 0 0;background:#fff;padding:8px;flex-wrap:wrap}
+.tb-btn{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;border-radius:6px;cursor:pointer;color:#444;font-size:14px;font-weight:600}
+.tb-btn:hover{background:var(--offwhite)}
+.tb-btn.active{background:var(--navy);color:#fff}
+.tb-sep{width:1px;height:20px;background:var(--card-border);margin:0 4px}
+#editor{
+  min-height:320px;border:1px solid var(--card-border);border-top:none;border-radius:0 0 12px 12px;background:#fff;
+  padding:16px;font-size:15px;line-height:1.6;color:var(--ink);outline:none;white-space:pre-wrap;word-wrap:break-word;
+}
+#editor:empty::before{content:attr(data-placeholder);color:#B5B4AC}
+.symbol-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem}
+.symbol-btn{border:1px solid var(--card-border);background:#fff;border-radius:6px;width:30px;height:30px;font-size:14px;cursor:pointer}
+.symbol-btn:hover{background:var(--offwhite)}
+.editor-footer{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+.word-count{font-size:12px;color:var(--warmgrey)}
+.copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer}
+.copy-btn:hover{opacity:.88}
+.copy-btn.copied{background:#1D9E75}
+
+/* PREVIEW (ported from LinkedInPreview.tsx) */
+.preview-shell{background:#F3F2EF;border-radius:12px;padding:1.5rem .75rem;display:flex;justify-content:center}
+.li-card{width:min(100%,555px);background:#fff;border-radius:8px;border:1px solid #E0DFDB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1D1D1D}
+.li-header{display:flex;align-items:flex-start;gap:8px;padding:12px 16px 8px}
+.li-avatar{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#0A66C2;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:18px}
+.li-name-row{font-weight:600;font-size:14px;color:#1D1D1D}
+.li-meta{font-size:12px;color:#666;margin-top:1px}
+.li-body{padding:0 16px 8px;font-size:14px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}
+.li-more{color:#0A66C2;font-weight:500;cursor:default}
+.li-reactions{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;font-size:12px;color:#666}
+.li-actions{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E0DFDB}
+.li-actions span{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 0;font-size:13px;font-weight:600;color:#666}
+.fold-status{font-size:12px;margin-top:.6rem;padding:0 4px}
+.fold-ok{color:#2C7A4B}
+.fold-warn{color:#B4782899}
+
+/* CTA */
+.cta-band{background:var(--navy);border-radius:16px;padding:2.5rem 2rem;text-align:center;color:#fff;margin:3rem 0}
+.cta-band h2{font-size:1.5rem;font-weight:700;margin-bottom:.6rem}
+.cta-band p{color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 1.5rem;font-size:15px}
+.cta-band .btn-primary{background:var(--coral)}
+
+/* FAQ */
+.faq-section{margin:3rem 0}
+.faq-item{border-bottom:1px solid var(--card-border);padding:1.1rem 0}
+.faq-item h3{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:.5rem}
+.faq-item p{font-size:14px;color:#555}
+
+footer{border-top:1px solid var(--card-border);margin-top:3rem;padding:2rem;text-align:center;font-size:13px;color:var(--warmgrey)}
+footer a{color:var(--blue);text-decoration:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="Signal home">Signal</a>
+    <ul class="nav-links" role="list">
+      <li><a href="/index.html#problem">The problem</a></li>
+      <li><a href="/who-its-for.html">Who it's for</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/pricing.html">Pricing</a></li>
+    </ul>
+    <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
+    <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="font-size:14px;padding:9px 18px;background:var(--coral)">Try Signal for free</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="tool-hero">
+  <span class="eyebrow">Free tool · No sign-up required</span>
+  <h1>Free LinkedIn post preview <span class="italic-accent">&amp; editor</span></h1>
+  <p>Write and format your post, then see exactly how it will render in the LinkedIn feed &mdash; including precisely where the &ldquo;see more&rdquo; cutoff falls.</p>
+  <div class="proof-strip" aria-label="Signal usage stats">
+    <span class="proof-item"><strong>21</strong>&nbsp;founders using Signal</span>
+    <span class="proof-divider" aria-hidden="true"></span>
+    <span class="proof-item"><strong>75+</strong>&nbsp;posts generated</span>
+    <span class="proof-divider" aria-hidden="true"></span>
+    <span class="proof-item"><strong>100+</strong>&nbsp;questions answered</span>
+  </div>
+</header>
+
+<section class="tool-grid" aria-label="LinkedIn post editor and preview">
+  <div>
+    <span class="panel-label">Write your post</span>
+    <div class="toolbar" role="toolbar" aria-label="Formatting">
+      <button type="button" class="tb-btn" id="btn-bold" title="Bold" aria-label="Bold"><b>B</b></button>
+      <button type="button" class="tb-btn" id="btn-italic" title="Italic" aria-label="Italic"><i>I</i></button>
+      <div class="tb-sep"></div>
+      <button type="button" class="tb-btn" id="btn-ul" title="Bulleted list" aria-label="Bulleted list">&bull;</button>
+      <button type="button" class="tb-btn" id="btn-ol" title="Numbered list" aria-label="Numbered list">1.</button>
+      <div class="tb-sep"></div>
+      <button type="button" class="tb-btn" id="btn-undo" title="Undo" aria-label="Undo">&#8630;</button>
+      <button type="button" class="tb-btn" id="btn-redo" title="Redo" aria-label="Redo">&#8631;</button>
+    </div>
+    <div id="editor" contenteditable="true" data-placeholder="Start writing your LinkedIn post here..." aria-label="Post editor"></div>
+    <div class="symbol-row" aria-label="Insert symbol">
+      <span style="font-size:11px;color:var(--warmgrey);align-self:center;margin-right:4px">Insert:</span>
+      <button class="symbol-btn" data-symbol="&#8594;">&#8594;</button>
+      <button class="symbol-btn" data-symbol="&#8592;">&#8592;</button>
+      <button class="symbol-btn" data-symbol="&#8593;">&#8593;</button>
+      <button class="symbol-btn" data-symbol="&#8595;">&#8595;</button>
+      <button class="symbol-btn" data-symbol="&#10003;">&#10003;</button>
+      <button class="symbol-btn" data-symbol="&#10007;">&#10007;</button>
+      <button class="symbol-btn" data-symbol="&#8226;">&#8226;</button>
+      <button class="symbol-btn" data-symbol="&#9656;">&#9656;</button>
+      <button class="symbol-btn" data-symbol="&#9670;">&#9670;</button>
+      <button class="symbol-btn" data-symbol="&#9733;">&#9733;</button>
+      <button class="symbol-btn" data-symbol="&#128161;">&#128161;</button>
+      <button class="symbol-btn" data-symbol="&#128293;">&#128293;</button>
+      <button class="symbol-btn" data-symbol="&#128204;">&#128204;</button>
+    </div>
+    <div class="editor-footer">
+      <span class="word-count" id="word-count">0 words</span>
+      <button class="copy-btn" id="copy-btn" type="button">Copy for LinkedIn</button>
+    </div>
+  </div>
+
+  <div>
+    <span class="panel-label">Live preview</span>
+    <div class="preview-shell">
+      <div class="li-card">
+        <div id="probe" aria-hidden="true" style="position:absolute;visibility:hidden;pointer-events:none;top:-99999px;left:-99999px;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;padding:0;margin:0;border:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"></div>
+        <div class="li-header">
+          <div class="li-avatar">YN</div>
+          <div style="flex:1;min-width:0">
+            <div class="li-name-row">Your Name <span style="font-weight:400;color:#666;font-size:12px">&middot; 1st</span></div>
+            <div class="li-meta">Your headline goes here</div>
+            <div class="li-meta">12h &middot; &#127760;</div>
+          </div>
+        </div>
+        <div class="li-body" id="li-body"></div>
+        <div class="li-reactions">
+          <span>&#128077;&#10084;&#65039; 47</span>
+          <span>12 comments &middot; 5 reposts</span>
+        </div>
+        <div class="li-actions">
+          <span>Like</span><span>Comment</span><span>Repost</span><span>Send</span>
+        </div>
+      </div>
+    </div>
+    <p class="fold-status" id="fold-status"></p>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Like formatting your posts? You'll love not having to think of them.</h2>
+  <p>Signal sends you three research-backed LinkedIn questions every morning. Answer one, get a structured post outline, done in minutes.</p>
+  <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Try Signal for free &rarr;</a>
+</div>
+
+<section class="faq-section" aria-labelledby="faq-heading">
+  <span class="section-label">Common questions</span>
+  <h2 id="faq-heading" style="font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:1rem">LinkedIn post formatting, answered</h2>
+
+  <div class="faq-item">
+    <h3>How do I preview what my LinkedIn post will look like before posting?</h3>
+    <p>Type or paste your post into the editor on the left. The preview panel on the right updates as you type, rendering your post at LinkedIn's actual feed width and font size, including where the &ldquo;see more&rdquo; cutoff will appear.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Why does LinkedIn cut off my post with &ldquo;see more&rdquo;?</h3>
+    <p>LinkedIn truncates posts in the feed after roughly three visible lines of text, showing a &ldquo;see more&rdquo; link so readers can expand the rest. The exact cutoff point depends on line length, line breaks, and device width, not a fixed character count.</p>
+  </div>
+  <div class="faq-item">
+    <h3>What is the LinkedIn character limit for posts?</h3>
+    <p>LinkedIn allows up to 3,000 characters per post. The &ldquo;see more&rdquo; feed cutoff happens much earlier than that, typically after around three visible lines, so most of a longer post is hidden until a reader clicks to expand it.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Does this tool save or post my content to LinkedIn?</h3>
+    <p>No. This tool runs entirely in your browser. Nothing you type is saved, stored, or sent anywhere. Use the copy button to copy your finished post, then paste it into LinkedIn yourself.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Can I format bold and italic text for LinkedIn with this tool?</h3>
+    <p>Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your formatted text into Unicode characters that display as bold or italic when pasted into LinkedIn.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; Signal &middot; <a href="/index.html">Home</a> &middot; <a href="/pricing.html">Pricing</a> &middot; <a href="/blog.html">Blog</a></p>
+</footer>
+
+<script>
+(function(){
+  var editor = document.getElementById('editor');
+  var liBody = document.getElementById('li-body');
+  var probe = document.getElementById('probe');
+  var wordCountEl = document.getElementById('word-count');
+  var foldStatusEl = document.getElementById('fold-status');
+  var copyBtn = document.getElementById('copy-btn');
+
+  var MAX_VISUAL_LINES = 3;
+
+  function exec(cmd){
+    document.execCommand(cmd, false, null);
+    editor.focus();
+    handleInput();
+  }
+  document.getElementById('btn-bold').addEventListener('click', function(){ exec('bold'); });
+  document.getElementById('btn-italic').addEventListener('click', function(){ exec('italic'); });
+  document.getElementById('btn-ul').addEventListener('click', function(){ exec('insertUnorderedList'); });
+  document.getElementById('btn-ol').addEventListener('click', function(){ exec('insertOrderedList'); });
+  document.getElementById('btn-undo').addEventListener('click', function(){ exec('undo'); });
+  document.getElementById('btn-redo').addEventListener('click', function(){ exec('redo'); });
+
+  document.querySelectorAll('.symbol-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      editor.focus();
+      document.execCommand('insertText', false, btn.getAttribute('data-symbol'));
+      handleInput();
+    });
+  });
+
+  function htmlToPlainText(html){
+    var div = document.createElement('div');
+    div.innerHTML = html;
+    return (div.innerText || div.textContent || '')
+      .replace(/\n{6,}/g, '\n\n\n\n\n\n')
+      .trim();
+  }
+
+  function countWords(s){
+    var t = s.trim();
+    if (!t) return 0;
+    return t.split(/\s+/).length;
+  }
+
+  function endsAtSentenceBoundary(text){
+    var trimmed = text.trim();
+    if (!trimmed) return false;
+    return /[.!?…"')\]]$/.test(trimmed);
+  }
+
+  function renderWithHashtags(text){
+    var parts = text.split(/(#[\p{L}\p{N}_]+)/gu);
+    var frag = document.createDocumentFragment();
+    parts.forEach(function(part){
+      var span = document.createElement('span');
+      if (/^#[\p{L}\p{N}_]+$/u.test(part)) span.style.color = '#0A66C2';
+      span.textContent = part;
+      frag.appendChild(span);
+    });
+    return frag;
+  }
+
+  function measureAndRender(){
+    var text = htmlToPlainText(editor.innerHTML);
+    wordCountEl.textContent = countWords(text) + ' words';
+
+    var cs = getComputedStyle(liBody);
+    probe.style.width = liBody.clientWidth + 'px';
+    probe.style.fontFamily = cs.fontFamily;
+    probe.style.fontSize = cs.fontSize;
+    probe.style.fontWeight = cs.fontWeight;
+    probe.style.letterSpacing = cs.letterSpacing;
+    probe.style.lineHeight = cs.lineHeight;
+
+    var lh = parseFloat(cs.lineHeight);
+    var maxHeight = lh * MAX_VISUAL_LINES + 1;
+
+    var cutIndex = text.length;
+    probe.textContent = text;
+    if (probe.scrollHeight > maxHeight && text.length > 0) {
+      var tail = '… more';
+      var lo = 0, hi = text.length, best = 0;
+      while (lo <= hi) {
+        var mid = (lo + hi) >> 1;
+        probe.textContent = text.slice(0, mid) + tail;
+        if (probe.scrollHeight <= maxHeight) { best = mid; lo = mid + 1; }
+        else { hi = mid - 1; }
+      }
+      if (best > 0 && best < text.length) {
+        var nextChar = text[best], prevChar = text[best - 1];
+        if (/\S/.test(nextChar) && /\S/.test(prevChar)) {
+          var slice = text.slice(0, best);
+          var lastBreak = Math.max(slice.lastIndexOf(' '), slice.lastIndexOf('\n'));
+          if (lastBreak > Math.floor(best * 0.4)) best = lastBreak;
+        }
+      }
+      cutIndex = best;
+    }
+
+    var isTruncated = cutIndex < text.length;
+    var hook = isTruncated ? text.slice(0, cutIndex) : text;
+    var body = isTruncated ? text.slice(cutIndex) : '';
+
+    liBody.innerHTML = '';
+    liBody.appendChild(renderWithHashtags(hook));
+    if (isTruncated) {
+      var more = document.createElement('span');
+      more.innerHTML = '<span style="color:#666">&hellip; </span><span style="color:#0A66C2;font-weight:500">more</span>';
+      liBody.appendChild(more);
+      var bodyDiv = document.createElement('div');
+      bodyDiv.style.color = '#00000066';
+      bodyDiv.style.marginTop = '6px';
+      bodyDiv.appendChild(renderWithHashtags(body));
+      liBody.appendChild(bodyDiv);
+    }
+
+    var hookComplete = !isTruncated || endsAtSentenceBoundary(hook);
+    if (!text.trim()) {
+      foldStatusEl.textContent = '';
+    } else if (hookComplete) {
+      foldStatusEl.textContent = "✓ Your hook lands before 'see more'";
+      foldStatusEl.className = 'fold-status fold-ok';
+    } else {
+      foldStatusEl.textContent = "Your hook is cut off — consider shortening your opening line";
+      foldStatusEl.className = 'fold-status fold-warn';
+    }
+  }
+
+  function handleInput(){ measureAndRender(); }
+  editor.addEventListener('input', handleInput);
+  window.addEventListener('resize', measureAndRender);
+
+  function mapChar(ch, style){
+    var code = ch.codePointAt(0);
+    var isUpper = code >= 0x41 && code <= 0x5A;
+    var isLower = code >= 0x61 && code <= 0x7A;
+    if (!isUpper && !isLower) return ch;
+    var base = style === 'bold' ? (isUpper ? 0x1D400 : 0x1D41A) : (style === 'italic' ? (isUpper ? 0x1D434 : 0x1D44E) : null);
+    if (base === null) return ch;
+    var offset = isUpper ? code - 0x41 : code - 0x61;
+    return String.fromCodePoint(base + offset);
+  }
+
+  function htmlToUnicodeFormatted(html){
+    var root = document.createElement('div');
+    root.innerHTML = html;
+    var out = '';
+    function walk(node, style){
+      if (node.nodeType === 3) {
+        var text = node.textContent;
+        if (style) { for (var i = 0; i < text.length; i++) out += mapChar(text[i], style); }
+        else out += text;
+        return;
+      }
+      if (node.nodeType !== 1) return;
+      var tag = node.tagName.toLowerCase();
+      var nextStyle = style;
+      if (tag === 'b' || tag === 'strong') nextStyle = 'bold';
+      if (tag === 'i' || tag === 'em') nextStyle = 'italic';
+      if (tag === 'div' || tag === 'p' || tag === 'br') out += '\n';
+      Array.prototype.forEach.call(node.childNodes, function(c){ walk(c, nextStyle); });
+    }
+    Array.prototype.forEach.call(root.childNodes, function(c){ walk(c, null); });
+    return out.replace(/\n{3,}/g, '\n\n').trim();
+  }
+
+  copyBtn.addEventListener('click', function(){
+    var formatted = htmlToUnicodeFormatted(editor.innerHTML);
+    navigator.clipboard.writeText(formatted).then(function(){
+      copyBtn.textContent = 'Copied';
+      copyBtn.classList.add('copied');
+      setTimeout(function(){ copyBtn.textContent = 'Copy for LinkedIn'; copyBtn.classList.remove('copied'); }, 1800);
+    });
+  });
+
+  measureAndRender();
+})();
+</script>
+</body>
+</html>
