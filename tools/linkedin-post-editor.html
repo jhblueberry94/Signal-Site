@@ -24,12 +24,18 @@
 {"@type":"ListItem","position":1,"name":"Home","item":"https://postsignal.co/"},
 {"@type":"ListItem","position":2,"name":"Free LinkedIn Post Preview & Editor Tool","item":"https://postsignal.co/tools/linkedin-post-editor.html"}
 ]},
+{"@type":"HowTo","name":"How to preview a LinkedIn post","step":[
+{"@type":"HowToStep","position":1,"text":"Type or paste your post into the editor on the left."},
+{"@type":"HowToStep","position":2,"text":"Use the toolbar to bold, italicise, or underline text, or insert symbols and emojis."},
+{"@type":"HowToStep","position":3,"text":"Check the live preview on the right, including exactly where the 'see more' cutoff falls."},
+{"@type":"HowToStep","position":4,"text":"Copy your finished post and paste it directly into LinkedIn."}
+]},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How do I preview what my LinkedIn post will look like before posting?","acceptedAnswer":{"@type":"Answer","text":"Type or paste your post into the editor on the left. The preview panel on the right updates as you type, rendering your post at LinkedIn's actual feed width and font size, including where the 'see more' cutoff will appear."}},
 {"@type":"Question","name":"Why does LinkedIn cut off my post with 'see more'?", "acceptedAnswer":{"@type":"Answer","text":"LinkedIn truncates posts in the feed after roughly three visible lines of text, showing a 'see more' link so readers can expand the rest. The exact cutoff point depends on line length, line breaks, and device width, not a fixed character count."}},
 {"@type":"Question","name":"What is the LinkedIn character limit for posts?","acceptedAnswer":{"@type":"Answer","text":"LinkedIn allows up to 3,000 characters per post. The 'see more' feed cutoff happens much earlier than that, typically after around three visible lines, so most of a longer post is hidden until a reader clicks to expand it."}},
 {"@type":"Question","name":"Does this tool save or post my content to LinkedIn?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. Nothing you type is saved, stored, or sent anywhere. Use the copy button to copy your finished post, then paste it into LinkedIn yourself."}},
-{"@type":"Question","name":"Can I format bold and italic text for LinkedIn with this tool?","acceptedAnswer":{"@type":"Answer","text":"Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your formatted text into Unicode characters that display as bold or italic when pasted into LinkedIn."}}
+{"@type":"Question","name":"Can I format bold and italic text for LinkedIn with this tool?","acceptedAnswer":{"@type":"Answer","text":"Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your selected text into Unicode characters that display as bold, italic, or underlined the moment you paste them into LinkedIn."}}
 ]}
 ]}
 </script>
@@ -53,10 +59,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--offwhite);color:var(--ink
 .section-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:.75rem}
 .btn-primary{display:inline-block;background:var(--navy);color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;transition:opacity .15s}
 .btn-primary:hover{opacity:.88}
-.card{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:1.5rem}
 main{max-width:1180px;margin:0 auto;padding:0 2rem}
 
-/* NAV (trimmed — matches main site) */
 nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--card-border)}
 .nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;height:72px;padding:0 2rem;gap:2rem}
 .logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0;font-weight:700;color:var(--navy);font-size:18px}
@@ -66,64 +70,74 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .nav-signin{font-size:14px;font-weight:500;color:#666;text-decoration:none;margin-right:.5rem}
 @media (max-width:860px){.nav-links{display:none}}
 
-/* HERO */
 .tool-hero{padding:3rem 0 2rem;text-align:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--blue);background:#EAF1F8;border:1px solid #D6E4F0;border-radius:20px;padding:6px 14px;margin-bottom:1.25rem}
 h1{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em;color:var(--navy);line-height:1.15;margin-bottom:.9rem}
 .tool-hero p{max-width:640px;margin:0 auto;color:#555;font-size:16px}
 
-/* SOCIAL PROOF STRIP */
 .proof-strip{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:1.75rem 0 0;padding-top:1.25rem;border-top:1px solid var(--card-border)}
 .proof-item{font-size:13px;color:#666;display:inline-flex;align-items:center;gap:6px}
 .proof-item strong{color:var(--navy);font-size:15px}
 .proof-divider{width:1px;height:13px;background:var(--card-border)}
 
-/* EDITOR LAYOUT */
 .tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2.5rem 0}
 @media (max-width:900px){.tool-grid{grid-template-columns:1fr}}
-.panel-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgrey);margin-bottom:.75rem;display:block}
-.toolbar{display:flex;align-items:center;gap:2px;border:1px solid var(--card-border);border-bottom:none;border-radius:12px 12px 0 0;background:#fff;padding:8px;flex-wrap:wrap}
-.tb-btn{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;border-radius:6px;cursor:pointer;color:#444;font-size:14px;font-weight:600}
+.panel-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgrey);margin-bottom:.75rem;display:flex;align-items:center;justify-content:space-between}
+
+/* EDITOR CARD */
+.editor-card{border:1px solid var(--card-border);border-radius:12px;background:#fff;overflow:visible;position:relative}
+.toolbar{display:flex;align-items:center;gap:2px;border-bottom:1px solid var(--card-border);padding:8px;flex-wrap:wrap}
+.tb-btn{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;border-radius:6px;cursor:pointer;color:#444;font-size:14px;font-weight:600}
 .tb-btn:hover{background:var(--offwhite)}
-.tb-btn.active{background:var(--navy);color:#fff}
+.tb-btn svg{width:17px;height:17px}
 .tb-sep{width:1px;height:20px;background:var(--card-border);margin:0 4px}
+.tb-label{font-size:9px;font-weight:700;letter-spacing:.03em}
+
 #editor{
-  min-height:320px;border:1px solid var(--card-border);border-top:none;border-radius:0 0 12px 12px;background:#fff;
-  padding:16px;font-size:15px;line-height:1.6;color:var(--ink);outline:none;white-space:pre-wrap;word-wrap:break-word;
+  width:100%;min-height:320px;border:none;background:#fff;resize:vertical;
+  padding:16px;font-size:15px;line-height:1.6;color:var(--ink);outline:none;
+  font-family:'DM Sans',sans-serif;
 }
-#editor:empty::before{content:attr(data-placeholder);color:#B5B4AC}
-.symbol-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem}
-.symbol-btn{border:1px solid var(--card-border);background:#fff;border-radius:6px;width:30px;height:30px;font-size:14px;cursor:pointer}
+#editor::placeholder{color:#B5B4AC}
+
+.symbol-panel{position:absolute;top:48px;left:8px;z-index:20;background:#fff;border:1px solid var(--card-border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.1);padding:10px;display:none;width:260px}
+.symbol-panel.open{display:block}
+.symbol-panel-label{font-size:10px;font-weight:600;color:var(--warmgrey);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;display:block}
+.symbol-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.symbol-btn{border:1px solid var(--card-border);background:#fff;border-radius:6px;height:30px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .symbol-btn:hover{background:var(--offwhite)}
-.editor-footer{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+
+.editor-footer{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-top:1px solid var(--card-border)}
 .word-count{font-size:12px;color:var(--warmgrey)}
 .copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer}
 .copy-btn:hover{opacity:.88}
 .copy-btn.copied{background:#1D9E75}
 
-/* PREVIEW (ported from LinkedInPreview.tsx) */
-.preview-shell{background:#F3F2EF;border-radius:12px;padding:1.5rem .75rem;display:flex;justify-content:center}
-.li-card{width:min(100%,555px);background:#fff;border-radius:8px;border:1px solid #E0DFDB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1D1D1D}
+/* PREVIEW */
+.preview-toggle{display:flex;align-items:center;gap:4px;background:var(--offwhite);border-radius:8px;padding:3px}
+.dev-btn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:none;background:transparent;border-radius:6px;cursor:pointer;color:#888}
+.dev-btn.active{background:#fff;color:var(--navy);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.dev-btn svg{width:15px;height:15px}
+.preview-shell{background:#F3F2EF;border-radius:12px;padding:1.5rem .75rem;display:flex;justify-content:center;min-height:340px}
+.li-card{width:555px;max-width:100%;background:#fff;border-radius:8px;border:1px solid #E0DFDB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1D1D1D;transition:width .15s}
+.li-card.mobile{width:352px}
 .li-header{display:flex;align-items:flex-start;gap:8px;padding:12px 16px 8px}
 .li-avatar{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#0A66C2;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:18px}
 .li-name-row{font-weight:600;font-size:14px;color:#1D1D1D}
 .li-meta{font-size:12px;color:#666;margin-top:1px}
-.li-body{padding:0 16px 8px;font-size:14px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}
-.li-more{color:#0A66C2;font-weight:500;cursor:default}
+.li-body{padding:0 16px 8px;font-size:14px;line-height:1.55;white-space:pre-wrap;word-wrap:break-word}
 .li-reactions{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;font-size:12px;color:#666}
 .li-actions{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E0DFDB}
 .li-actions span{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 0;font-size:13px;font-weight:600;color:#666}
-.fold-status{font-size:12px;margin-top:.6rem;padding:0 4px}
+.fold-status{font-size:12px;margin-top:.6rem;padding:0 4px;min-height:16px}
 .fold-ok{color:#2C7A4B}
 .fold-warn{color:#B4782899}
 
-/* CTA */
 .cta-band{background:var(--navy);border-radius:16px;padding:2.5rem 2rem;text-align:center;color:#fff;margin:3rem 0}
 .cta-band h2{font-size:1.5rem;font-weight:700;margin-bottom:.6rem}
 .cta-band p{color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 1.5rem;font-size:15px}
 .cta-band .btn-primary{background:var(--coral)}
 
-/* FAQ */
 .faq-section{margin:3rem 0}
 .faq-item{border-bottom:1px solid var(--card-border);padding:1.1rem 0}
 .faq-item h3{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:.5rem}
@@ -167,44 +181,86 @@ footer a{color:var(--blue);text-decoration:none}
 <section class="tool-grid" aria-label="LinkedIn post editor and preview">
   <div>
     <span class="panel-label">Write your post</span>
-    <div class="toolbar" role="toolbar" aria-label="Formatting">
-      <button type="button" class="tb-btn" id="btn-bold" title="Bold" aria-label="Bold"><b>B</b></button>
-      <button type="button" class="tb-btn" id="btn-italic" title="Italic" aria-label="Italic"><i>I</i></button>
-      <div class="tb-sep"></div>
-      <button type="button" class="tb-btn" id="btn-ul" title="Bulleted list" aria-label="Bulleted list">&bull;</button>
-      <button type="button" class="tb-btn" id="btn-ol" title="Numbered list" aria-label="Numbered list">1.</button>
-      <div class="tb-sep"></div>
-      <button type="button" class="tb-btn" id="btn-undo" title="Undo" aria-label="Undo">&#8630;</button>
-      <button type="button" class="tb-btn" id="btn-redo" title="Redo" aria-label="Redo">&#8631;</button>
-    </div>
-    <div id="editor" contenteditable="true" data-placeholder="Start writing your LinkedIn post here..." aria-label="Post editor"></div>
-    <div class="symbol-row" aria-label="Insert symbol">
-      <span style="font-size:11px;color:var(--warmgrey);align-self:center;margin-right:4px">Insert:</span>
-      <button class="symbol-btn" data-symbol="&#8594;">&#8594;</button>
-      <button class="symbol-btn" data-symbol="&#8592;">&#8592;</button>
-      <button class="symbol-btn" data-symbol="&#8593;">&#8593;</button>
-      <button class="symbol-btn" data-symbol="&#8595;">&#8595;</button>
-      <button class="symbol-btn" data-symbol="&#10003;">&#10003;</button>
-      <button class="symbol-btn" data-symbol="&#10007;">&#10007;</button>
-      <button class="symbol-btn" data-symbol="&#8226;">&#8226;</button>
-      <button class="symbol-btn" data-symbol="&#9656;">&#9656;</button>
-      <button class="symbol-btn" data-symbol="&#9670;">&#9670;</button>
-      <button class="symbol-btn" data-symbol="&#9733;">&#9733;</button>
-      <button class="symbol-btn" data-symbol="&#128161;">&#128161;</button>
-      <button class="symbol-btn" data-symbol="&#128293;">&#128293;</button>
-      <button class="symbol-btn" data-symbol="&#128204;">&#128204;</button>
-    </div>
-    <div class="editor-footer">
-      <span class="word-count" id="word-count">0 words</span>
-      <button class="copy-btn" id="copy-btn" type="button">Copy for LinkedIn</button>
+    <div class="editor-card">
+      <div class="toolbar" role="toolbar" aria-label="Formatting">
+        <button type="button" class="tb-btn" id="btn-bold" title="Bold" aria-label="Bold"><b>B</b></button>
+        <button type="button" class="tb-btn" id="btn-italic" title="Italic" aria-label="Italic"><i>I</i></button>
+        <button type="button" class="tb-btn" id="btn-underline" title="Underline" aria-label="Underline"><u>U</u></button>
+        <div class="tb-sep"></div>
+        <button type="button" class="tb-btn" id="btn-ul" title="Bulleted list" aria-label="Bulleted list">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l11 0"/><path d="M9 12l11 0"/><path d="M9 18l11 0"/><path d="M5 6l0 .01"/><path d="M5 12l0 .01"/><path d="M5 18l0 .01"/></svg>
+        </button>
+        <button type="button" class="tb-btn" id="btn-ol" title="Numbered list" aria-label="Numbered list">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 6h9"/><path d="M11 12h9"/><path d="M12 18h8"/><path d="M4 16a2 2 0 1 1 4 0c0 .591 -.5 1 -1 1.5l-3 2.5h4"/><path d="M6 10v-6l-2 2"/></svg>
+        </button>
+        <div class="tb-sep"></div>
+        <button type="button" class="tb-btn" id="btn-symbols" title="Insert symbol or emoji" aria-label="Insert symbol or emoji" aria-haspopup="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M9 10l.01 0"/><path d="M15 10l.01 0"/><path d="M9.5 15a3.5 3.5 0 0 0 5 0"/></svg>
+        </button>
+        <div class="tb-sep"></div>
+        <button type="button" class="tb-btn" id="btn-undo" title="Undo" aria-label="Undo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l-4 -4l4 -4"/><path d="M5 10h11a4 4 0 1 1 0 8h-1"/></svg>
+        </button>
+        <button type="button" class="tb-btn" id="btn-redo" title="Redo" aria-label="Redo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14l4 -4l-4 -4"/><path d="M19 10h-11a4 4 0 1 0 0 8h1"/></svg>
+        </button>
+
+        <div class="symbol-panel" id="symbol-panel">
+          <span class="symbol-panel-label">Arrows &amp; symbols</span>
+          <div class="symbol-grid" style="margin-bottom:10px">
+            <button class="symbol-btn" data-symbol="&#8594;">&#8594;</button>
+            <button class="symbol-btn" data-symbol="&#8592;">&#8592;</button>
+            <button class="symbol-btn" data-symbol="&#8593;">&#8593;</button>
+            <button class="symbol-btn" data-symbol="&#8595;">&#8595;</button>
+            <button class="symbol-btn" data-symbol="&#10003;">&#10003;</button>
+            <button class="symbol-btn" data-symbol="&#10007;">&#10007;</button>
+            <button class="symbol-btn" data-symbol="&#8226;">&#8226;</button>
+            <button class="symbol-btn" data-symbol="&#9656;">&#9656;</button>
+            <button class="symbol-btn" data-symbol="&#9670;">&#9670;</button>
+            <button class="symbol-btn" data-symbol="&#9733;">&#9733;</button>
+            <button class="symbol-btn" data-symbol="&#9734;">&#9734;</button>
+            <button class="symbol-btn" data-symbol="&#10022;">&#10022;</button>
+          </div>
+          <span class="symbol-panel-label">Emojis</span>
+          <div class="symbol-grid">
+            <button class="symbol-btn" data-symbol="&#128161;">&#128161;</button>
+            <button class="symbol-btn" data-symbol="&#128293;">&#128293;</button>
+            <button class="symbol-btn" data-symbol="&#128204;">&#128204;</button>
+            <button class="symbol-btn" data-symbol="&#128170;">&#128170;</button>
+            <button class="symbol-btn" data-symbol="&#128640;">&#128640;</button>
+            <button class="symbol-btn" data-symbol="&#127919;">&#127919;</button>
+            <button class="symbol-btn" data-symbol="&#128200;">&#128200;</button>
+            <button class="symbol-btn" data-symbol="&#128077;">&#128077;</button>
+            <button class="symbol-btn" data-symbol="&#128075;">&#128075;</button>
+            <button class="symbol-btn" data-symbol="&#9989;">&#9989;</button>
+            <button class="symbol-btn" data-symbol="&#128071;">&#128071;</button>
+            <button class="symbol-btn" data-symbol="&#128064;">&#128064;</button>
+          </div>
+        </div>
+      </div>
+      <textarea id="editor" placeholder="Start writing your LinkedIn post here..." aria-label="Post editor"></textarea>
+      <div class="editor-footer">
+        <span class="word-count" id="word-count">0 words</span>
+        <button class="copy-btn" id="copy-btn" type="button">Copy for LinkedIn</button>
+      </div>
     </div>
   </div>
 
   <div>
-    <span class="panel-label">Live preview</span>
+    <span class="panel-label">
+      <span>Live preview</span>
+      <span class="preview-toggle" role="group" aria-label="Preview device">
+        <button type="button" class="dev-btn active" id="dev-desktop" title="Desktop preview" aria-label="Desktop preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10"/><path d="M7 20h10"/><path d="M9 16v4"/><path d="M15 16v4"/></svg>
+        </button>
+        <button type="button" class="dev-btn" id="dev-mobile" title="Mobile preview" aria-label="Mobile preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14"/><path d="M11 4h2"/><path d="M12 17v.01"/></svg>
+        </button>
+      </span>
+    </span>
     <div class="preview-shell">
-      <div class="li-card">
-        <div id="probe" aria-hidden="true" style="position:absolute;visibility:hidden;pointer-events:none;top:-99999px;left:-99999px;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;padding:0;margin:0;border:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"></div>
+      <div id="probe" aria-hidden="true" style="position:absolute;visibility:hidden;pointer-events:none;top:-99999px;left:-99999px;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;padding:0;margin:0;border:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"></div>
+      <div class="li-card" id="li-card">
         <div class="li-header">
           <div class="li-avatar">YN</div>
           <div style="flex:1;min-width:0">
@@ -255,7 +311,7 @@ footer a{color:var(--blue);text-decoration:none}
   </div>
   <div class="faq-item">
     <h3>Can I format bold and italic text for LinkedIn with this tool?</h3>
-    <p>Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your formatted text into Unicode characters that display as bold or italic when pasted into LinkedIn.</p>
+    <p>Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your selected text into Unicode characters that display as bold, italic, or underlined the moment you paste them into LinkedIn.</p>
   </div>
 </section>
 
@@ -269,53 +325,128 @@ footer a{color:var(--blue);text-decoration:none}
 (function(){
   var editor = document.getElementById('editor');
   var liBody = document.getElementById('li-body');
+  var liCard = document.getElementById('li-card');
   var probe = document.getElementById('probe');
   var wordCountEl = document.getElementById('word-count');
   var foldStatusEl = document.getElementById('fold-status');
   var copyBtn = document.getElementById('copy-btn');
+  var symbolPanel = document.getElementById('symbol-panel');
+  var symbolsBtn = document.getElementById('btn-symbols');
 
   var MAX_VISUAL_LINES = 3;
+  var device = 'desktop';
 
-  function exec(cmd){
-    document.execCommand(cmd, false, null);
+  /* ---------- Unicode formatting (matches the real app's approach) ---------- */
+  function mapChar(ch, style){
+    var code = ch.codePointAt(0);
+    var isUpper = code >= 0x41 && code <= 0x5A;
+    var isLower = code >= 0x61 && code <= 0x7A;
+    var isDigit = code >= 0x30 && code <= 0x39;
+    if (style === 'underline') return ch + '\u0332';
+    if (!isUpper && !isLower && !(style === 'bold' && isDigit)) return ch;
+    if (style === 'bold') {
+      if (isDigit) return String.fromCodePoint(0x1D7CE + (code - 0x30));
+      return String.fromCodePoint((isUpper ? 0x1D400 : 0x1D41A) + (code - (isUpper ? 0x41 : 0x61)));
+    }
+    if (style === 'italic') {
+      if (!isUpper && !isLower) return ch;
+      return String.fromCodePoint((isUpper ? 0x1D434 : 0x1D44E) + (code - (isUpper ? 0x41 : 0x61)));
+    }
+    return ch;
+  }
+  function applyStyle(text, style){
+    var out = '';
+    for (var i = 0; i < text.length; i++) out += mapChar(text[i], style);
+    return out;
+  }
+
+  function applyToSelection(style){
+    var start = editor.selectionStart, end = editor.selectionEnd;
+    if (start === end) { editor.focus(); return; }
+    var val = editor.value;
+    var selected = val.slice(start, end);
+    var styled = applyStyle(selected, style);
+    editor.value = val.slice(0, start) + styled + val.slice(end);
+    editor.selectionStart = start;
+    editor.selectionEnd = start + styled.length;
     editor.focus();
     handleInput();
   }
-  document.getElementById('btn-bold').addEventListener('click', function(){ exec('bold'); });
-  document.getElementById('btn-italic').addEventListener('click', function(){ exec('italic'); });
-  document.getElementById('btn-ul').addEventListener('click', function(){ exec('insertUnorderedList'); });
-  document.getElementById('btn-ol').addEventListener('click', function(){ exec('insertOrderedList'); });
-  document.getElementById('btn-undo').addEventListener('click', function(){ exec('undo'); });
-  document.getElementById('btn-redo').addEventListener('click', function(){ exec('redo'); });
+  document.getElementById('btn-bold').addEventListener('click', function(){ applyToSelection('bold'); });
+  document.getElementById('btn-italic').addEventListener('click', function(){ applyToSelection('italic'); });
+  document.getElementById('btn-underline').addEventListener('click', function(){ applyToSelection('underline'); });
 
+  function prefixLines(prefixFn){
+    var start = editor.selectionStart, end = editor.selectionEnd;
+    var val = editor.value;
+    var lineStart = val.lastIndexOf('\n', start - 1) + 1;
+    var lineEnd = val.indexOf('\n', end);
+    if (lineEnd === -1) lineEnd = val.length;
+    var block = val.slice(lineStart, lineEnd);
+    var lines = block.split('\n');
+    var out = lines.map(function(line, i){ return prefixFn(line, i); }).join('\n');
+    editor.value = val.slice(0, lineStart) + out + val.slice(lineEnd);
+    editor.focus();
+    handleInput();
+  }
+  document.getElementById('btn-ul').addEventListener('click', function(){
+    prefixLines(function(line){ return line.trim() ? '\u2022 ' + line.replace(/^(\u2022|\d+\.)\s*/, '') : line; });
+  });
+  document.getElementById('btn-ol').addEventListener('click', function(){
+    var n = 1;
+    prefixLines(function(line){
+      if (!line.trim()) return line;
+      var clean = line.replace(/^(\u2022|\d+\.)\s*/, '');
+      return (n++) + '. ' + clean;
+    });
+  });
+
+  document.getElementById('btn-undo').addEventListener('click', function(){ document.execCommand('undo'); handleInput(); });
+  document.getElementById('btn-redo').addEventListener('click', function(){ document.execCommand('redo'); handleInput(); });
+
+  symbolsBtn.addEventListener('click', function(e){
+    e.stopPropagation();
+    symbolPanel.classList.toggle('open');
+  });
+  document.addEventListener('click', function(e){
+    if (!symbolPanel.contains(e.target) && e.target !== symbolsBtn) symbolPanel.classList.remove('open');
+  });
   document.querySelectorAll('.symbol-btn').forEach(function(btn){
     btn.addEventListener('click', function(){
+      var sym = btn.getAttribute('data-symbol');
+      var start = editor.selectionStart, end = editor.selectionEnd;
+      var val = editor.value;
+      editor.value = val.slice(0, start) + sym + val.slice(end);
+      editor.selectionStart = editor.selectionEnd = start + sym.length;
       editor.focus();
-      document.execCommand('insertText', false, btn.getAttribute('data-symbol'));
       handleInput();
     });
   });
 
-  function htmlToPlainText(html){
-    var div = document.createElement('div');
-    div.innerHTML = html;
-    return (div.innerText || div.textContent || '')
-      .replace(/\n{6,}/g, '\n\n\n\n\n\n')
-      .trim();
+  /* ---------- Device toggle ---------- */
+  var devDesktop = document.getElementById('dev-desktop');
+  var devMobile = document.getElementById('dev-mobile');
+  function setDevice(d){
+    device = d;
+    liCard.classList.toggle('mobile', d === 'mobile');
+    devDesktop.classList.toggle('active', d === 'desktop');
+    devMobile.classList.toggle('active', d === 'mobile');
+    measureAndRender();
   }
+  devDesktop.addEventListener('click', function(){ setDevice('desktop'); });
+  devMobile.addEventListener('click', function(){ setDevice('mobile'); });
 
+  /* ---------- Word count + fold measurement (ported from LinkedInPreview.tsx) ---------- */
   function countWords(s){
     var t = s.trim();
     if (!t) return 0;
     return t.split(/\s+/).length;
   }
-
   function endsAtSentenceBoundary(text){
     var trimmed = text.trim();
     if (!trimmed) return false;
     return /[.!?…"')\]]$/.test(trimmed);
   }
-
   function renderWithHashtags(text){
     var parts = text.split(/(#[\p{L}\p{N}_]+)/gu);
     var frag = document.createDocumentFragment();
@@ -329,7 +460,7 @@ footer a{color:var(--blue);text-decoration:none}
   }
 
   function measureAndRender(){
-    var text = htmlToPlainText(editor.innerHTML);
+    var text = editor.value;
     wordCountEl.textContent = countWords(text) + ' words';
 
     var cs = getComputedStyle(liBody);
@@ -346,7 +477,7 @@ footer a{color:var(--blue);text-decoration:none}
     var cutIndex = text.length;
     probe.textContent = text;
     if (probe.scrollHeight > maxHeight && text.length > 0) {
-      var tail = '… more';
+      var tail = '…more';
       var lo = 0, hi = text.length, best = 0;
       while (lo <= hi) {
         var mid = (lo + hi) >> 1;
@@ -373,7 +504,7 @@ footer a{color:var(--blue);text-decoration:none}
     liBody.appendChild(renderWithHashtags(hook));
     if (isTruncated) {
       var more = document.createElement('span');
-      more.innerHTML = '<span style="color:#666">&hellip; </span><span style="color:#0A66C2;font-weight:500">more</span>';
+      more.innerHTML = '<span style="color:#666">&hellip;</span><span style="color:#0A66C2;font-weight:500">more</span>';
       liBody.appendChild(more);
       var bodyDiv = document.createElement('div');
       bodyDiv.style.color = '#00000066';
@@ -398,43 +529,8 @@ footer a{color:var(--blue);text-decoration:none}
   editor.addEventListener('input', handleInput);
   window.addEventListener('resize', measureAndRender);
 
-  function mapChar(ch, style){
-    var code = ch.codePointAt(0);
-    var isUpper = code >= 0x41 && code <= 0x5A;
-    var isLower = code >= 0x61 && code <= 0x7A;
-    if (!isUpper && !isLower) return ch;
-    var base = style === 'bold' ? (isUpper ? 0x1D400 : 0x1D41A) : (style === 'italic' ? (isUpper ? 0x1D434 : 0x1D44E) : null);
-    if (base === null) return ch;
-    var offset = isUpper ? code - 0x41 : code - 0x61;
-    return String.fromCodePoint(base + offset);
-  }
-
-  function htmlToUnicodeFormatted(html){
-    var root = document.createElement('div');
-    root.innerHTML = html;
-    var out = '';
-    function walk(node, style){
-      if (node.nodeType === 3) {
-        var text = node.textContent;
-        if (style) { for (var i = 0; i < text.length; i++) out += mapChar(text[i], style); }
-        else out += text;
-        return;
-      }
-      if (node.nodeType !== 1) return;
-      var tag = node.tagName.toLowerCase();
-      var nextStyle = style;
-      if (tag === 'b' || tag === 'strong') nextStyle = 'bold';
-      if (tag === 'i' || tag === 'em') nextStyle = 'italic';
-      if (tag === 'div' || tag === 'p' || tag === 'br') out += '\n';
-      Array.prototype.forEach.call(node.childNodes, function(c){ walk(c, nextStyle); });
-    }
-    Array.prototype.forEach.call(root.childNodes, function(c){ walk(c, null); });
-    return out.replace(/\n{3,}/g, '\n\n').trim();
-  }
-
   copyBtn.addEventListener('click', function(){
-    var formatted = htmlToUnicodeFormatted(editor.innerHTML);
-    navigator.clipboard.writeText(formatted).then(function(){
+    navigator.clipboard.writeText(editor.value).then(function(){
       copyBtn.textContent = 'Copied';
       copyBtn.classList.add('copied');
       setTimeout(function(){ copyBtn.textContent = 'Copy for LinkedIn'; copyBtn.classList.remove('copied'); }, 1800);
