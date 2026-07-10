@@ -534,7 +534,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     var cutIndex = text.length;
     probe.textContent = text;
     if (probe.scrollHeight > maxHeight && text.length > 0) {
-      var tail = '…more';
+      var tail = ' …more';
       var lo = 0, hi = text.length, best = 0;
       while (lo <= hi) {
         var mid = (lo + hi) >> 1;
@@ -560,8 +560,10 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     liBody.innerHTML = '';
     liBody.appendChild(renderWithHashtags(hook));
     if (isTruncated) {
+      liBody.appendChild(document.createTextNode(' '));
       var more = document.createElement('span');
-      more.innerHTML = '<span style="color:#666">&hellip;</span><span style="color:#0A66C2;font-weight:500">more</span>';
+      more.style.whiteSpace = 'nowrap';
+      more.innerHTML = '<span style="color:#666">&hellip;</span><span style="color:#0A66C2;font-weight:500;cursor:pointer">more</span>';
       liBody.appendChild(more);
       var bodyDiv = document.createElement('div');
       bodyDiv.style.color = '#00000066';
