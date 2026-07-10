@@ -558,19 +558,21 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     var body = isTruncated ? text.slice(cutIndex) : '';
 
     liBody.innerHTML = '';
-    liBody.appendChild(renderWithHashtags(hook));
+    var hookDiv = document.createElement('div');
+    hookDiv.appendChild(renderWithHashtags(hook));
+    liBody.appendChild(hookDiv);
     if (isTruncated) {
-      liBody.appendChild(document.createTextNode(' '));
-      var more = document.createElement('span');
-      more.style.borderBottom = '1px dashed #999';
-      more.style.paddingBottom = '1px';
-      more.style.whiteSpace = 'nowrap';
-      more.innerHTML = '<span style="color:#666">&hellip;</span><span style="color:#0A66C2;font-weight:500;cursor:pointer"> more</span>';
-      liBody.appendChild(more);
-      var bodySpan = document.createElement('span');
-      bodySpan.style.color = '#00000066';
-      bodySpan.appendChild(renderWithHashtags(body));
-      liBody.appendChild(bodySpan);
+      var moreRow = document.createElement('div');
+      moreRow.style.borderTop = '1px dashed #999';
+      moreRow.style.textAlign = 'right';
+      moreRow.style.lineHeight = 'normal';
+      moreRow.innerHTML = '<span style="color:#666">&hellip;</span> <span style="color:#0A66C2;font-weight:500;cursor:pointer">See more</span>';
+      liBody.appendChild(moreRow);
+      var bodyDiv = document.createElement('div');
+      bodyDiv.style.color = '#00000066';
+      bodyDiv.style.textAlign = 'left';
+      bodyDiv.appendChild(renderWithHashtags(body));
+      liBody.appendChild(bodyDiv);
     }
 
     var hookComplete = !isTruncated || endsAtSentenceBoundary(hook);
