@@ -134,6 +134,9 @@ h1{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em;co
 .li-actions{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E0DFDB}
 .li-actions span{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 0;font-size:13px;font-weight:600;color:#666}
 .fold-status{font-size:13px;margin-top:.75rem;padding:.6rem .85rem;border-radius:8px;min-height:16px;display:flex;align-items:center;gap:8px;font-weight:500;max-width:560px;margin-left:auto;margin-right:auto;box-sizing:border-box}
+.jargon-legend{font-size:12.5px;margin-top:.5rem;padding:.55rem .85rem;border-radius:8px;display:none;align-items:center;gap:8px;max-width:560px;margin-left:auto;margin-right:auto;box-sizing:border-box;color:#7A5B00;background:#FFFBEB;border:1px solid #F3E3A8}
+.jargon-legend.show{display:flex}
+.jargon-legend-swatch{width:12px;height:12px;border-radius:3px;background:#FDF0C4;border:1px solid #E8D394;flex-shrink:0}
 .fold-status:empty{display:none}
 .fold-ok{color:#0F6B3F;background:#E8F5EE;border:1px solid #C8E9D6}
 .fold-warn{color:#A03D1F;background:#FBEAE3;border:1px solid #F0C7B5}
@@ -331,6 +334,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       </div>
     </div>
     <p class="fold-status" id="fold-status"></p>
+    <p class="jargon-legend" id="jargon-legend"><span class="jargon-legend-swatch" aria-hidden="true"></span> Highlighted text reads as generic or AI-flagged. Consider rewriting in your own words.</p>
   </div>
 </section>
 
@@ -728,6 +732,10 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       liBody.appendChild(bodyDiv);
     }
 
+    var jargonLegendEl = document.getElementById('jargon-legend');
+    var hasFlagged = liBody.querySelector('span[title]') !== null;
+    jargonLegendEl.classList.toggle('show', hasFlagged);
+
     var hookComplete = !isTruncated || endsAtSentenceBoundary(hook);
     if (!text.trim()) {
       foldStatusEl.textContent = '';
@@ -735,7 +743,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       foldStatusEl.textContent = "✓ Your hook lands before 'see more'";
       foldStatusEl.className = 'fold-status fold-ok';
     } else {
-      foldStatusEl.textContent = "Your hook is cut off — consider shortening your opening line";
+      foldStatusEl.textContent = "Your hook is cut off. Consider shortening your opening line";
       foldStatusEl.className = 'fold-status fold-warn';
     }
   }
