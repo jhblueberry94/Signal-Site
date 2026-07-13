@@ -613,10 +613,20 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     '(' + JARGON_PHRASES.map(function(j){ return escapeRegex(j.phrase); }).join('|') + ')',
     'gui'
   );
+  // Catches rephrased variants of the formulaic "I'm [adverb] to [share/announce]"
+  // opener (e.g. "I'm so happy to share") that a literal phrase list would miss.
+  var formulaicOpenerPattern = /I['\u2019]?m\s+(?:so\s+|really\s+|very\s+)?(?:happy|excited|thrilled|pleased|delighted)\s+to\s+(?:share|announce)/gui;
+  // A hyphen with a space on each side is a common AI-writing dash substitute,
+  // distinct from (but as flaggable as) a true em dash.
+  var spacedHyphenPattern = /\s-\s/g;
 
   function renderWithHashtags(text){
-    // Split on hashtags, jargon phrases, and em dashes in one pass so highlighting layers correctly
-    var combined = new RegExp('(#[\\p{L}\\p{N}_]+)|' + jargonPattern.source + '|(\\u2014)', 'gui');
+    // Split on hashtags, jargon phrases, formulaic openers, em dashes, and
+    // spaced-hyphen dash-substitutes in one pass so highlighting layers correctly
+    var combined = new RegExp(
+      '(#[\\p{L}\\p{N}_]+)|' + jargonPattern.source + '|(' + formulaicOpenerPattern.source + ')|(\\u2014)|(\\s-\\s)',
+      'gui'
+    );
     var parts = text.split(combined).filter(function(p){ return p !== undefined; });
     var frag = document.createDocumentFragment();
     parts.forEach(function(part){
@@ -626,7 +636,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
         span.style.color = '#0A66C2';
       } else if (part === '\u2014') {
         span.style.background = '#FDF0C4';
-        span.title = 'em dash — LinkedIn/AI-detection flag; consider a period or comma instead';
+        span.title = 'em dash \u2014 LinkedIn/AI-detection flag; consider a period or comma instead';
+      } else if (/^\s-\s$/.test(part)) {
+        span.style.background = '#FDF0C4';
+        span.title = 'spaced hyphen used as a dash \u2014 common AI-writing tell; consider a period or comma instead';
+      } else if (new RegExp('^' + formulaicOpenerPattern.source + '$', 'ui').test(part)) {
+        span.style.background = '#FDF0C4';
+        span.title = 'Flagged: formulaic AI opener';
       } else if (JARGON_PHRASES.some(function(j){ return j.phrase.toLowerCase() === part.toLowerCase(); })) {
         span.style.background = '#FDF0C4';
         var reason = JARGON_PHRASES.find(function(j){ return j.phrase.toLowerCase() === part.toLowerCase(); }).reason;
