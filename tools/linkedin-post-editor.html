@@ -129,9 +129,10 @@ h1{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em;co
 .li-reactions{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;font-size:12px;color:#666}
 .li-actions{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E0DFDB}
 .li-actions span{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 0;font-size:13px;font-weight:600;color:#666}
-.fold-status{font-size:12px;margin-top:.6rem;padding:0 4px;min-height:16px}
-.fold-ok{color:#2C7A4B}
-.fold-warn{color:#B4782899}
+.fold-status{font-size:13px;margin-top:.75rem;padding:.6rem .85rem;border-radius:8px;min-height:16px;display:flex;align-items:center;gap:8px;font-weight:500}
+.fold-status:empty{display:none}
+.fold-ok{color:#0F6B3F;background:#E8F5EE;border:1px solid #C8E9D6}
+.fold-warn{color:#9A5B0D;background:#FDF3E3;border:1px solid #F3DDB0}
 
 .cta-band{background:var(--navy);border-radius:16px;padding:2.5rem 2rem;text-align:center;color:#fff;margin:3rem 0}
 .cta-band h2{font-size:1.5rem;font-weight:700;margin-bottom:.6rem}
@@ -505,12 +506,82 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     if (!trimmed) return false;
     return /[.!?…"')\]]$/.test(trimmed);
   }
+  // Informed by LinkedIn's May 2026 "AI slop" crackdown (targets generic
+  // patterns, not AI usage itself: corporate buzzwords, vague inflated
+  // claims with no specifics, formulaic AI-writing openers/closers, and
+  // overused em dashes) plus Signal's own established banned-word rules.
+  var JARGON_PHRASES = [
+    // Corporate buzzwords / clichés
+    {phrase:'synergy', reason:'corporate buzzword'},
+    {phrase:'leverage', reason:'corporate buzzword'},
+    {phrase:'unlock', reason:'corporate buzzword'},
+    {phrase:'thought leader', reason:'corporate buzzword'},
+    {phrase:'game-changer', reason:'corporate buzzword'},
+    {phrase:'game changer', reason:'corporate buzzword'},
+    {phrase:'paradigm shift', reason:'corporate buzzword'},
+    {phrase:'move the needle', reason:'corporate buzzword'},
+    {phrase:'low-hanging fruit', reason:'corporate buzzword'},
+    {phrase:'circle back', reason:'corporate buzzword'},
+    {phrase:'touch base', reason:'corporate buzzword'},
+    {phrase:'deep dive', reason:'corporate buzzword'},
+    {phrase:'double down', reason:'corporate buzzword'},
+    {phrase:'north star', reason:'corporate buzzword'},
+    {phrase:'best-in-class', reason:'corporate buzzword'},
+    {phrase:'world-class', reason:'corporate buzzword'},
+    {phrase:'cutting-edge', reason:'corporate buzzword'},
+    {phrase:'next-level', reason:'corporate buzzword'},
+    {phrase:'revolutionize', reason:'corporate buzzword'},
+    {phrase:'supercharge', reason:'corporate buzzword'},
+    {phrase:'holistic approach', reason:'corporate buzzword'},
+    {phrase:'ever-evolving landscape', reason:'corporate buzzword'},
+    // Vague inflated claims (no evidence attached — flagged as generic per LinkedIn's stated criteria)
+    {phrase:'passionate professional', reason:'vague, no evidence'},
+    {phrase:'results-driven', reason:'vague, no evidence'},
+    {phrase:'proven track record', reason:'vague, no evidence'},
+    {phrase:'strategic initiatives', reason:'vague, no evidence'},
+    // Formulaic AI-writing openers/closers
+    {phrase:"I'm excited to announce", reason:'formulaic AI opener'},
+    {phrase:"I'm thrilled to share", reason:'formulaic AI opener'},
+    {phrase:"let's dive in", reason:'formulaic AI opener'},
+    {phrase:'the truth is', reason:'formulaic AI opener'},
+    {phrase:"here's the kicker", reason:'formulaic AI phrase'},
+    {phrase:'let that sink in', reason:'formulaic AI phrase'},
+    {phrase:'plot twist', reason:'formulaic AI phrase'},
+    {phrase:'buckle up', reason:'formulaic AI phrase'},
+    {phrase:'unpopular opinion', reason:'formulaic AI phrase'},
+    {phrase:'hot take', reason:'formulaic AI phrase'},
+    {phrase:'real talk', reason:'formulaic AI phrase'},
+    {phrase:'no fluff', reason:'formulaic AI phrase'},
+    {phrase:'food for thought', reason:'formulaic AI phrase'},
+    {phrase:'mic drop', reason:'formulaic AI phrase'},
+    {phrase:'in today\u2019s fast-paced world', reason:'formulaic AI opener'},
+    {phrase:'in an ever-changing world', reason:'formulaic AI opener'}
+  ];
+
+  function escapeRegex(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  var jargonPattern = new RegExp(
+    '(' + JARGON_PHRASES.map(function(j){ return escapeRegex(j.phrase); }).join('|') + ')',
+    'gui'
+  );
+
   function renderWithHashtags(text){
-    var parts = text.split(/(#[\p{L}\p{N}_]+)/gu);
+    // Split on hashtags, jargon phrases, and em dashes in one pass so highlighting layers correctly
+    var combined = new RegExp('(#[\\p{L}\\p{N}_]+)|' + jargonPattern.source + '|(\\u2014)', 'gui');
+    var parts = text.split(combined).filter(function(p){ return p !== undefined; });
     var frag = document.createDocumentFragment();
     parts.forEach(function(part){
+      if (!part) return;
       var span = document.createElement('span');
-      if (/^#[\p{L}\p{N}_]+$/u.test(part)) span.style.color = '#0A66C2';
+      if (/^#[\p{L}\p{N}_]+$/u.test(part)) {
+        span.style.color = '#0A66C2';
+      } else if (part === '\u2014') {
+        span.style.background = '#FDF0C4';
+        span.title = 'em dash — LinkedIn/AI-detection flag; consider a period or comma instead';
+      } else if (JARGON_PHRASES.some(function(j){ return j.phrase.toLowerCase() === part.toLowerCase(); })) {
+        span.style.background = '#FDF0C4';
+        var reason = JARGON_PHRASES.find(function(j){ return j.phrase.toLowerCase() === part.toLowerCase(); }).reason;
+        span.title = 'Flagged: ' + reason;
+      }
       span.textContent = part;
       frag.appendChild(span);
     });
