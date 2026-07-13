@@ -2,700 +2,77 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free LinkedIn Post Preview & Editor Tool | Signal</title>
-<meta name="description" content="Write and format your LinkedIn post, then preview exactly how it will look before you publish — including where LinkedIn cuts it off with 'see more'. Free, no sign-up.">
-<meta name="keywords" content="linkedin post preview, linkedin post editor, linkedin see more cutoff, linkedin character limit tool, free linkedin formatting tool, how will my linkedin post look">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://postsignal.co/tools/linkedin-post-editor.html">
-<meta property="og:title" content="Free LinkedIn Post Preview & Editor Tool | Signal">
-<meta property="og:description" content="Write and format your LinkedIn post, then preview exactly how it will look before you publish — including the 'see more' cutoff. Free, no sign-up.">
-<meta property="og:url" content="https://postsignal.co/tools/linkedin-post-editor.html">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://postsignal.co/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free LinkedIn Post Preview & Editor Tool | Signal">
-<meta name="twitter:description" content="Write and format your LinkedIn post, then preview exactly how it will look before you publish — including the 'see more' cutoff. Free, no sign-up.">
-<meta name="twitter:image" content="https://postsignal.co/og-image.png">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"SoftwareApplication","name":"Signal LinkedIn Post Preview Tool","applicationCategory":"BusinessApplication","operatingSystem":"Any (web-based)","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"description":"A free tool to write, format, and preview LinkedIn posts exactly as they will render, including the 'see more' cutoff point.","url":"https://postsignal.co/tools/linkedin-post-editor.html","isPartOf":{"@type":"WebSite","name":"Signal","url":"https://postsignal.co"}},
-{"@type":"BreadcrumbList","itemListElement":[
-{"@type":"ListItem","position":1,"name":"Home","item":"https://postsignal.co/"},
-{"@type":"ListItem","position":2,"name":"Free LinkedIn Post Preview & Editor Tool","item":"https://postsignal.co/tools/linkedin-post-editor.html"}
-]},
-{"@type":"HowTo","name":"How to preview a LinkedIn post","step":[
-{"@type":"HowToStep","position":1,"text":"Type or paste your post into the editor on the left."},
-{"@type":"HowToStep","position":2,"text":"Use the toolbar to bold, italicise, or underline text, or insert symbols and emojis."},
-{"@type":"HowToStep","position":3,"text":"Check the live preview on the right, including exactly where the 'see more' cutoff falls."},
-{"@type":"HowToStep","position":4,"text":"Copy your finished post and paste it directly into LinkedIn."}
-]},
-{"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How do I preview what my LinkedIn post will look like before posting?","acceptedAnswer":{"@type":"Answer","text":"Type or paste your post into the editor on the left. The preview panel on the right updates as you type, rendering your post at LinkedIn's actual feed width and font size, including where the 'see more' cutoff will appear."}},
-{"@type":"Question","name":"Why does LinkedIn cut off my post with 'see more'?", "acceptedAnswer":{"@type":"Answer","text":"LinkedIn truncates posts in the feed after roughly three visible lines of text, showing a 'see more' link so readers can expand the rest. The exact cutoff point depends on line length, line breaks, and device width, not a fixed character count."}},
-{"@type":"Question","name":"What is the LinkedIn character limit for posts?","acceptedAnswer":{"@type":"Answer","text":"LinkedIn allows up to 3,000 characters per post. The 'see more' feed cutoff happens much earlier than that, typically after around three visible lines, so most of a longer post is hidden until a reader clicks to expand it."}},
-{"@type":"Question","name":"Does this tool save or post my content to LinkedIn?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. Nothing you type is saved, stored, or sent anywhere. Use the copy button to copy your finished post, then paste it into LinkedIn yourself."}},
-{"@type":"Question","name":"Can I format bold and italic text for LinkedIn with this tool?","acceptedAnswer":{"@type":"Answer","text":"Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your selected text into Unicode characters that display as bold, italic, or underlined the moment you paste them into LinkedIn."}}
-]}
-]}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<title>Signal — Popup D2, Refined</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --navy:#1A1A2E;
-  --blue:#2D6A9F;
-  --coral:#D85A30;
-  --offwhite:#F5F4F1;
-  --warmgrey:#9E9E9E;
-  --ink:#1A1A1A;
-  --card-border:#E8E7E4;
-}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--offwhite);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.italic-accent{font-family:'Instrument Serif',Georgia,serif;font-style:italic;color:var(--blue)}
-.section-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--warmgrey);display:block;margin-bottom:.75rem}
-.btn-primary{display:inline-block;background:var(--navy);color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 28px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;transition:opacity .15s}
-.btn-primary:hover{opacity:.88}
-main{max-width:1180px;margin:0 auto;padding:0 2rem}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1A1A2E;--coral:#D85A30;--blue:#2D6A9F;--offwhite:#F5F4F1;--border:#E8E7E4}
+body{font-family:'DM Sans',sans-serif;background:#EDEBE6;padding:3rem 2rem;color:var(--navy)}
+.italic-accent{font-family:'Instrument Serif',serif;font-style:italic;color:var(--coral)}
+.wrap{max-width:460px;margin:0 auto}
+h1.page-title{font-size:1.4rem;margin-bottom:2rem;text-align:center}
+.stage{background:#00000055;border-radius:16px;padding:2.5rem 1.5rem;display:flex;align-items:center;justify-content:center;min-height:540px}
+.modal{background:#fff;border-radius:16px;padding:2.25rem 2rem;width:100%;max-width:360px;box-shadow:0 20px 50px rgba(0,0,0,.3);position:relative;text-align:center}
+.close{position:absolute;top:12px;right:14px;background:none;border:none;font-size:18px;color:#aaa;cursor:pointer;line-height:1}
 
-nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--card-border)}
-.nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;height:72px;padding:0 2rem;gap:2rem}
-.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0;font-weight:700;color:var(--navy);font-size:18px}
-.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none;flex:1}
-.nav-links a{font-size:14px;font-weight:500;color:#666;text-decoration:none}
-.nav-links a:hover{color:var(--blue)}
-.nav-signin{font-size:14px;font-weight:500;color:#666;text-decoration:none;margin-right:.5rem}
-@media (max-width:860px){.nav-links{display:none}}
+.preview{background:var(--offwhite);border-radius:10px;padding:1rem;margin-bottom:1.25rem;border:1px solid #eee}
+.p-card{background:#fff;border-radius:8px;padding:.75rem;border:1px solid #e5e5e5;text-align:left}
+.p-avatar{width:26px;height:26px;border-radius:50%;background:var(--blue);display:inline-block;vertical-align:middle;margin-right:6px}
+.p-name{font-size:11px;font-weight:600;color:var(--navy);display:inline-block;vertical-align:middle}
+.p-line{height:6px;background:#eee;border-radius:3px;margin-top:8px}
+.p-line.short{width:60%}
 
-.tool-hero{padding:3rem 0 2rem;text-align:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--blue);background:#EAF1F8;border:1px solid #D6E4F0;border-radius:20px;padding:6px 14px;margin-bottom:1.25rem}
-h1{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;letter-spacing:-.01em;color:var(--navy);line-height:1.15;margin-bottom:.9rem}
-.tool-hero p{max-width:640px;margin:0 auto;color:#555;font-size:16px}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);margin-bottom:.65rem}
+.eyebrow svg{flex-shrink:0}
+.h1{font-size:26px;font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:.55rem}
+.h2{font-size:14px;color:#555;line-height:1.5;margin-bottom:1.35rem;max-width:290px;margin-left:auto;margin-right:auto}
+.h2 strong{color:var(--navy);font-weight:600}
 
-.proof-strip{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:1.75rem 0 0;padding-top:1.25rem;border-top:1px solid var(--card-border)}
-.proof-item{font-size:13px;color:#666;display:inline-flex;align-items:center;gap:6px}
-.proof-item strong{color:var(--navy);font-size:15px}
-.proof-divider{width:1px;height:13px;background:var(--card-border)}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--coral);color:#fff;padding:13px 28px;border-radius:9px;text-decoration:none;font-weight:600;font-size:14.5px;box-shadow:0 6px 16px rgba(216,90,48,.28)}
+.microcopy{font-size:11.5px;color:#999;margin-top:.65rem}
 
-.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2.5rem 0}
-@media (max-width:900px){.tool-grid{grid-template-columns:1fr}}
-.panel-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--warmgrey);margin-bottom:.75rem;display:flex;align-items:center;justify-content:space-between;min-height:34px}
-
-/* EDITOR CARD */
-.editor-card{border:1px solid var(--card-border);border-radius:12px;background:#fff;overflow:visible;position:relative}
-.toolbar{display:flex;align-items:center;gap:2px;border-bottom:1px solid var(--card-border);padding:8px;flex-wrap:wrap}
-.tb-btn{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;border-radius:6px;cursor:pointer;color:#444;font-size:14px;font-weight:600}
-.tb-btn:hover{background:var(--offwhite)}
-.tb-btn svg{width:17px;height:17px}
-.tb-sep{width:1px;height:20px;background:var(--card-border);margin:0 4px}
-.tb-label{font-size:9px;font-weight:700;letter-spacing:.03em}
-
-#editor{
-  width:100%;min-height:320px;border:none;background:#fff;resize:vertical;
-  padding:16px;font-size:15px;line-height:1.6;color:var(--ink);outline:none;
-  font-family:'DM Sans',sans-serif;
-}
-#editor::placeholder{color:#B5B4AC}
-
-.symbol-panel{position:absolute;top:48px;left:8px;z-index:20;background:#fff;border:1px solid var(--card-border);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.1);padding:10px;display:none;width:260px}
-.symbol-panel.open{display:block}
-.symbol-panel-label{font-size:10px;font-weight:600;color:var(--warmgrey);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;display:block}
-.symbol-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.symbol-btn{border:1px solid var(--card-border);background:#fff;border-radius:6px;height:30px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.symbol-btn:hover{background:var(--offwhite)}
-
-.editor-footer{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-top:1px solid var(--card-border)}
-.word-count{font-size:12px;color:var(--warmgrey)}
-.copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:13px;font-weight:500;cursor:pointer}
-.cta-secondary-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;color:var(--navy);border:1px solid var(--card-border);border-radius:8px;padding:8px 15px;font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;transition:border-color .15s,color .15s}
-.cta-hero-btn{display:inline-flex;align-items:center;gap:6px;background:var(--coral);color:#fff;border:1px solid var(--coral);border-radius:8px;padding:8px 15px;font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;transition:opacity .15s}
-.cta-hero-btn:hover{opacity:.88}
-.cta-secondary-btn:hover{border-color:var(--blue);color:var(--blue)}
-.copy-btn:hover{opacity:.88}
-.copy-btn.copied{background:#1D9E75}
-
-/* PREVIEW */
-.preview-toggle{display:flex;align-items:center;gap:4px;background:var(--offwhite);border-radius:8px;padding:3px}
-.dev-btn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:none;background:transparent;border-radius:6px;cursor:pointer;color:#888}
-.dev-btn.active{background:#fff;color:var(--navy);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-.dev-btn svg{width:15px;height:15px}
-.preview-shell{background:#F3F2EF;border-radius:12px;padding:0 .75rem .75rem;display:flex;justify-content:center;min-height:340px}
-.li-card{width:560px;max-width:100%;background:#fff;border-radius:8px;border:1px solid #E0DFDB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1D1D1D}
-.li-card.mobile{width:355px}
-.li-header{display:flex;align-items:flex-start;gap:8px;padding:12px 16px 8px}
-.li-avatar{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:#0A66C2;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:18px}
-.li-name-row{font-weight:600;font-size:14px;color:#1D1D1D}
-.li-meta{font-size:12px;color:#666;margin-top:1px}
-.li-body{padding:0 16px 8px;font-size:14px;line-height:17.5px;white-space:pre-wrap;word-wrap:break-word}
-.li-reactions{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;font-size:12px;color:#666}
-.li-actions{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #E0DFDB}
-.li-actions span{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 0;font-size:13px;font-weight:600;color:#666}
-.fold-status{font-size:13px;margin-top:.75rem;padding:.6rem .85rem;border-radius:8px;min-height:16px;display:flex;align-items:center;gap:8px;font-weight:500;max-width:560px;margin-left:auto;margin-right:auto;box-sizing:border-box}
-.fold-status:empty{display:none}
-.fold-ok{color:#0F6B3F;background:#E8F5EE;border:1px solid #C8E9D6}
-.fold-warn{color:#A03D1F;background:#FBEAE3;border:1px solid #F0C7B5}
-
-.cta-band{background:var(--navy);border-radius:16px;padding:2.5rem 2rem;text-align:center;color:#fff;margin:3rem 0}
-.cta-band h2{font-size:1.5rem;font-weight:700;margin-bottom:.6rem}
-.cta-band p{color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 1.5rem;font-size:15px}
-.cta-band .btn-primary{background:var(--coral)}
-
-.faq-section{margin:3rem 0}
-.faq-item{border-bottom:1px solid var(--card-border);padding:1.1rem 0}
-.faq-item h3{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:.5rem}
-.faq-item p{font-size:14px;color:#555}
-
-footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;text-align:left}
-.footer-inner{max-width:1100px;margin:0 auto}
-.footer-cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2rem;border-bottom:0.5px solid rgba(255,255,255,.12)}
-.footer-logo{display:flex;align-items:center;margin-bottom:.85rem}
-.footer-tagline{font-size:14px;color:rgba(255,255,255,.45);max-width:230px;line-height:1.5}
-.footer-col-title{display:block;font-size:12px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:1rem}
-.footer-links-col{display:flex;flex-direction:column;gap:.65rem;background:none;position:static;z-index:auto;backdrop-filter:none;border-bottom:none;top:auto}
-.footer-links-col a{font-size:14px;color:rgba(255,255,255,.5);text-decoration:none;transition:color .15s}
-.footer-links-col a:hover{color:#fff}
-.footer-bottom{padding-top:1.5rem;text-align:center}
-.footer-copy{font-size:13px;color:rgba(255,255,255,.3)}
-@media (max-width:640px){.footer-cols{grid-template-columns:1fr 1fr;gap:2rem 1.5rem;text-align:left}.footer-brand{grid-column:1/-1}}
+.notes{background:var(--navy);color:#fff;border-radius:14px;padding:1.5rem 1.75rem;margin-top:2rem;font-size:13px;line-height:1.7;max-width:460px;margin-left:auto;margin-right:auto}
+.notes strong{color:#fff}
+.notes ul{margin:.5rem 0 0 1.1rem}
+.notes li{margin-bottom:.35rem;color:rgba(255,255,255,.82)}
 </style>
 </head>
 <body>
+<div class="wrap">
+<h1 class="page-title">Popup D2 <span class="italic-accent">— refined</span></h1>
 
-<nav>
-  <div class="nav-inner">
-    <a href="/index.html" class="logo" aria-label="Signal home"><img src="data:image/png;base64,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" alt="Signal" height="28" style="display:block;height:28px;width:auto"></a>
-    <ul class="nav-links" role="list">
-      <li><a href="/index.html#problem">The problem</a></li>
-      <li><a href="/who-its-for.html">Who it's for</a></li>
-      <li><a href="/index.html#action">See it in action</a></li>
-      <li><a href="/index.html#research">The research</a></li>
-      <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-    </ul>
-    <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
-    <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="font-size:14px;padding:9px 18px;background:#D85A30">Try Signal for free</a>
-  </div>
-</nav>
-
-<main>
-
-<header class="tool-hero">
-  <span class="eyebrow">Free tool · No sign-up required</span>
-  <h1>Free LinkedIn post preview <span class="italic-accent">&amp; editor</span></h1>
-  <p>Write and format your post, then see exactly how it will render in the LinkedIn feed &mdash; including precisely where the &ldquo;see more&rdquo; cutoff falls.</p>
-  <div class="proof-strip" aria-label="Signal usage stats">
-    <span class="proof-item"><strong>21</strong>&nbsp;founders using Signal</span>
-    <span class="proof-divider" aria-hidden="true"></span>
-    <span class="proof-item"><strong>75+</strong>&nbsp;posts generated</span>
-    <span class="proof-divider" aria-hidden="true"></span>
-    <span class="proof-item"><strong>100+</strong>&nbsp;questions answered</span>
-  </div>
-</header>
-
-<section class="tool-grid" aria-label="LinkedIn post editor and preview">
-  <div>
-    <span class="panel-label">Write your post</span>
-    <div class="editor-card">
-      <div class="toolbar" role="toolbar" aria-label="Formatting">
-        <button type="button" class="tb-btn" id="btn-bold" title="Bold" aria-label="Bold"><b>B</b></button>
-        <button type="button" class="tb-btn" id="btn-italic" title="Italic" aria-label="Italic"><i>I</i></button>
-        <button type="button" class="tb-btn" id="btn-underline" title="Underline" aria-label="Underline"><u>U</u></button>
-        <div class="tb-sep"></div>
-        <button type="button" class="tb-btn" id="btn-ul" title="Bulleted list" aria-label="Bulleted list">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l11 0"/><path d="M9 12l11 0"/><path d="M9 18l11 0"/><path d="M5 6l0 .01"/><path d="M5 12l0 .01"/><path d="M5 18l0 .01"/></svg>
-        </button>
-        <button type="button" class="tb-btn" id="btn-ol" title="Numbered list" aria-label="Numbered list">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 6h9"/><path d="M11 12h9"/><path d="M12 18h8"/><path d="M4 16a2 2 0 1 1 4 0c0 .591 -.5 1 -1 1.5l-3 2.5h4"/><path d="M6 10v-6l-2 2"/></svg>
-        </button>
-        <div class="tb-sep"></div>
-        <button type="button" class="tb-btn" id="btn-symbols" title="Insert symbol or emoji" aria-label="Insert symbol or emoji" aria-haspopup="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M9 10l.01 0"/><path d="M15 10l.01 0"/><path d="M9.5 15a3.5 3.5 0 0 0 5 0"/></svg>
-        </button>
-        <div class="tb-sep"></div>
-        <button type="button" class="tb-btn" id="btn-undo" title="Undo" aria-label="Undo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14l-4 -4l4 -4"/><path d="M5 10h11a4 4 0 1 1 0 8h-1"/></svg>
-        </button>
-        <button type="button" class="tb-btn" id="btn-redo" title="Redo" aria-label="Redo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14l4 -4l-4 -4"/><path d="M19 10h-11a4 4 0 1 0 0 8h1"/></svg>
-        </button>
-
-        <div class="symbol-panel" id="symbol-panel">
-          <span class="symbol-panel-label">Arrows &amp; symbols</span>
-          <div class="symbol-grid" style="margin-bottom:10px">
-            <button class="symbol-btn" data-symbol="&#8594;">&#8594;</button>
-            <button class="symbol-btn" data-symbol="&#8592;">&#8592;</button>
-            <button class="symbol-btn" data-symbol="&#8593;">&#8593;</button>
-            <button class="symbol-btn" data-symbol="&#8595;">&#8595;</button>
-            <button class="symbol-btn" data-symbol="&#10003;">&#10003;</button>
-            <button class="symbol-btn" data-symbol="&#10007;">&#10007;</button>
-            <button class="symbol-btn" data-symbol="&#8226;">&#8226;</button>
-            <button class="symbol-btn" data-symbol="&#9656;">&#9656;</button>
-            <button class="symbol-btn" data-symbol="&#9670;">&#9670;</button>
-            <button class="symbol-btn" data-symbol="&#9733;">&#9733;</button>
-            <button class="symbol-btn" data-symbol="&#9734;">&#9734;</button>
-            <button class="symbol-btn" data-symbol="&#10022;">&#10022;</button>
-          </div>
-          <span class="symbol-panel-label">Emojis</span>
-          <div class="symbol-grid">
-            <button class="symbol-btn" data-symbol="&#128161;">&#128161;</button>
-            <button class="symbol-btn" data-symbol="&#128293;">&#128293;</button>
-            <button class="symbol-btn" data-symbol="&#128204;">&#128204;</button>
-            <button class="symbol-btn" data-symbol="&#128170;">&#128170;</button>
-            <button class="symbol-btn" data-symbol="&#128640;">&#128640;</button>
-            <button class="symbol-btn" data-symbol="&#127919;">&#127919;</button>
-            <button class="symbol-btn" data-symbol="&#128200;">&#128200;</button>
-            <button class="symbol-btn" data-symbol="&#128077;">&#128077;</button>
-            <button class="symbol-btn" data-symbol="&#128075;">&#128075;</button>
-            <button class="symbol-btn" data-symbol="&#9989;">&#9989;</button>
-            <button class="symbol-btn" data-symbol="&#128071;">&#128071;</button>
-            <button class="symbol-btn" data-symbol="&#128064;">&#128064;</button>
-          </div>
-        </div>
-      </div>
-      <textarea id="editor" placeholder="Start writing your LinkedIn post here..." aria-label="Post editor"></textarea>
-      <div class="editor-footer">
-        <span class="word-count" id="word-count">0 words</span>
-        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-          <a href="https://app.postsignal.co/auth?signup=true" class="cta-hero-btn">Get post ideas</a>
-          <a href="https://app.postsignal.co/auth?signup=true" class="cta-secondary-btn">Schedule post</a>
-          <button class="copy-btn" id="copy-btn" type="button">Copy for LinkedIn</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <span class="panel-label">
-      <span>Live preview</span>
-      <span class="preview-toggle" role="group" aria-label="Preview device">
-        <button type="button" class="dev-btn active" id="dev-desktop" title="Desktop preview" aria-label="Desktop preview">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10"/><path d="M7 20h10"/><path d="M9 16v4"/><path d="M15 16v4"/></svg>
-        </button>
-        <button type="button" class="dev-btn" id="dev-mobile" title="Mobile preview" aria-label="Mobile preview">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14"/><path d="M11 4h2"/><path d="M12 17v.01"/></svg>
-        </button>
-      </span>
-    </span>
-    <div class="preview-shell">
-      <div id="probe" aria-hidden="true" style="position:absolute;visibility:hidden;pointer-events:none;top:-99999px;left:-99999px;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;padding:0;margin:0;border:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"></div>
-      <div class="li-card" id="li-card">
-        <div class="li-header">
-          <div class="li-avatar">YN</div>
-          <div style="flex:1;min-width:0">
-            <div class="li-name-row">Your Name <span style="font-weight:400;color:#666;font-size:12px">&middot; 1st</span></div>
-            <div class="li-meta">Your headline goes here</div>
-            <div class="li-meta">12h &middot; &#127760;</div>
-          </div>
-        </div>
-        <div class="li-body" id="li-body"></div>
-        <div class="li-reactions">
-          <span style="display:inline-flex;align-items:center;gap:4px">
-            <span style="display:inline-flex">
-              <svg width="16" height="16" viewBox="0 0 16 16" style="border-radius:50%;background:#378FE9;border:1.5px solid #fff;position:relative;z-index:2">
-                <path d="M6.5 13.5h4.2c.6 0 1.1-.4 1.2-1l1-4.5c.2-.8-.4-1.5-1.2-1.5H9.3l.3-2.2c.1-.6-.1-1.2-.6-1.6-.4-.3-1-.2-1.3.2L5.5 6.2v7.3z" fill="#fff"/>
-                <path d="M3 6.5h2v7H3z" fill="#fff"/>
-              </svg>
-              <svg width="16" height="16" viewBox="0 0 16 16" style="border-radius:50%;background:#DF704D;border:1.5px solid #fff;margin-left:-5px;position:relative;z-index:1">
-                <path d="M8 12.3l-3.3-3c-1-1-1-2.5 0-3.4.9-.9 2.4-.9 3.3.1.9-1 2.4-1 3.3-.1 1 .9 1 2.4 0 3.4l-3.3 3z" fill="#fff"/>
-              </svg>
-            </span>
-            <span>47</span>
-          </span>
-          <span>12 comments &middot; 5 reposts</span>
-        </div>
-        <div class="li-actions">
-          <span>Like</span><span>Comment</span><span>Repost</span><span>Send</span>
-        </div>
-      </div>
-    </div>
-    <p class="fold-status" id="fold-status"></p>
-  </div>
-</section>
-
-<div class="cta-band">
-  <h2>Like formatting your posts? You'll love not having to think of them.</h2>
-  <p>Signal sends you three research-backed LinkedIn questions every morning. Answer one, get a structured post outline, done in minutes.</p>
-  <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Try Signal for free &rarr;</a>
+<div class="stage">
+<div class="modal">
+<button class="close">&times;</button>
+<div class="preview">
+<div class="p-card">
+<span class="p-avatar"></span><span class="p-name">Your next post</span>
+<div class="p-line"></div>
+<div class="p-line"></div>
+<div class="p-line short"></div>
+</div>
+</div>
+<div class="eyebrow">
+<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#D85A30" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+Your thinking. Never AI-generated.
+</div>
+<h2 class="h1">Stop staring<br>at the blank page.</h2>
+<p class="h2">One question surfaces <strong>your</strong> expertise. Signal structures it, so you never sound like a bot.</p>
+<a href="#" class="cta">Get my first prompt &rarr;</a>
+<div class="microcopy">Free to start &middot; No credit card required</div>
+</div>
 </div>
 
-<section class="faq-section" aria-labelledby="faq-heading">
-  <span class="section-label">Common questions</span>
-  <h2 id="faq-heading" style="font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:1rem">LinkedIn post formatting, answered</h2>
+<div class="notes">
+<strong>What changed and why</strong>
+<ul>
+<li><strong>Eyebrow now leads with authenticity</strong> ("Your thinking. Never AI-generated.") instead of a stat — this is the actual differentiator, and it needs to land before the H1 sets up the pain point, not after.</li>
+<li><strong>H1 unchanged</strong> — "Stop staring at the blank page" is still the strongest hook; no reason to touch what's already working.</li>
+<li><strong>H2 rewritten to close the specific objection</strong> a skeptical visitor has right before clicking: that this is AI slop wearing a founder's name. "Your expertise... you never sound like a bot" answers that directly, right at the decision point.</li>
+<li>Stat eyebrow (75+ posts) dropped from this version — decide if you want it back in the microcopy line under the button, or if the authenticity claim alone carries enough trust on its own.</li>
+</ul>
+</div>
 
-  <div class="faq-item">
-    <h3>How do I preview what my LinkedIn post will look like before posting?</h3>
-    <p>Type or paste your post into the editor on the left. The preview panel on the right updates as you type, rendering your post at LinkedIn's actual feed width and font size, including where the &ldquo;see more&rdquo; cutoff will appear.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Why does LinkedIn cut off my post with &ldquo;see more&rdquo;?</h3>
-    <p>LinkedIn truncates posts in the feed after roughly three visible lines of text, showing a &ldquo;see more&rdquo; link so readers can expand the rest. The exact cutoff point depends on line length, line breaks, and device width, not a fixed character count.</p>
-  </div>
-  <div class="faq-item">
-    <h3>What is the LinkedIn character limit for posts?</h3>
-    <p>LinkedIn allows up to 3,000 characters per post. The &ldquo;see more&rdquo; feed cutoff happens much earlier than that, typically after around three visible lines, so most of a longer post is hidden until a reader clicks to expand it.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Does this tool save or post my content to LinkedIn?</h3>
-    <p>No. This tool runs entirely in your browser. Nothing you type is saved, stored, or sent anywhere. Use the copy button to copy your finished post, then paste it into LinkedIn yourself.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Can I format bold and italic text for LinkedIn with this tool?</h3>
-    <p>Yes. LinkedIn's post composer does not support real bold or italic formatting, so this tool converts your selected text into Unicode characters that display as bold, italic, or underlined the moment you paste them into LinkedIn.</p>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-cols">
-      <div class="footer-col footer-brand">
-        <div class="footer-logo"><img src="data:image/png;base64,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" alt="Signal" height="48" style="display:block;height:48px;width:auto;margin:0 auto"></div>
-        <p class="footer-tagline">Daily LinkedIn prompts for B2B professionals.</p>
-      </div>
-      <div class="footer-col">
-        <span class="footer-col-title">Product</span>
-        <nav class="footer-links-col" aria-label="Product">
-          <a href="/pricing.html">Pricing</a>
-          <a href="/index.html#action">See it in action</a>
-          <a href="/who-its-for.html">Who it's for</a>
-          <a href="/tools/linkedin-post-editor.html">Free post editor</a>
-        </nav>
-      </div>
-      <div class="footer-col">
-        <span class="footer-col-title">Resources</span>
-        <nav class="footer-links-col" aria-label="Resources">
-          <a href="/blog.html">Blog</a>
-          <a href="/faq.html">FAQ</a>
-          <a href="/compare/index.html">Compare</a>
-        </nav>
-      </div>
-      <div class="footer-col">
-        <span class="footer-col-title">Company</span>
-        <nav class="footer-links-col" aria-label="Company">
-          <a href="mailto:josh@blueberry-media.co.uk">Contact</a>
-          <a href="/privacy">Privacy policy</a>
-          <a href="/terms">Terms</a>
-        </nav>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">Made for B2B professionals.</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var editor = document.getElementById('editor');
-  var liBody = document.getElementById('li-body');
-  var liCard = document.getElementById('li-card');
-  var wordCountEl = document.getElementById('word-count');
-  var foldStatusEl = document.getElementById('fold-status');
-  var copyBtn = document.getElementById('copy-btn');
-  var symbolPanel = document.getElementById('symbol-panel');
-  var symbolsBtn = document.getElementById('btn-symbols');
-
-  var probe = document.getElementById('probe');
-  var MAX_VISUAL_LINES = 3;
-  var device = 'desktop';
-
-  /* ---------- Unicode formatting (matches the real app's approach) ---------- */
-  function mapChar(ch, style){
-    var code = ch.codePointAt(0);
-    var isUpper = code >= 0x41 && code <= 0x5A;
-    var isLower = code >= 0x61 && code <= 0x7A;
-    var isDigit = code >= 0x30 && code <= 0x39;
-    if (style === 'underline') return ch + '\u0332';
-    if (!isUpper && !isLower && !(style === 'bold' && isDigit)) return ch;
-    if (style === 'bold') {
-      if (isDigit) return String.fromCodePoint(0x1D7CE + (code - 0x30));
-      return String.fromCodePoint((isUpper ? 0x1D400 : 0x1D41A) + (code - (isUpper ? 0x41 : 0x61)));
-    }
-    if (style === 'italic') {
-      if (!isUpper && !isLower) return ch;
-      return String.fromCodePoint((isUpper ? 0x1D434 : 0x1D44E) + (code - (isUpper ? 0x41 : 0x61)));
-    }
-    return ch;
-  }
-  function applyStyle(text, style){
-    var out = '';
-    for (var i = 0; i < text.length; i++) out += mapChar(text[i], style);
-    return out;
-  }
-
-  function applyToSelection(style){
-    var start = editor.selectionStart, end = editor.selectionEnd;
-    if (start === end) { editor.focus(); return; }
-    var val = editor.value;
-    var selected = val.slice(start, end);
-    var styled = applyStyle(selected, style);
-    editor.value = val.slice(0, start) + styled + val.slice(end);
-    editor.selectionStart = start;
-    editor.selectionEnd = start + styled.length;
-    editor.focus();
-    handleInput();
-  }
-  document.getElementById('btn-bold').addEventListener('click', function(){ applyToSelection('bold'); });
-  document.getElementById('btn-italic').addEventListener('click', function(){ applyToSelection('italic'); });
-  document.getElementById('btn-underline').addEventListener('click', function(){ applyToSelection('underline'); });
-
-  function prefixLines(prefixFn){
-    var start = editor.selectionStart, end = editor.selectionEnd;
-    var val = editor.value;
-    var lineStart = val.lastIndexOf('\n', start - 1) + 1;
-    var lineEnd = val.indexOf('\n', end);
-    if (lineEnd === -1) lineEnd = val.length;
-    var block = val.slice(lineStart, lineEnd);
-    var lines = block.split('\n');
-    var out = lines.map(function(line, i){ return prefixFn(line, i); }).join('\n');
-    editor.value = val.slice(0, lineStart) + out + val.slice(lineEnd);
-    editor.focus();
-    handleInput();
-  }
-  document.getElementById('btn-ul').addEventListener('click', function(){
-    prefixLines(function(line){ return line.trim() ? '\u2022 ' + line.replace(/^(\u2022|\d+\.)\s*/, '') : line; });
-  });
-  document.getElementById('btn-ol').addEventListener('click', function(){
-    var n = 1;
-    prefixLines(function(line){
-      if (!line.trim()) return line;
-      var clean = line.replace(/^(\u2022|\d+\.)\s*/, '');
-      return (n++) + '. ' + clean;
-    });
-  });
-
-  document.getElementById('btn-undo').addEventListener('click', function(){ document.execCommand('undo'); handleInput(); });
-  document.getElementById('btn-redo').addEventListener('click', function(){ document.execCommand('redo'); handleInput(); });
-
-  symbolsBtn.addEventListener('click', function(e){
-    e.stopPropagation();
-    symbolPanel.classList.toggle('open');
-  });
-  document.addEventListener('click', function(e){
-    if (!symbolPanel.contains(e.target) && e.target !== symbolsBtn) symbolPanel.classList.remove('open');
-  });
-  document.querySelectorAll('.symbol-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var sym = btn.getAttribute('data-symbol');
-      var start = editor.selectionStart, end = editor.selectionEnd;
-      var val = editor.value;
-      editor.value = val.slice(0, start) + sym + val.slice(end);
-      editor.selectionStart = editor.selectionEnd = start + sym.length;
-      editor.focus();
-      handleInput();
-    });
-  });
-
-  /* ---------- Device toggle ---------- */
-  var devDesktop = document.getElementById('dev-desktop');
-  var devMobile = document.getElementById('dev-mobile');
-  function setDevice(d){
-    device = d;
-    liCard.classList.toggle('mobile', d === 'mobile');
-    devDesktop.classList.toggle('active', d === 'desktop');
-    devMobile.classList.toggle('active', d === 'mobile');
-    requestAnimationFrame(function(){ requestAnimationFrame(measureAndRender); });
-  }
-  devDesktop.addEventListener('click', function(){ setDevice('desktop'); });
-  devMobile.addEventListener('click', function(){ setDevice('mobile'); });
-
-  /* ---------- Word count + fold measurement (ported from LinkedInPreview.tsx) ---------- */
-  function countWords(s){
-    var t = s.trim();
-    if (!t) return 0;
-    return t.split(/\s+/).length;
-  }
-  function endsAtSentenceBoundary(text){
-    var trimmed = text.trim();
-    if (!trimmed) return false;
-    return /[.!?…"')\]]$/.test(trimmed);
-  }
-  // Informed by LinkedIn's May 2026 "AI slop" crackdown (targets generic
-  // patterns, not AI usage itself: corporate buzzwords, vague inflated
-  // claims with no specifics, formulaic AI-writing openers/closers, and
-  // overused em dashes) plus Signal's own established banned-word rules.
-  var JARGON_PHRASES = [
-    // Corporate buzzwords / clichés
-    {phrase:'synergy', reason:'corporate buzzword'},
-    {phrase:'leverage', reason:'corporate buzzword'},
-    {phrase:'unlock', reason:'corporate buzzword'},
-    {phrase:'thought leader', reason:'corporate buzzword'},
-    {phrase:'game-changer', reason:'corporate buzzword'},
-    {phrase:'game changer', reason:'corporate buzzword'},
-    {phrase:'paradigm shift', reason:'corporate buzzword'},
-    {phrase:'move the needle', reason:'corporate buzzword'},
-    {phrase:'low-hanging fruit', reason:'corporate buzzword'},
-    {phrase:'circle back', reason:'corporate buzzword'},
-    {phrase:'touch base', reason:'corporate buzzword'},
-    {phrase:'deep dive', reason:'corporate buzzword'},
-    {phrase:'double down', reason:'corporate buzzword'},
-    {phrase:'north star', reason:'corporate buzzword'},
-    {phrase:'best-in-class', reason:'corporate buzzword'},
-    {phrase:'world-class', reason:'corporate buzzword'},
-    {phrase:'cutting-edge', reason:'corporate buzzword'},
-    {phrase:'next-level', reason:'corporate buzzword'},
-    {phrase:'revolutionize', reason:'corporate buzzword'},
-    {phrase:'supercharge', reason:'corporate buzzword'},
-    {phrase:'holistic approach', reason:'corporate buzzword'},
-    {phrase:'ever-evolving landscape', reason:'corporate buzzword'},
-    // Vague inflated claims (no evidence attached — flagged as generic per LinkedIn's stated criteria)
-    {phrase:'passionate professional', reason:'vague, no evidence'},
-    {phrase:'results-driven', reason:'vague, no evidence'},
-    {phrase:'proven track record', reason:'vague, no evidence'},
-    {phrase:'strategic initiatives', reason:'vague, no evidence'},
-    // Formulaic AI-writing openers/closers
-    {phrase:"I'm excited to announce", reason:'formulaic AI opener'},
-    {phrase:"I'm thrilled to share", reason:'formulaic AI opener'},
-    {phrase:"let's dive in", reason:'formulaic AI opener'},
-    {phrase:'the truth is', reason:'formulaic AI opener'},
-    {phrase:"here's the kicker", reason:'formulaic AI phrase'},
-    {phrase:'let that sink in', reason:'formulaic AI phrase'},
-    {phrase:'plot twist', reason:'formulaic AI phrase'},
-    {phrase:'buckle up', reason:'formulaic AI phrase'},
-    {phrase:'unpopular opinion', reason:'formulaic AI phrase'},
-    {phrase:'hot take', reason:'formulaic AI phrase'},
-    {phrase:'real talk', reason:'formulaic AI phrase'},
-    {phrase:'no fluff', reason:'formulaic AI phrase'},
-    {phrase:'food for thought', reason:'formulaic AI phrase'},
-    {phrase:'mic drop', reason:'formulaic AI phrase'},
-    {phrase:'in today\u2019s fast-paced world', reason:'formulaic AI opener'},
-    {phrase:'in an ever-changing world', reason:'formulaic AI opener'}
-  ];
-
-  function escapeRegex(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
-  var jargonPattern = new RegExp(
-    '(' + JARGON_PHRASES.map(function(j){ return escapeRegex(j.phrase); }).join('|') + ')',
-    'gui'
-  );
-
-  function renderWithHashtags(text){
-    // Split on hashtags, jargon phrases, and em dashes in one pass so highlighting layers correctly
-    var combined = new RegExp('(#[\\p{L}\\p{N}_]+)|' + jargonPattern.source + '|(\\u2014)', 'gui');
-    var parts = text.split(combined).filter(function(p){ return p !== undefined; });
-    var frag = document.createDocumentFragment();
-    parts.forEach(function(part){
-      if (!part) return;
-      var span = document.createElement('span');
-      if (/^#[\p{L}\p{N}_]+$/u.test(part)) {
-        span.style.color = '#0A66C2';
-      } else if (part === '\u2014') {
-        span.style.background = '#FDF0C4';
-        span.title = 'em dash — LinkedIn/AI-detection flag; consider a period or comma instead';
-      } else if (JARGON_PHRASES.some(function(j){ return j.phrase.toLowerCase() === part.toLowerCase(); })) {
-        span.style.background = '#FDF0C4';
-        var reason = JARGON_PHRASES.find(function(j){ return j.phrase.toLowerCase() === part.toLowerCase(); }).reason;
-        span.title = 'Flagged: ' + reason;
-      }
-      span.textContent = part;
-      frag.appendChild(span);
-    });
-    return frag;
-  }
-
-  function measureAndRender(){
-    var text = editor.value;
-    wordCountEl.textContent = countWords(text) + ' words';
-
-    // Verified via direct DevTools Computed-panel inspection of Typegrow's
-    // real preview element (checked twice, at full non-squeezed browser
-    // width): content width 411px, font-size 14px, line-height 20px. Cross-
-    // checked against the observed cutoff for a real test post: 3 visual
-    // lines averaging ~45 chars each, confirming this is a visual-line wrap,
-    // not a flat character-count budget (an earlier assumption that proved
-    // wrong when tested against Typegrow's actual rendered output).
-    var cs = getComputedStyle(liBody);
-    var padL = parseFloat(cs.paddingLeft) || 0;
-    var padR = parseFloat(cs.paddingRight) || 0;
-    var contentWidth = liBody.clientWidth - padL - padR;
-    probe.style.width = contentWidth + 'px';
-    probe.style.fontFamily = cs.fontFamily;
-    probe.style.fontSize = cs.fontSize;
-    probe.style.fontWeight = cs.fontWeight;
-    probe.style.letterSpacing = cs.letterSpacing;
-    probe.style.lineHeight = cs.lineHeight;
-
-    var lh = parseFloat(cs.lineHeight);
-    var HOOK_LINES = MAX_VISUAL_LINES; // full 3 lines available to hook text (e.g. line / blank line / line cadence); "…more" appears as an additional line below when truncated
-    var maxHeight = lh * HOOK_LINES + 1;
-
-    var cutIndex = text.length;
-    probe.textContent = text;
-    if (probe.scrollHeight > maxHeight && text.length > 0) {
-      var lo = 0, hi = text.length, best = 0;
-      while (lo <= hi) {
-        var mid = (lo + hi) >> 1;
-        probe.textContent = text.slice(0, mid);
-        if (probe.scrollHeight <= maxHeight) { best = mid; lo = mid + 1; }
-        else { hi = mid - 1; }
-      }
-      if (best > 0 && best < text.length) {
-        var nextChar = text[best], prevChar = text[best - 1];
-        if (/\S/.test(nextChar) && /\S/.test(prevChar)) {
-          var slice = text.slice(0, best);
-          var lastBreak = Math.max(slice.lastIndexOf(' '), slice.lastIndexOf('\n'));
-          if (lastBreak > Math.floor(best * 0.4)) best = lastBreak;
-        }
-      }
-      cutIndex = best;
-    }
-
-    var isTruncated = cutIndex < text.length;
-    var hook = isTruncated ? text.slice(0, cutIndex) : text;
-    var body = isTruncated ? text.slice(cutIndex) : '';
-
-    liBody.innerHTML = '';
-    var hookDiv = document.createElement('div');
-    hookDiv.style.position = 'relative';
-    if (isTruncated) { hookDiv.style.paddingBottom = '2px'; }
-    hookDiv.appendChild(renderWithHashtags(hook));
-    liBody.appendChild(hookDiv);
-    if (isTruncated) {
-      var more = document.createElement('span');
-      more.className = 'see-more-overlay';
-      more.style.position = 'absolute';
-      more.style.right = '0';
-      more.style.bottom = '2px';
-      more.style.background = '#fff';
-      more.style.paddingLeft = '4px';
-      more.innerHTML = '<span style="color:#666">&hellip;</span> <span style="color:#0A66C2;font-weight:500;cursor:pointer;border-bottom:1px dashed #0A66C2">see more</span>';
-      hookDiv.appendChild(more);
-      var bodyDiv = document.createElement('div');
-      bodyDiv.style.color = '#00000066';
-      bodyDiv.style.textAlign = 'left';
-      bodyDiv.appendChild(renderWithHashtags(body));
-      liBody.appendChild(bodyDiv);
-    }
-
-    var hookComplete = !isTruncated || endsAtSentenceBoundary(hook);
-    if (!text.trim()) {
-      foldStatusEl.textContent = '';
-    } else if (hookComplete) {
-      foldStatusEl.textContent = "✓ Your hook lands before 'see more'";
-      foldStatusEl.className = 'fold-status fold-ok';
-    } else {
-      foldStatusEl.textContent = "Your hook is cut off — consider shortening your opening line";
-      foldStatusEl.className = 'fold-status fold-warn';
-    }
-  }
-
-  function handleInput(){ measureAndRender(); }
-  editor.addEventListener('input', handleInput);
-  window.addEventListener('resize', measureAndRender);
-
-  copyBtn.addEventListener('click', function(){
-    navigator.clipboard.writeText(editor.value).then(function(){
-      copyBtn.textContent = 'Copied';
-      copyBtn.classList.add('copied');
-      setTimeout(function(){ copyBtn.textContent = 'Copy for LinkedIn'; copyBtn.classList.remove('copied'); }, 1800);
-    });
-  });
-
-  measureAndRender();
-})();
-</script>
+</div>
 </body>
 </html>
