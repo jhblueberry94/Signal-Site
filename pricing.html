@@ -12,17 +12,17 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signal Pricing: One Plan, Full Access. Try Free for 7 Days.</title>
+<title>Signal Pricing: LinkedIn Content Tool, £35/month</title>
 <meta name="description" content="Signal gives B2B professionals daily LinkedIn prompts and AI-drafted posts. One plan at £35/month, everything included. 7-day free trial, cancel anytime.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://postsignal.co/pricing.html">
-<meta property="og:title" content="Signal Pricing: One Plan, Full Access.">
+<meta property="og:title" content="Signal Pricing: LinkedIn Content Tool, £35/month">
 <meta property="og:description" content="One plan, everything included. Try Signal free for 7 days. Daily prompts, Story Arc drafts, Tone of Voice calibration.">
 <meta property="og:url" content="https://postsignal.co/pricing.html">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://postsignal.co/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Signal Pricing: One Plan, Full Access.">
+<meta name="twitter:title" content="Signal Pricing: LinkedIn Content Tool, £35/month">
 <meta name="twitter:description" content="One plan, everything included. Try Signal free for 7 days. Daily prompts, Story Arc drafts, Tone of Voice calibration.">
 <meta name="twitter:image" content="https://postsignal.co/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,13 +84,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(245,244,241,.95);backdrop-
 .page-header .sub{font-size:17px;color:#555;max-width:500px;margin:0 auto 2rem}
 
 /* DISCREET COUNTDOWN */
-.countdown-strip{display:flex;justify-content:center;margin-bottom:2.5rem}
-.countdown-inner{display:inline-flex;align-items:center;gap:.6rem;background:#fff;border:1px solid var(--card-border);border-radius:100px;padding:.45rem 1.1rem}
-.cd-pill-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);margin-right:.25rem}
-.cd-unit{display:flex;align-items:baseline;gap:2px}
-.cd-num{font-size:13px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;min-width:18px;text-align:right}
-.cd-sub{font-size:11px;color:var(--warmgrey);font-weight:400}
-.cd-sep{font-size:11px;color:var(--card-border);margin:0 1px}
 .countdown-footnote{text-align:center;font-size:12px;color:var(--warmgrey);margin-top:.5rem;margin-bottom:.5rem}
 
 /* PRICING CARDS - equal height two-col */
@@ -105,6 +98,11 @@ nav{position:sticky;top:0;z-index:100;background:rgba(245,244,241,.95);backdrop-
 .plan-price-row{display:flex;align-items:baseline;gap:.3rem;margin-bottom:.3rem}
 .plan-price{font-size:3rem;font-weight:700;line-height:1;color:var(--ink)}
 .plan-price-suffix{font-size:15px;font-weight:400;color:var(--warmgrey)}
+
+.currency-toggle{display:inline-flex;background:#fff;border:1px solid var(--card-border,#E8E7E4);border-radius:8px;padding:3px;margin:0 auto 2rem;gap:2px}
+.currency-toggle button{font-family:inherit;font-size:13px;font-weight:600;padding:.4rem .9rem;border:none;background:transparent;color:var(--warmgrey,#777);border-radius:6px;cursor:pointer;transition:background .15s,color .15s}
+.currency-toggle button.active{background:var(--navy,#1A1A2E);color:#fff}
+.currency-toggle button:hover:not(.active){color:var(--navy,#1A1A2E)}
 .plan-trial-line{font-size:13px;font-weight:500;margin-bottom:.6rem}
 .plan-trial-line.blue{color:var(--blue)}
 .plan-trial-line.grey{color:var(--warmgrey)}
@@ -181,14 +179,24 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   "description": "Daily LinkedIn prompts and AI-drafted posts for B2B professionals. One plan, all three content pillars, Tone of Voice calibration.",
   "brand": { "@type": "Brand", "name": "Signal" },
   "image": "https://postsignal.co/og-image.png",
-  "offers": {
-    "@type": "Offer",
-    "name": "Pro Monthly",
-    "price": "22",
-    "priceCurrency": "GBP",
-    "availability": "https://schema.org/InStock",
-    "url": "https://postsignal.co/pricing.html"
-  }
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Pro Monthly",
+      "price": "35",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://postsignal.co/pricing.html"
+    },
+    {
+      "@type": "Offer",
+      "name": "Team Per Seat Monthly",
+      "price": "18",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://postsignal.co/pricing.html"
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -198,8 +206,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Is Signal really free until the end of June?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. During our open testing period all users get full Pro access at no cost. The free-access period ends 30 June 2026. After that, new users start a 7-day free trial before moving to £35/month." }
+      "name": "How much does Signal cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Signal is £35/month, or the equivalent in USD and EUR. One plan, everything included, with a 7-day free trial and no credit card required to start." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Signal's LinkedIn content tool free right now?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. During our open testing period all users get full Pro access at no cost, for a limited time. Once the period ends, new users start a 7-day free trial before moving to £35/month." }
     },
     {
       "@type": "Question",
@@ -223,7 +236,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 <body>
 
 <div class="beta-banner">
-  🎉 <strong>Testing period active:</strong> all users have full access free until 30 June 2026. No card needed. <a href="https://app.postsignal.co/auth?signup=true">Get started →</a>
+  🎉 <strong>Testing period active:</strong> all users have full access free for a limited time. No card needed. <a href="https://app.postsignal.co/auth?signup=true">Get started →</a>
 </div>
 
 <nav>
@@ -262,24 +275,14 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 <header class="page-header">
   <span class="section-label">Pricing</span>
   <h1>One plan. <span class="italic-accent">Everything</span> included.</h1>
-  <p class="sub">No tiers, no feature gating. Full access from day one, for individuals and teams.</p>
+  <p class="sub">Simple, transparent pricing for the Signal LinkedIn content tool. No tiers, no feature gating. Full access from day one, for individuals and teams.</p>
 
-  <!-- Discreet countdown pill -->
-  <div class="countdown-strip">
-    <div class="countdown-inner">
-      <span class="cd-pill-label">Free until</span>
-      <div class="cd-unit"><span class="cd-num" id="cd-weeks">00</span><span class="cd-sub">w</span></div>
-      <span class="cd-sep">·</span>
-      <div class="cd-unit"><span class="cd-num" id="cd-days">00</span><span class="cd-sub">d</span></div>
-      <span class="cd-sep">·</span>
-      <div class="cd-unit"><span class="cd-num" id="cd-hours">00</span><span class="cd-sub">h</span></div>
-      <span class="cd-sep">·</span>
-      <div class="cd-unit"><span class="cd-num" id="cd-mins">00</span><span class="cd-sub">m</span></div>
-      <span class="cd-sep">·</span>
-      <div class="cd-unit"><span class="cd-num" id="cd-secs">00</span><span class="cd-sub">s</span></div>
-    </div>
+  <p class="countdown-footnote">Free access for a limited time · After that: £35/month with a 7-day free trial</p>
+  <div class="currency-toggle" role="group" aria-label="Currency selector">
+    <button type="button" class="active" data-cur="GBP" aria-pressed="true">£ GBP</button>
+    <button type="button" data-cur="USD" aria-pressed="false">$ USD</button>
+    <button type="button" data-cur="EUR" aria-pressed="false">€ EUR</button>
   </div>
-  <p class="countdown-footnote">Full access ends 30 June · After that: £35/month with a 7-day free trial</p>
 </header>
 
 <!-- Pricing cards -->
@@ -291,7 +294,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <div class="featured-badge">Most popular</div>
       <p class="plan-tier">Pro: Individual</p>
       <div class="plan-price-row">
-        <span class="plan-price">£35</span>
+        <span class="plan-price" id="price-pro">£35</span>
         <span class="plan-price-suffix">/month</span>
       </div>
       <p class="plan-trial-line blue">7-day free trial, no card required</p>
@@ -315,7 +318,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     <div class="plan-card">
       <p class="plan-tier">Team: Enterprise</p>
       <div class="plan-price-row">
-        <span class="plan-price">£18</span>
+        <span class="plan-price" id="price-team">£18</span>
         <span class="plan-price-suffix">/seat/mo</span>
       </div>
       <p class="plan-trial-line grey">Billed annually · 5 seat minimum</p>
@@ -342,7 +345,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 <section class="table-section">
   <div class="table-inner">
     <div class="table-header">
-      <h2>Everything in <span class="italic-accent">one plan</span></h2>
+      <h2>What's included in Signal's <span class="italic-accent">LinkedIn content plan</span></h2>
       <p>No feature gating. If it's in Signal, it's in your plan.</p>
     </div>
     <table class="feature-table">
@@ -383,15 +386,31 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   </div>
 </section>
 
+
+<!-- Pricing comparison -->
+<section class="faq-section" style="padding-bottom:0">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <h2>How Signal’s pricing compares to Taplio, Supergrow and AuthoredUp</h2>
+    </div>
+    <p style="font-size:14px;color:#666;line-height:1.65;margin-bottom:1rem">Most LinkedIn content tools use tiered pricing, where ideation features, analytics or scheduling sit behind higher plans. Taplio’s AI features start at around $65/month, Supergrow runs $19 to $39/month depending on tier, and AuthoredUp’s paid plans add analytics from around $12/month on top of its editor. Signal is one flat plan at £35/month with everything included: daily research-backed questions, Story Arc drafting, Tone of Voice calibration and LinkedIn scheduling.</p>
+    <p style="font-size:14px;color:#666;line-height:1.65;margin-bottom:2rem">If you’re weighing up a switch, see our full comparisons: <a href="compare/taplio.html" style="color:var(--blue)">Signal vs Taplio</a>, <a href="compare/supergrow.html" style="color:var(--blue)">Signal vs Supergrow</a> and <a href="compare/authoredup.html" style="color:var(--blue)">Signal vs AuthoredUp</a>.</p>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq-section">
   <div class="faq-inner">
     <div class="faq-header">
-      <h2>Common questions</h2>
+      <h2>Common questions about Signal's pricing</h2>
     </div>
     <div class="faq-item">
-      <h3>Is Signal really free until the end of June?</h3>
-      <p>Yes. During our open testing period all users get full Pro access at no cost. The countdown above shows exactly how long remains. After 30 June, new users start a standard 7-day free trial before moving to £35/month.</p>
+      <h3>How much does Signal cost?</h3>
+      <p>Signal is £35/month, or the equivalent in USD and EUR. One plan, everything included, with a 7-day free trial and no credit card required to start.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Signal's LinkedIn content tool free right now?</h3>
+      <p>Yes. During our open testing period all users get full Pro access at no cost, for a limited time. Once the period ends, new users start a standard 7-day free trial before moving to £35/month.</p>
     </div>
     <div class="faq-item">
       <h3>What happens to existing users when the free period ends?</h3>
@@ -432,9 +451,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <div class="footer-col">
         <span class="footer-col-title">Product</span>
         <nav class="footer-links-col" aria-label="Product">
-          <a href="/pricing.html">Pricing</a>
-          <a href="/index.html#action">See it in action</a>
-          <a href="/who-its-for.html">Who it's for</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="index.html#action">See it in action</a>
+          <a href="who-its-for.html">Who it's for</a>
           <a href="/tools/linkedin-post-editor.html">Free post editor</a>
         </nav>
       </div>
@@ -469,29 +488,24 @@ hamburger.addEventListener('click', function() {
   hamburger.setAttribute('aria-expanded', open);
 });
 
-function updateCountdown() {
-  const end = new Date('2026-06-30T23:59:59Z');
-  const now = new Date();
-  let diff = end - now;
-  if (diff <= 0) {
-    document.querySelector('.countdown-strip').style.display = 'none';
-    document.querySelector('.countdown-footnote').textContent = 'Free testing period has ended. Start your 7-day trial today.';
-    return;
-  }
-  const totalSecs = Math.floor(diff / 1000);
-  const weeks  = Math.floor(totalSecs / (7 * 24 * 3600));
-  const days   = Math.floor((totalSecs % (7 * 24 * 3600)) / (24 * 3600));
-  const hours  = Math.floor((totalSecs % (24 * 3600)) / 3600);
-  const mins   = Math.floor((totalSecs % 3600) / 60);
-  const secs   = totalSecs % 60;
-  document.getElementById('cd-weeks').textContent = String(weeks).padStart(2,'0');
-  document.getElementById('cd-days').textContent  = String(days).padStart(2,'0');
-  document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-  document.getElementById('cd-mins').textContent  = String(mins).padStart(2,'0');
-  document.getElementById('cd-secs').textContent  = String(secs).padStart(2,'0');
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
+const prices = {
+  GBP: { sym: '\u00a3', pro: 35, team: 18 },
+  USD: { sym: '$', pro: 47, team: 24 },
+  EUR: { sym: '\u20ac', pro: 41, team: 21 }
+};
+document.querySelectorAll('.currency-toggle button').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    const cur = prices[btn.dataset.cur];
+    document.getElementById('price-pro').textContent = cur.sym + cur.pro;
+    document.getElementById('price-team').textContent = cur.sym + cur.team;
+    document.querySelectorAll('.currency-toggle button').forEach(function(b) {
+      b.classList.toggle('active', b === btn);
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+  });
+});
+
+
 </script>
 </body>
 </html>
