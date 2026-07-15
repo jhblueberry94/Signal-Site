@@ -28,7 +28,7 @@
 <meta name="twitter:description" content="Signal gives B2B professionals three research-backed LinkedIn questions every day. Answer one, get a post outline. Build your personal brand without the blank page.">
 <meta name="twitter:image" content="https://postsignal.co/og-image.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Signal","applicationCategory":"BusinessApplication","description":"Signal gives B2B professionals three research-backed LinkedIn questions every day. Answer one, get a post outline. Build your personal brand without the blank page.","offers":{"@type":"Offer","price":"22","priceCurrency":"GBP"},"url":"https://postsignal.co"}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Signal","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://postsignal.co","author":{"@type":"Person","name":"Josh Huggins","sameAs":"https://www.linkedin.com/in/joshua-huggins-socialmedia/"},"offers":{"@type":"Offer","price":"35","priceCurrency":"GBP","url":"https://postsignal.co/pricing.html"}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -277,28 +277,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   }
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Signal",
-  "url": "https://postsignal.co",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "description": "Signal asks B2B professionals three research-backed LinkedIn questions every day. Answer one, get a structured post outline using the Story Arc framework.",
-  "author": {
-    "@type": "Person",
-    "name": "Josh Huggins",
-    "sameAs": "https://www.linkedin.com/in/joshua-huggins-socialmedia/"
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "GBP",
-    "url": "https://postsignal.co/pricing.html"
-  }
-}
-</script>
 </head>
 <body>
 
@@ -350,7 +328,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="background:#D85A30">Try Signal for free →</a>
       <a href="https://www.cal.eu/josh-huggins-mkwhu8/30min?user=josh-huggins-mkwhu8&layout=month_view" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.7rem 1.5rem;background:transparent;color:#555;border:1.5px solid #D0CFC8;border-radius:8px;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;text-decoration:none;white-space:nowrap">Book a demo</a>
     </div>
-    <span class="hero-microcopy">14-day free trial. No credit card required. Cancel anytime.</span>
+    <span class="hero-microcopy">7-day free trial. No credit card required. Cancel anytime.</span>
     <div class="hero-stats" role="note" aria-label="Signal usage stats">
       <span class="hero-stat-item"><span class="hero-stat-icon" aria-hidden="true">&#128101;</span><strong>21</strong> founders using Signal</span>
       <span class="hero-stat-divider" aria-hidden="true"></span>
@@ -734,7 +712,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       </div>
     </div>
     <hr class="calc-divider">
-    <p class="calc-sentence" id="calc-sentence">At <strong>£300/day</strong>, your LinkedIn content costs you around <strong>£563/month</strong>. Signal is £22/month.</p>
+    <p class="calc-sentence" id="calc-sentence">At <strong>£300/day</strong>, your LinkedIn content costs you around <strong>£563/month</strong>. Signal is £35/month.</p>
     <div class="calc-cta"><a href="https://app.postsignal.co/auth?signup=true" class="btn-primary">Start free trial →</a></div>
     <p class="calc-footnote">Based on avg. 1.5 hrs/post · 3 posts/week · industry benchmark data</p>
   </div>
@@ -842,7 +820,7 @@ function calcUpdate(){
   document.getElementById('cost-stat').textContent='£'+cost.toLocaleString();
   document.getElementById('saves-stat').textContent='£'+saves.toLocaleString();
   document.getElementById('headline-cost').textContent='£'+cost.toLocaleString();
-  document.getElementById('calc-sentence').innerHTML='At <strong>£'+rate.toLocaleString()+'/day</strong>, your LinkedIn content costs you around <strong>£'+cost.toLocaleString()+'/month</strong>. Signal is £22/month.';
+  document.getElementById('calc-sentence').innerHTML='At <strong>£'+rate.toLocaleString()+'/day</strong>, your LinkedIn content costs you around <strong>£'+cost.toLocaleString()+'/month</strong>. Signal is £35/month.';
 }
 slider.addEventListener('input',calcUpdate);
 calcUpdate();
