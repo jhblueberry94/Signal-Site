@@ -10,25 +10,25 @@ const NAV_LINKS = [
 
 export default function Header() {
   return (
-    <header className="site-header">
-      <div className="site-header__inner">
-        <Link href="/" className="site-header__logo">
-          Signal
+    <nav id="mainnav" aria-label="Main navigation">
+      <div className="nav-inner">
+        <Link href="/" className="logo" aria-label="Signal home">
+          <img src="/logo.png" alt="Signal" height={28} style={{ display: "block", height: 28, width: "auto" }} />
         </Link>
-        <nav className="site-header__nav">
+        <ul className="nav-links" role="list">
           {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
+            <li key={link.href}>
+              <Link href={link.href}>{link.label}</Link>
+            </li>
           ))}
-        </nav>
-        <div className="site-header__actions">
-          <a href="https://app.postsignal.co/auth">Sign in</a>
-          <a href="https://app.postsignal.co/auth?signup=true" className="btn-primary">
-            Start free trial
-          </a>
-        </div>
+        </ul>
+        <a href="https://app.postsignal.co/auth" className="nav-signin">
+          Sign in
+        </a>
+        <a href="https://app.postsignal.co/auth?signup=true" className="btn-primary" style={{ marginLeft: "1rem" }}>
+          Start free trial
+        </a>
       </div>
-    </header>
+    </nav>
   );
 }
