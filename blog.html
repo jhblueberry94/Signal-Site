@@ -16,18 +16,18 @@
 <title>LinkedIn Content Blog for B2B Professionals | Signal</title>
 <meta name="description" content="Expert guides on LinkedIn content strategy, personal branding, and post writing for B2B professionals, consultants, and fractional leaders.">
 <meta name="keywords" content="LinkedIn content strategy, B2B personal brand LinkedIn, LinkedIn for consultants, LinkedIn for fractional executives, how to write LinkedIn posts, LinkedIn content ideas B2B">
-<link rel="canonical" href="https://postsignal.co/blog.html">
+<link rel="canonical" href="https://postsignal.co/blog/">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="LinkedIn Content Strategy Blog | Signal">
 <meta property="og:description" content="Expert guides on LinkedIn content strategy, personal branding, and post writing for B2B professionals, consultants, fractional leaders and executive coaches.">
-<meta property="og:url" content="https://postsignal.co/blog.html">
+<meta property="og:url" content="https://postsignal.co/blog/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://postsignal.co/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="LinkedIn Content Strategy Blog | Signal">
 <meta name="twitter:description" content="Research-backed LinkedIn content strategy guides for B2B professionals, consultants and fractional leaders.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Blog","name":"Signal Blog","description":"LinkedIn content strategy and personal branding guides for B2B professionals","url":"https://postsignal.co/blog.html","publisher":{"@type":"Organization","name":"Signal","url":"https://postsignal.co"}}
+{"@context":"https://schema.org","@type":"Blog","name":"Signal Blog","description":"LinkedIn content strategy and personal branding guides for B2B professionals","url":"https://postsignal.co/blog/","publisher":{"@type":"Organization","name":"Signal","url":"https://postsignal.co"}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,61 +64,40 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .blog-hero h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;line-height:1.2;letter-spacing:-.02em;color:var(--ink);max-width:680px;margin:0 auto 1rem}
 .blog-hero .section-sub{font-size:17px;color:#555;max-width:560px;margin:0 auto;line-height:1.6}
 
-.cat-cards-wrap{max-width:1060px;margin:0 auto;padding:2rem 2rem 0}
-.cat-cards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
-.cat-card{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:1.25rem;cursor:pointer;transition:border-color .2s,transform .2s;text-decoration:none;display:block}
-.cat-card:hover{border-color:var(--navy);transform:translateY(-3px)}
-.cat-card.all-card{background:var(--navy);border-color:var(--navy)}
-.cat-card.all-card h3{color:#fff}
-.cat-card.all-card p{color:rgba(255,255,255,.6)}
-.cat-card.all-card .cat-count{color:rgba(255,255,255,.7)}
-.cat-card.all-card .cat-count svg path{stroke:rgba(255,255,255,.7)}
-.cat-card.all-card:hover{border-color:var(--navy);opacity:.9;transform:translateY(-3px)}
-.cat-card.cat-active{background:var(--navy);border-color:var(--navy)}
-.cat-card.cat-active h3{color:#fff}
-.cat-card.cat-active p{color:rgba(255,255,255,.6)}
-.cat-card.cat-active .cat-count{color:rgba(255,255,255,.7)}
-.cat-card.cat-active .cat-count svg path{stroke:rgba(255,255,255,.7)}
-.cat-card h3{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:.4rem;line-height:1.3}
-.cat-card p{font-size:13px;color:#666;line-height:1.5;margin-bottom:.75rem}
-.cat-card .cat-count{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);display:flex;align-items:center;gap:5px}
-.cat-card .cat-count svg{flex-shrink:0}
-
-/* CATEGORY TABS removed ,  replaced by category cards */
+/* CATEGORY PILLS */
+.cat-pills-wrap{max-width:1060px;margin:0 auto;padding:2rem 2rem 0}
+.cat-pills-row{display:flex;flex-wrap:wrap;gap:.5rem}
+.cat-pill{display:inline-flex;align-items:center;gap:.45rem;background:#fff;border:1px solid var(--card-border);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:500;color:var(--navy);text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.cat-pill:hover{border-color:var(--navy)}
+.cat-pill .pill-badge{background:#F5F4F1;color:#888;font-size:11px;font-weight:700;border-radius:999px;padding:2px 8px;line-height:1.5}
+.cat-pill.cat-active{background:var(--navy);border-color:var(--navy);color:#fff}
+.cat-pill.cat-active .pill-badge{background:rgba(255,255,255,.18);color:#fff}
 
 /* LAYOUT */
 .blog-body{max-width:1060px;margin:0 auto;padding:2.5rem 2rem;display:grid;grid-template-columns:1fr 300px;gap:2.5rem;align-items:start}
 
-/* CLUSTER HEADING */
-.cluster-label-row{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;margin-top:3rem}
-.cluster-label-row:first-child{margin-top:0}
-.cluster-label-row .cl-name{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--warmgrey);white-space:nowrap}
-.cluster-label-row .cl-line{flex:1;height:1px;background:var(--card-border)}
+/* POST FEED: hero + 2-col grid */
+.post-feed{display:block}
+.post-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.post-card{background:#fff;border:1px solid var(--card-border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block;transition:border-color .2s ease,transform .2s ease}
+.post-card:hover{border-color:var(--navy);transform:translateY(-3px)}
+.post-card.post-hidden{display:none}
+.post-media{position:relative;aspect-ratio:3/2;overflow:hidden;background:#e5e4e1}
+.post-media img{width:100%;height:100%;object-fit:cover;display:block}
+.post-cat-pill{position:absolute;top:12px;left:12px;background:rgba(26,26,46,.82);color:#fff;font-size:11px;font-weight:600;padding:4px 11px;border-radius:999px;letter-spacing:.02em}
+.post-body{padding:1.25rem}
+.post-body h3{font-size:16px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:.5rem}
+.post-body p{font-size:13px;color:#666;line-height:1.55;margin-bottom:.75rem}
+.post-foot{display:flex;justify-content:space-between;font-size:12px;color:var(--warmgrey)}
+.post-read{color:var(--blue);font-weight:500}
 
-/* PILLAR CARD ,  Option B */
-.pillar-card{background:#fff;border:1px solid var(--card-border);border-radius:16px;padding:2rem;margin-bottom:1rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start;transition:border-color .2s ease,transform .2s ease;cursor:pointer}
-.pillar-card:hover{border-color:var(--navy);transform:translateY(-2px)}
-.pillar-badge{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 10px;border-radius:4px;margin-bottom:.75rem;background:#F5F4F1;color:#888}
-.pillar-card h2{font-size:20px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:.6rem}
-.pillar-card p{font-size:15px;color:#555;line-height:1.65;margin-bottom:1rem}
-.pillar-meta{font-size:13px;color:var(--warmgrey);display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
-.pillar-cta{display:inline-block;background:var(--navy);color:#fff;font-size:14px;font-weight:500;padding:11px 22px;border-radius:8px;text-decoration:none;white-space:nowrap;transition:opacity .15s;align-self:flex-start;margin-top:.25rem}
-.pillar-cta:hover{opacity:.85}
-
-/* CLUSTER POSTS GRID ,  Option B */
-.cluster-posts{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-bottom:2.5rem}
-.cluster-post{background:#fff;border:1px solid var(--card-border);border-radius:12px;padding:1.25rem 1.25rem 1rem;transition:border-color .2s ease,transform .2s ease;cursor:pointer}
-.cluster-post:hover{border-color:var(--navy);transform:translateY(-3px)}
-.cluster-post .cp-pill{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:3px 9px;border-radius:20px;margin-bottom:.6rem;background:#F5F4F1;color:#888}
-.cluster-post h3{font-size:15px;font-weight:600;color:var(--ink);line-height:1.4;margin-bottom:.5rem}
-.cluster-post p{font-size:13px;color:#666;line-height:1.55;margin-bottom:.6rem}
-.cluster-post .cp-foot{display:flex;justify-content:space-between;font-size:12px;color:var(--warmgrey);margin-top:.25rem}
-.cluster-post .cp-read{color:var(--blue);text-decoration:none;font-weight:500}
-.cluster-post .cp-read:hover{text-decoration:underline}
-
-/* CLUSTER BLOCK ,  for tab filtering */
-.cluster-block{display:block}
-.cluster-block.hidden{display:none}
+/* HERO CARD, spans full grid width */
+.post-card.is-hero{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.post-card.is-hero .post-media{aspect-ratio:1200/630}
+.post-card.is-hero .post-body{padding:2rem;display:flex;flex-direction:column;justify-content:center}
+.post-card.is-hero .post-body h3{font-size:22px;line-height:1.3}
+.post-card.is-hero .post-body p{font-size:15px}
+@media(max-width:768px){.post-card.is-hero{grid-template-columns:1fr}}
 
 /* SIDEBAR */
 .blog-sidebar{position:sticky;top:76px;display:flex;flex-direction:column;gap:1.5rem}
@@ -155,16 +134,9 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   .nav-links,.nav-signin{display:none}
   .hamburger{display:flex}
   .blog-body{grid-template-columns:1fr}
-  .cluster-posts{grid-template-columns:1fr 1fr}
   .blog-sidebar{position:static}
-  .pillar-card{grid-template-columns:1fr}
-  .cat-cards-grid{grid-template-columns:1fr 1fr}
+  .post-grid{grid-template-columns:1fr}
 }
-@media(max-width:480px){.cluster-posts{grid-template-columns:1fr}}
-
-.card-link{position:absolute;inset:0;z-index:1;border-radius:inherit;display:block}
-.pillar-card,.cluster-post{position:relative}
-.pillar-cta,.cp-read,.pillar-card h2 a,.cluster-post h3 a{position:relative;z-index:2}
 </style>
 </head>
 <body>
@@ -173,12 +145,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   <div class="nav-inner">
     <a href="/" class="logo" aria-label="Signal home"><img src="data:image/png;base64,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" alt="Signal" height="28" style="display:block;height:28px;width:auto"></a>
     <ul class="nav-links" role="list">
-      <li><a href="index.html#problem">The problem</a></li>
-      <li><a href="who-its-for.html">Who it's for</a></li>
-      <li><a href="index.html#action">See it in action</a></li>
-      <li><a href="index.html#research">The research</a></li>
-      <li><a href="blog.html" class="nav-active">Blog</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="/#problem">The problem</a></li>
+      <li><a href="/who-its-for/">Who it's for</a></li>
+      <li><a href="/#action">See it in action</a></li>
+      <li><a href="/#research">The research</a></li>
+      <li><a href="/blog/" class="nav-active">Blog</a></li>
+      <li><a href="/pricing/">Pricing</a></li>
     </ul>
     <a href="https://app.postsignal.co/auth" class="nav-signin">Sign in</a>
     <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="font-size:14px;padding:9px 18px;flex-shrink:0;background:var(--coral)">Get started free</a>
@@ -187,12 +159,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     </button>
   </div>
   <div class="mobile-menu" id="mobilemenu">
-    <a href="index.html#problem">The problem</a>
-    <a href="who-its-for.html">Who it's for</a>
-    <a href="index.html#action">See it in action</a>
-    <a href="index.html#research">The research</a>
-    <a href="blog.html">Blog</a>
-    <a href="pricing.html">Pricing</a>
+    <a href="/#problem">The problem</a>
+    <a href="/who-its-for/">Who it's for</a>
+    <a href="/#action">See it in action</a>
+    <a href="/#research">The research</a>
+    <a href="/blog/">Blog</a>
+    <a href="/pricing/">Pricing</a>
     <a href="https://app.postsignal.co/auth">Sign in</a>
     <a href="https://app.postsignal.co/auth?signup=true" class="btn-primary" style="background:var(--coral)">Get started free</a>
   </div>
@@ -206,291 +178,267 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   <p class="section-sub">Research-backed guides on LinkedIn content strategy, post writing, and personal branding, written specifically for consultants, fractional leaders, executive coaches, and B2B advisors.</p>
 </section>
 
-<div class="cat-cards-wrap" aria-label="Browse by category">
-  <div class="cat-cards-grid">
-    <a href="#" class="cat-card all-card cat-active" data-filter="all">
-      <h3>All topics</h3>
-      <p>Every guide and article across all six content categories.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="rgba(255,255,255,.7)" stroke-width="1.6" stroke-linecap="round"/></svg>
-        7 articles →
-      </span>
-    </a>
-    <a href="#" class="cat-card" data-filter="consultant-fractional-guides">
-      <h3>Consultant &amp; fractional guides</h3>
-      <p>LinkedIn strategy written specifically for consultants, fractional leaders and executive coaches.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        2 articles →
-      </span>
-    </a>
-    <a href="#" class="cat-card" data-filter="linkedin-strategy">
-      <h3>LinkedIn strategy</h3>
-      <p>The algorithm, posting cadence, formats and what actually drives reach in 2026.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        1 article →
-      </span>
-    </a>
-    <a href="#" class="cat-card" data-filter="personal-brand">
-      <h3>Personal brand</h3>
-      <p>From zero to recognised expert. Building a LinkedIn presence that generates inbound pipeline.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        1 article →
-      </span>
-    </a>
-    <a href="#" class="cat-card" data-filter="content-writing">
-      <h3>Content writing</h3>
-      <p>Hooks, frameworks, the Story Arc, and how to write posts that get saved not just liked.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        1 article →
-      </span>
-    </a>
-    <a href="#" class="cat-card" data-filter="tools-workflows">
-      <h3>Tools &amp; workflows</h3>
-      <p>Honest comparisons of Taplio, Supergrow, Signal and every other LinkedIn content tool.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        1 article →
-      </span>
-    </a>
-    <a href="#" class="cat-card" data-filter="linkedin-by-role">
-      <h3>LinkedIn by role</h3>
-      <p>Tailored guides for founders, B2B advisors, leadership trainers and sales leaders.</p>
-      <span class="cat-count">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h9M2 12h6" stroke="#D85A30" stroke-width="1.6" stroke-linecap="round"/></svg>
-        1 article →
-      </span>
-    </a>
+<div class="cat-pills-wrap" aria-label="Browse by category">
+  <div class="cat-pills-row" role="tablist">
+    <a href="#" class="cat-pill cat-active" data-filter="all" role="tab" aria-selected="true">All topics <span class="pill-badge">22</span></a>
+    <a href="#" class="cat-pill" data-filter="consultant-fractional-guides" role="tab" aria-selected="false">Consultant &amp; fractional <span class="pill-badge">7</span></a>
+    <a href="#" class="cat-pill" data-filter="linkedin-strategy" role="tab" aria-selected="false">LinkedIn strategy <span class="pill-badge">4</span></a>
+    <a href="#" class="cat-pill" data-filter="personal-brand" role="tab" aria-selected="false">Personal brand <span class="pill-badge">1</span></a>
+    <a href="#" class="cat-pill" data-filter="content-writing" role="tab" aria-selected="false">Content writing <span class="pill-badge">1</span></a>
+    <a href="#" class="cat-pill" data-filter="tools-workflows" role="tab" aria-selected="false">Tools &amp; workflows <span class="pill-badge">8</span></a>
+    <a href="#" class="cat-pill" data-filter="linkedin-by-role" role="tab" aria-selected="false">By role <span class="pill-badge">1</span></a>
   </div>
 </div>
-
 
 <div class="blog-body">
 <div class="main-col">
 
-  <!-- CLUSTER 1: CONSULTANT & FRACTIONAL -->
-  <div class="cluster-block" data-category="consultant-fractional-guides">
-    <div class="cluster-label-row"><span class="cl-name">Consultant &amp; fractional guides</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <a href="blog/linkedin-for-consultants.html" class="card-link"></a>
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2><a href="blog/linkedin-for-consultants.html" style="color:inherit;text-decoration:none">LinkedIn for Consultants: The Complete Guide to Building a Personal Brand and Attracting Clients (2026)</a></h2>
-        <p>How independent consultants, executive coaches, and B2B advisors build LinkedIn visibility that turns followers into inbound client enquiries, without sounding like they're selling.</p>
-        <div class="pillar-meta"><span>18 min read</span><span>·</span><span>Target: "LinkedIn for consultants"</span></div>
+<div class="post-feed">
+  <div class="post-grid" id="postGrid">
+    <a href="/blog/linkedin-for-consultants/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-10">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A consultant gesturing during a client meeting with a laptop open on the table" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
       </div>
-      <a href="blog/linkedin-for-consultants.html" class="pillar-cta">Read guide →</a>
-    </article>
-    <div class="cluster-posts">
-      <div class="cluster-post">
-        <a href="blog/linkedin-fractional-executives.html" class="card-link"></a>
-        <span class="cp-pill">Fractional leaders</span>
-        <h3><a href="blog/linkedin-fractional-executives.html" style="color:inherit;text-decoration:none">LinkedIn for fractional executives: build visibility without looking like you are job hunting</a></h3>
+      <div class="post-body">
+        <h3>LinkedIn for Consultants: The Complete Guide to Building a Personal Brand and Attracting Clients (2026)</h3>
+        <p>How independent consultants, executive coaches, and B2B advisors build LinkedIn visibility that turns followers into inbound client enquiries, without sounding like they&#x27;re selling.</p>
+        <div class="post-foot"><span>18 min read</span><span class="post-read">Read &rarr;</span></div>
+      </div>
+    </a>
+    <a href="/blog/linkedin-fractional-executives/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="Two professionals in conversation during an advisory meeting" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
+      </div>
+      <div class="post-body">
+        <h3>LinkedIn for fractional executives: build visibility without looking like you are job hunting</h3>
         <p>The availability paradox every fractional leader faces and the content strategy that resolves it.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/linkedin-fractional-executives.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/linkedin-executive-coaches.html" class="card-link"></a>
-        <span class="cp-pill">Executive coaches</span>
-        <h3><a href="blog/linkedin-executive-coaches.html" style="color:inherit;text-decoration:none">LinkedIn for executive coaches: building authority that converts followers into discovery calls</a></h3>
+    </a>
+    <a href="/blog/linkedin-executive-coaches/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-10">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1573496267526-08a69e46a409?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="Two women in a coaching conversation, both holding pens" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
+      </div>
+      <div class="post-body">
+        <h3>LinkedIn for executive coaches: building authority that converts followers into discovery calls</h3>
         <p>Your methodology is your differentiator. Here is how to make it visible without giving everything away.</p>
-        <div class="cp-foot"><span>5 min read</span><a href="blog/linkedin-executive-coaches.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>5 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/how-to-get-consulting-clients-linkedin.html" class="card-link"></a>
-        <span class="cp-pill">Consultant strategy</span>
-        <h3><a href="blog/how-to-get-consulting-clients-linkedin.html" style="color:inherit;text-decoration:none">How to get consulting clients from LinkedIn in 2026</a></h3>
+    </a>
+    <a href="/blog/how-to-get-consulting-clients-linkedin/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-15">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1551836022-aadb801c60ae?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A consultant and client talking together in an office" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
+      </div>
+      <div class="post-body">
+        <h3>How to get consulting clients from LinkedIn in 2026</h3>
         <p>Most LinkedIn advice treats client wins as an outreach problem. Here is why consistent posting is what actually gets consultants hired.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/how-to-get-consulting-clients-linkedin.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/linkedin-leadership-advisors.html" class="card-link"></a>
-        <span class="cp-pill">Leadership advisors</span>
-        <h3><a href="blog/linkedin-leadership-advisors.html" style="color:inherit;text-decoration:none">LinkedIn for leadership advisors: building credibility between client engagements</a></h3>
+    </a>
+    <a href="/blog/linkedin-leadership-advisors/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-12">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1616587224026-668840f26916?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="Two people in a seated advisory conversation" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
+      </div>
+      <div class="post-body">
+        <h3>LinkedIn for leadership advisors: building credibility between client engagements</h3>
         <p>Leadership advisors who post consistently get more inbound enquiries. Here is the content approach that works.</p>
-        <div class="cp-foot"><span>5 min read</span><a href="blog/linkedin-leadership-advisors.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>5 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/linkedin-agency-owners.html" class="card-link"></a>
-        <span class="cp-pill">Agency owners</span>
-        <h3><a href="blog/linkedin-agency-owners.html" style="color:inherit;text-decoration:none">LinkedIn for agency owners: how to attract clients without sounding like you are pitching</a></h3>
+    </a>
+    <a href="/blog/linkedin-agency-owners/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-10">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="Two people in a business meeting seated in leather chairs" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
+      </div>
+      <div class="post-body">
+        <h3>LinkedIn for agency owners: how to attract clients without sounding like you are pitching</h3>
         <p>Agency owners face a specific LinkedIn problem. Here is how to position your thinking instead of your services.</p>
-        <div class="cp-foot"><span>5 min read</span><a href="blog/linkedin-agency-owners.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>5 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/linkedin-post-ideas-for-consultants.html" class="card-link"></a>
-        <span class="cp-pill">Consultant strategy</span>
-        <h3><a href="blog/linkedin-post-ideas-for-consultants.html" style="color:inherit;text-decoration:none">15 LinkedIn post ideas for consultants (2026)</a></h3>
+    </a>
+    <a href="/blog/linkedin-post-ideas-for-consultants/" class="post-card" data-category="consultant-fractional-guides" data-date="2026-06-25">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1587135991058-8816b028691f?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A hand writing notes on paper, generating content ideas" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Consultant &amp; fractional</span>
+      </div>
+      <div class="post-body">
+        <h3>15 LinkedIn post ideas for consultants (2026)</h3>
         <p>Move past generic post idea lists. These 15 ideas are built around the content types that actually attract consulting clients.</p>
-        <div class="cp-foot"><span>8 min read</span><a href="blog/linkedin-post-ideas-for-consultants.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>8 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-    </div>
-  </div>
-
-  <!-- CLUSTER 2: LINKEDIN STRATEGY -->
-
-  <div class="cluster-block" data-category="linkedin-strategy">
-    <div class="cluster-label-row"><span class="cl-name">LinkedIn strategy</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <a href="blog/linkedin-content-strategy-2026.html" class="card-link"></a>
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2><a href="blog/linkedin-content-strategy-2026.html" style="color:inherit;text-decoration:none">LinkedIn Content Strategy for B2B Professionals: The Complete 2026 Guide</a></h2>
+    </a>
+    <a href="/blog/linkedin-content-strategy-2026/" class="post-card" data-category="linkedin-strategy" data-date="2026-07-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1714974528737-3e6c7e4d11af?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A group of people around a table in a strategy planning session" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">LinkedIn strategy</span>
+      </div>
+      <div class="post-body">
+        <h3>LinkedIn Content Strategy for B2B Professionals: The Complete 2026 Guide</h3>
         <p>Everything you need to build a LinkedIn content strategy that compounds over time: the algorithm, the right formats, posting cadence, and what actually drives reach in 2026.</p>
-        <div class="pillar-meta"><span>20 min read</span><span>·</span><span>Target: "LinkedIn content strategy 2026"</span></div>
+        <div class="post-foot"><span>20 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <a href="blog/linkedin-content-strategy-2026.html" class="pillar-cta">Read guide &rarr;</a>
-</article>
-    <div class="cluster-posts">
-      <div class="cluster-post">
-        <a href="blog/linkedin-algorithm-2026.html" class="card-link"></a>
-        <span class="cp-pill">LinkedIn strategy</span>
-        <h3><a href="blog/linkedin-algorithm-2026.html" style="color:inherit;text-decoration:none">The LinkedIn algorithm in 2026: what B2B professionals need to know about reach, saves, and AI-generated content</a></h3>
-        <p>AI-generated LinkedIn posts now get 47% less reach. Here's what the algorithm rewards instead.</p>
-        <div class="cp-foot"><span>7 min read</span><a href="blog/linkedin-algorithm-2026.html" class="cp-read">Read →</a></div>
+    </a>
+    <a href="/blog/linkedin-algorithm-2026/" class="post-card" data-category="linkedin-strategy" data-date="2026-06-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A monitoring screen displaying analytics data" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">LinkedIn strategy</span>
       </div>
-      <div class="cluster-post">
-        <a href="blog/best-time-to-post-linkedin-2026.html" class="card-link"></a>
-        <span class="cp-pill">LinkedIn strategy</span>
-        <h3><a href="blog/best-time-to-post-linkedin-2026.html" style="color:inherit;text-decoration:none">The best time to post on LinkedIn in 2026: what the data says for B2B professionals</a></h3>
+      <div class="post-body">
+        <h3>The LinkedIn algorithm in 2026: what B2B professionals need to know about reach, saves, and AI-generated content</h3>
+        <p>AI-generated LinkedIn posts now get 47% less reach. Here&#x27;s what the algorithm rewards instead.</p>
+        <div class="post-foot"><span>7 min read</span><span class="post-read">Read &rarr;</span></div>
+      </div>
+    </a>
+    <a href="/blog/best-time-to-post-linkedin-2026/" class="post-card" data-category="linkedin-strategy" data-date="2026-06-15">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1490724500206-cd5482e02b9e?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A desk clock beside a notebook and pen" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">LinkedIn strategy</span>
+      </div>
+      <div class="post-body">
+        <h3>The best time to post on LinkedIn in 2026: what the data says for B2B professionals</h3>
         <p>Timing matters less than consistency, but getting both right compounds your reach significantly.</p>
-        <div class="cp-foot"><span>5 min read</span><a href="blog/best-time-to-post-linkedin-2026.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>5 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/why-linkedin-content-fails.html" class="card-link"></a>
-        <span class="cp-pill">LinkedIn strategy</span>
-        <h3><a href="blog/why-linkedin-content-fails.html" style="color:inherit;text-decoration:none">Why LinkedIn content fails: the seven mistakes B2B professionals make and how to fix them</a></h3>
+    </a>
+    <a href="/blog/why-linkedin-content-fails/" class="post-card" data-category="linkedin-strategy" data-date="2026-06-15">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1620809975674-10b8ff5f8e58?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A stressed person with head in hands at a laptop" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">LinkedIn strategy</span>
+      </div>
+      <div class="post-body">
+        <h3>Why LinkedIn content fails: the seven mistakes B2B professionals make and how to fix them</h3>
         <p>Most LinkedIn content gets no traction not because it is bad writing, but because it solves the wrong problem.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/why-linkedin-content-fails.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-                </div>
-  </div>
-
-  <!-- CLUSTER 3: PERSONAL BRAND -->
-  <div class="cluster-block" data-category="personal-brand">
-    <div class="cluster-label-row"><span class="cl-name">Personal brand</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <a href="blog/b2b-personal-brand-linkedin.html" class="card-link"></a>
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2><a href="blog/b2b-personal-brand-linkedin.html" style="color:inherit;text-decoration:none">How to Build a B2B Personal Brand on LinkedIn: The Complete Guide for Professionals, Consultants and Founders (2026)</a></h2>
+    </a>
+    <a href="/blog/b2b-personal-brand-linkedin/" class="post-card" data-category="personal-brand" data-date="2026-06-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="Two professionals standing together in an office setting" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Personal brand</span>
+      </div>
+      <div class="post-body">
+        <h3>How to Build a B2B Personal Brand on LinkedIn: The Complete Guide for Professionals, Consultants and Founders (2026)</h3>
         <p>From zero following to recognised expert in your field. A step-by-step guide to building a LinkedIn personal brand that generates inbound pipeline, not just vanity metrics.</p>
-        <div class="pillar-meta"><span>22 min read</span><span>·</span><span>Target: "B2B personal brand LinkedIn"</span></div>
+        <div class="post-foot"><span>22 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <a href="blog/b2b-personal-brand-linkedin.html" class="pillar-cta">Read guide →</a>
-    </article>
-    <div class="cluster-posts">
-                      </div>
-  </div>
-
-  <!-- CLUSTER 4: CONTENT WRITING -->
-  <div class="cluster-block" data-category="content-writing">
-    <div class="cluster-label-row"><span class="cl-name">Content writing</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <a href="blog/how-to-write-linkedin-posts.html" class="card-link"></a>
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2><a href="blog/how-to-write-linkedin-posts.html" style="color:inherit;text-decoration:none">How to Write LinkedIn Posts That Perform in 2026: Hooks, Structure, Frameworks and the Story Arc Method</a></h2>
+    </a>
+    <a href="/blog/how-to-write-linkedin-posts/" class="post-card" data-category="content-writing" data-date="2026-06-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1550592704-6c76defa9985?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A hand writing with a pen in a notebook" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Content writing</span>
+      </div>
+      <div class="post-body">
+        <h3>How to Write LinkedIn Posts That Perform in 2026: Hooks, Structure, Frameworks and the Story Arc Method</h3>
         <p>The complete guide to writing LinkedIn posts that get read, saved and shared, covering hooks, the five-part Story Arc structure, PAS, BAB, AIDA, and what the 2026 algorithm rewards.</p>
-        <div class="pillar-meta"><span>19 min read</span><span>·</span><span>Target: "how to write LinkedIn posts 2026"</span></div>
+        <div class="post-foot"><span>19 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <a href="blog/how-to-write-linkedin-posts.html" class="pillar-cta">Read guide →</a>
-    </article>
-    <div class="cluster-posts">
-                      </div>
-  </div>
-
-  <!-- CLUSTER 5: TOOLS & WORKFLOWS -->
-  <div class="cluster-block" data-category="tools-workflows">
-    <div class="cluster-label-row"><span class="cl-name">Tools &amp; workflows</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <a href="blog/best-linkedin-content-tools-2026.html" class="card-link"></a>
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2><a href="blog/best-linkedin-content-tools-2026.html" style="color:inherit;text-decoration:none">The Best LinkedIn Content Tools in 2026: An Honest Comparison for B2B Professionals</a></h2>
+    </a>
+    <a href="/blog/best-linkedin-content-tools-2026/" class="post-card" data-category="tools-workflows" data-date="2026-07-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="Performance graphs displayed on a laptop screen" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
+      </div>
+      <div class="post-body">
+        <h3>The Best LinkedIn Content Tools in 2026: An Honest Comparison for B2B Professionals</h3>
         <p>Taplio, Supergrow, AuthoredUp, Kleo, and Signal compared honestly: what each tool does well, where it falls short, and which is right for your workflow and goals.</p>
-        <div class="pillar-meta"><span>16 min read</span><span>·</span><span>Target: "best LinkedIn content tools 2026"</span></div>
+        <div class="post-foot"><span>16 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <a href="blog/best-linkedin-content-tools-2026.html" class="pillar-cta">Read guide &rarr;</a>
-</article>
-    <div class="cluster-posts">
-      <div class="cluster-post">
-        <a href="blog/kleo-alternatives-2026.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/kleo-alternatives-2026.html" style="color:inherit;text-decoration:none">Kleo alternatives 2026: the 6 best tools after the shutdown</a></h3>
-        <p>LinkedIn shut down Kleo's free extension and Kleo 3.0 now costs $99 a month. Six alternatives compared for voice-led, credibility-first posting.</p>
-        <div class="cp-foot"><span>7 min read</span><a href="blog/kleo-alternatives-2026.html" class="cp-read">Read &rarr;</a></div>
+    </a>
+    <a href="/blog/kleo-alternatives-2026/" class="post-card" data-category="tools-workflows" data-date="2026-07-20">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1666558890267-12e89b72808d?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A person at a desk working across a laptop and phone" width="1200" height="630" fetchpriority="high">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
       </div>
-      <div class="cluster-post">
-        <a href="blog/taplio-alternatives-2026.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/taplio-alternatives-2026.html" style="color:inherit;text-decoration:none">Taplio alternatives in 2026: the best LinkedIn tools for B2B professionals who want content that sounds like them</a></h3>
-        <p>The most common complaint about Taplio: content feels robotic. Here's what to use instead.</p>
-        <div class="cp-foot"><span>7 min read</span><a href="blog/taplio-alternatives-2026.html" class="cp-read">Read →</a></div>
+      <div class="post-body">
+        <h3>Kleo alternatives 2026: the 6 best tools after the shutdown</h3>
+        <p>LinkedIn shut down Kleo&#x27;s free extension and Kleo 3.0 now costs $99 a month. Six alternatives compared for voice-led, credibility-first posting.</p>
+        <div class="post-foot"><span>7 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/supergrow-alternatives-2026.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/supergrow-alternatives-2026.html" style="color:inherit;text-decoration:none">Supergrow alternatives 2026: honest B2B comparison</a></h3>
+    </a>
+    <a href="/blog/taplio-alternatives-2026/" class="post-card" data-category="tools-workflows" data-date="2026-06-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1626105985445-6430a31f6f96?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A professional reviewing printed content pages" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
+      </div>
+      <div class="post-body">
+        <h3>Taplio alternatives in 2026: the best LinkedIn tools for B2B professionals who want content that sounds like them</h3>
+        <p>The most common complaint about Taplio: content feels robotic. Here&#x27;s what to use instead.</p>
+        <div class="post-foot"><span>7 min read</span><span class="post-read">Read &rarr;</span></div>
+      </div>
+    </a>
+    <a href="/blog/supergrow-alternatives-2026/" class="post-card" data-category="tools-workflows" data-date="2026-06-12">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1560221328-12fe60f83ab8?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A close-up of a monitor displaying a data graph" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
+      </div>
+      <div class="post-body">
+        <h3>Supergrow alternatives 2026: honest B2B comparison</h3>
         <p>Supergrow is a solid LinkedIn writing tool, but it will not fix the ideation problem. Here is what to use instead.</p>
-        <div class="cp-foot"><span>5 min read</span><a href="blog/supergrow-alternatives-2026.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>5 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/authoredup-vs-signal.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/authoredup-vs-signal.html" style="color:inherit;text-decoration:none">AuthoredUp vs Signal: which LinkedIn tool is right for you?</a></h3>
+    </a>
+    <a href="/blog/authoredup-vs-signal/" class="post-card" data-category="tools-workflows" data-date="2026-06-16">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1713006616027-c86d797b9986?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A person working at a laptop computer" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
+      </div>
+      <div class="post-body">
+        <h3>AuthoredUp vs Signal: which LinkedIn tool is right for you?</h3>
         <p>AuthoredUp is a post editor. Signal is a thinking tool. Both sit in your LinkedIn workflow but solve completely different problems.</p>
-        <div class="cp-foot"><span>5 min read</span><a href="blog/authoredup-vs-signal.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>5 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/best-linkedin-content-tools-consultants.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/best-linkedin-content-tools-consultants.html" style="color:inherit;text-decoration:none">The best LinkedIn content tools for consultants in 2026</a></h3>
+    </a>
+    <a href="/blog/best-linkedin-content-tools-consultants/" class="post-card" data-category="tools-workflows" data-date="2026-06-16">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1495666455530-30db8c031cc7?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A person using a tablet computer at a table" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
+      </div>
+      <div class="post-body">
+        <h3>The best LinkedIn content tools for consultants in 2026</h3>
         <p>A straightforward comparison of the tools B2B consultants actually use to stay consistent on LinkedIn.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/best-linkedin-content-tools-consultants.html" class="cp-read">Read →</a></div>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-      <div class="cluster-post">
-        <a href="blog/scripe-alternatives-2026.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/scripe-alternatives-2026.html" style="color:inherit;text-decoration:none">Scripe alternatives in 2026: honest B2B comparison</a></h3>
-        <p>Scripe’s voice-to-post mechanic is useful, but it won’t help you decide what to say. Here’s what to use instead.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/scripe-alternatives-2026.html" class="cp-read">Read →</a></div>
+    </a>
+    <a href="/blog/scripe-alternatives-2026/" class="post-card" data-category="tools-workflows" data-date="2026-06-25">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A condenser microphone against a dark background" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
       </div>
-      <div class="cluster-post">
-        <a href="blog/magicpost-alternatives-2026.html" class="card-link"></a>
-        <span class="cp-pill">Tools</span>
-        <h3><a href="blog/magicpost-alternatives-2026.html" style="color:inherit;text-decoration:none">MagicPost alternatives in 2026: LinkedIn tools that go beyond AI-generated posts</a></h3>
-        <p>MagicPost does a lot. But for B2B consultants, the bottleneck isn’t writing speed. Here’s what to use instead.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/magicpost-alternatives-2026.html" class="cp-read">Read →</a></div>
+      <div class="post-body">
+        <h3>Scripe alternatives in 2026: honest B2B comparison</h3>
+        <p>Scripe&#x27;s voice-to-post mechanic is useful, but it won&#x27;t help you decide what to say. Here&#x27;s what to use instead.</p>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
       </div>
-                </div>
+    </a>
+    <a href="/blog/magicpost-alternatives-2026/" class="post-card" data-category="tools-workflows" data-date="2026-06-25">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A hand writing a list of ideas in a notebook" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">Tools &amp; workflows</span>
+      </div>
+      <div class="post-body">
+        <h3>MagicPost alternatives in 2026: LinkedIn tools that go beyond AI-generated posts</h3>
+        <p>MagicPost does a lot. But for B2B consultants, the bottleneck isn&#x27;t writing speed. Here&#x27;s what to use instead.</p>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
+      </div>
+    </a>
+    <a href="/blog/linkedin-for-founders/" class="post-card" data-category="linkedin-by-role" data-date="2026-06-01">
+      <div class="post-media">
+        <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?fm=jpg&q=80&w=1200&h=630&fit=crop" alt="A group of people working together at computers in a startup office" width="1200" height="630" loading="lazy">
+        <span class="post-cat-pill">By role</span>
+      </div>
+      <div class="post-body">
+        <h3>LinkedIn for founders: how to build a personal brand that makes sales warmer and hiring easier</h3>
+        <p>Founders with an active LinkedIn presence raise 23% more in funding rounds. Here&#x27;s the content strategy behind it.</p>
+        <div class="post-foot"><span>6 min read</span><span class="post-read">Read &rarr;</span></div>
+      </div>
+    </a>
   </div>
-
-  <!-- CLUSTER 6: SPECIFIC ROLES -->
-  <div class="cluster-block" data-category="linkedin-by-role">
-    <div class="cluster-label-row"><span class="cl-name">LinkedIn by role</span><div class="cl-line"></div></div>
-    <article class="pillar-card">
-      <div>
-        <span class="pillar-badge">Pillar guide</span>
-        <h2>LinkedIn Content Strategy by Role: Tailored Guides for Founders, B2B Advisors, Leadership Trainers and Sales Leaders (2026)</h2>
-        <p>Generic LinkedIn advice doesn't work for every professional. These role-specific guides cover what to post, how to position yourself, and how to build inbound pipeline from LinkedIn, depending on exactly what you do.</p>
-        <div class="pillar-meta"><span>15 min read</span><span>·</span><span>Target: "LinkedIn strategy by role B2B"</span></div>
-      </div>
-      <a href="/linkedin-by-role.html" class="pillar-cta">Read guide →</a>
-</article>
-    <div class="cluster-posts">
-      <div class="cluster-post">
-        <a href="blog/linkedin-for-founders.html" class="card-link"></a>
-        <span class="cp-pill">Founder strategy</span>
-        <h3><a href="blog/linkedin-for-founders.html" style="color:inherit;text-decoration:none">LinkedIn for founders: how to build a personal brand that makes sales warmer and hiring easier</a></h3>
-        <p>Founders with an active LinkedIn presence raise 23% more in funding rounds. Here's the content strategy behind it.</p>
-        <div class="cp-foot"><span>6 min read</span><a href="blog/linkedin-for-founders.html" class="cp-read">Read →</a></div>
-      </div>
-    </div>
-  </div>
+</div>
 
 </div><!-- end main col -->
 
@@ -503,11 +451,11 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   </div>
   <div class="sidebar-box">
     <span class="sb-label">Most read</span>
-    <a href="blog/linkedin-for-consultants.html" class="popular-link">LinkedIn for consultants: the complete guide</a>
-    <a href="blog/taplio-alternatives-2026.html" class="popular-link">Taplio alternatives in 2026</a>
-    <a href="blog/how-to-write-linkedin-posts.html" class="popular-link">How to write LinkedIn posts that perform</a>
-    <a href="blog/linkedin-fractional-executives.html" class="popular-link">LinkedIn for fractional executives</a>
-    <a href="blog/linkedin-algorithm-2026.html" class="popular-link">The LinkedIn algorithm in 2026 explained</a>
+    <a href="/blog/linkedin-for-consultants/" class="popular-link">LinkedIn for consultants: the complete guide</a>
+    <a href="/blog/taplio-alternatives-2026/" class="popular-link">Taplio alternatives in 2026</a>
+    <a href="/blog/how-to-write-linkedin-posts/" class="popular-link">How to write LinkedIn posts that perform</a>
+    <a href="/blog/linkedin-fractional-executives/" class="popular-link">LinkedIn for fractional executives</a>
+    <a href="/blog/linkedin-algorithm-2026/" class="popular-link">The LinkedIn algorithm in 2026 explained</a>
   </div>
   <div class="sidebar-box">
     <span class="sb-label">Browse by topic</span>
@@ -541,18 +489,18 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <div class="footer-col">
         <span class="footer-col-title">Product</span>
         <nav class="footer-links-col" aria-label="Product">
-          <a href="/pricing.html">Pricing</a>
-          <a href="/index.html#action">See it in action</a>
-          <a href="/who-its-for.html">Who it's for</a>
-          <a href="/tools/linkedin-post-editor.html">Free post editor</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/#action">See it in action</a>
+          <a href="/who-its-for/">Who it's for</a>
+          <a href="/tools/linkedin-post-editor/">Free post editor</a>
         </nav>
       </div>
       <div class="footer-col">
         <span class="footer-col-title">Resources</span>
         <nav class="footer-links-col" aria-label="Resources">
-          <a href="blog.html">Blog</a>
-          <a href="faq.html">FAQ</a>
-          <a href="compare/index.html">Compare</a>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/compare/">Compare</a>
         </nav>
       </div>
       <div class="footer-col">
@@ -584,57 +532,70 @@ mobileMenu.querySelectorAll('a').forEach(function(l){
   });
 });
 
-var catCards=document.querySelectorAll('.cat-card');
-var clusters=document.querySelectorAll('.cluster-block');
+var catPills=document.querySelectorAll('.cat-pill');
+var postCards=document.querySelectorAll('.post-card');
 
 function applyFilter(filter){
-  catCards.forEach(function(c){
-    c.style.opacity='1';
-    var isActive=c.getAttribute('data-filter')===filter;
-    if(isActive){
-      c.classList.add('cat-active');
-    } else {
-      c.classList.remove('cat-active');
-    }
+  catPills.forEach(function(p){
+    var isActive=p.getAttribute('data-filter')===filter;
+    p.classList.toggle('cat-active',isActive);
+    p.setAttribute('aria-selected',isActive?'true':'false');
   });
-  if(filter==='all'){
-    var content=document.querySelector('.blog-body');
-    if(content)window.scrollTo({top:content.offsetTop-70,behavior:'smooth'});
-  } else {
-    clusters.forEach(function(cluster){
-      if(cluster.getAttribute('data-category')===filter){
-        var top=cluster.getBoundingClientRect().top+window.pageYOffset-90;
-        window.scrollTo({top:top,behavior:'smooth'});
-      }
+
+  var visible=[];
+  postCards.forEach(function(card){
+    var matches=filter==='all'||card.getAttribute('data-category')===filter;
+    card.classList.toggle('post-hidden',!matches);
+    card.classList.remove('is-hero');
+    card.style.order='';
+    if(matches)visible.push(card);
+  });
+
+  if(visible.length){
+    var hero=visible.reduce(function(a,b){
+      return b.getAttribute('data-date')>a.getAttribute('data-date')?b:a;
     });
+    hero.classList.add('is-hero');
+    hero.style.order='-1';
   }
+
+  var feed=document.querySelector('.post-feed');
+  if(feed)feed.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-catCards.forEach(function(card){
-  card.addEventListener('click',function(e){
+catPills.forEach(function(pill){
+  pill.addEventListener('click',function(e){
     e.preventDefault();
-    applyFilter(card.getAttribute('data-filter'));
+    applyFilter(pill.getAttribute('data-filter'));
   });
 });
+
+/* initialise: pick the hero for the default "all" view without scrolling */
+(function(){
+  var visible=Array.prototype.filter.call(postCards,function(c){return !c.classList.contains('post-hidden');});
+  if(visible.length){
+    var hero=visible.reduce(function(a,b){
+      return b.getAttribute('data-date')>a.getAttribute('data-date')?b:a;
+    });
+    hero.classList.add('is-hero');
+    hero.style.order='-1';
+  }
+})();
 </script>
 <script>
 (function(){
-  var clusters=document.querySelectorAll('.cluster-block');
+  var postCards=document.querySelectorAll('.post-card');
   var totals={};var grand=0;
-  clusters.forEach(function(cl){
-    var cat=cl.getAttribute('data-category');
-    var n=cl.querySelectorAll('.pillar-card,.cluster-post').length;
-    totals[cat]=(totals[cat]||0)+n;grand+=n;
+  postCards.forEach(function(card){
+    var cat=card.getAttribute('data-category');
+    totals[cat]=(totals[cat]||0)+1;grand+=1;
   });
-  document.querySelectorAll('.cat-card').forEach(function(card){
-    var f=card.getAttribute('data-filter');
-    var span=card.querySelector('.cat-count');
-    if(!span)return;
+  document.querySelectorAll('.cat-pill').forEach(function(pill){
+    var f=pill.getAttribute('data-filter');
+    var badge=pill.querySelector('.pill-badge');
+    if(!badge)return;
     var n=f==='all'?grand:(totals[f]||0);
-    var svg=span.querySelector('svg');
-    var txt=n===1?'1 article →':n+' articles →';
-    span.textContent=txt;
-    if(svg)span.insertBefore(svg,span.firstChild);
+    badge.textContent=n;
   });
 })();
 </script>

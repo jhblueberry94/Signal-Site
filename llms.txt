@@ -1,6 +1,6 @@
 # Signal
 
-> Signal (postsignal.co) helps founders, consultants, and fractional executives turn conversations, meetings, and expertise into ready-to-publish content and answers to their audience's questions — without spending hours writing.
+> Signal (postsignal.co) helps founders, consultants, and fractional executives turn conversations, meetings, and expertise into ready-to-publish content and answers to their audience's questions, without spending hours writing.
 
 ## What Signal does
 
@@ -10,9 +10,14 @@
 
 ## Who it's for
 
-- [For consultants](https://postsignal.co/for/consultants.html): consultants building authority and generating leads through content
-- [For founders](https://postsignal.co/for/founders.html): founders who need to show up consistently without hiring a content team
-- [For fractional executives](https://postsignal.co/for/fractional-executives.html): fractional execs building a personal brand across multiple clients
+- [For consultants](https://postsignal.co/for/consultants/): consultants building authority and generating leads through content
+- [For founders](https://postsignal.co/for/founders/): founders who need to show up consistently without hiring a content team
+- [For fractional executives](https://postsignal.co/for/fractional-executives/): fractional execs building a personal brand across multiple clients
+
+## Pricing
+
+- [Pricing](https://postsignal.co/pricing/): £35/month, one plan, 7-day free trial, no credit card required
+- [Pricing (machine-readable)](https://postsignal.co/pricing.md): structured pricing data for AI agents
 
 ## Comparisons
 

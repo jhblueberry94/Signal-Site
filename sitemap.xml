@@ -9,25 +9,31 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/pricing.html</loc>
+    <loc>https://postsignal.co/pricing/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/tools/linkedin-post-editor.html</loc>
+    <loc>https://postsignal.co/pricing.md</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://postsignal.co/tools/linkedin-post-editor/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog.html</loc>
+    <loc>https://postsignal.co/blog/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/linkedin-by-role.html</loc>
+    <loc>https://postsignal.co/linkedin-by-role/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,49 +41,49 @@
 
   <!-- Cluster: Consultant & fractional -->
   <url>
-    <loc>https://postsignal.co/blog/linkedin-for-consultants.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-for-consultants/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-fractional-executives.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-fractional-executives/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-executive-coaches.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-executive-coaches/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-agency-owners.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-agency-owners/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-for-founders.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-for-founders/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-leadership-advisors.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-leadership-advisors/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/how-to-get-consulting-clients-linkedin.html</loc>
+    <loc>https://postsignal.co/blog/how-to-get-consulting-clients-linkedin/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-post-ideas-for-consultants.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-post-ideas-for-consultants/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -85,25 +91,25 @@
 
   <!-- Cluster: LinkedIn strategy -->
   <url>
-    <loc>https://postsignal.co/blog/linkedin-content-strategy-2026.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-content-strategy-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/linkedin-algorithm-2026.html</loc>
+    <loc>https://postsignal.co/blog/linkedin-algorithm-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/why-linkedin-content-fails.html</loc>
+    <loc>https://postsignal.co/blog/why-linkedin-content-fails/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/best-time-to-post-linkedin-2026.html</loc>
+    <loc>https://postsignal.co/blog/best-time-to-post-linkedin-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -111,13 +117,13 @@
 
   <!-- Cluster: Personal brand & content writing -->
   <url>
-    <loc>https://postsignal.co/blog/b2b-personal-brand-linkedin.html</loc>
+    <loc>https://postsignal.co/blog/b2b-personal-brand-linkedin/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/how-to-write-linkedin-posts.html</loc>
+    <loc>https://postsignal.co/blog/how-to-write-linkedin-posts/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -125,113 +131,125 @@
 
   <!-- Cluster: Tools & alternatives -->
   <url>
-    <loc>https://postsignal.co/blog/best-linkedin-content-tools-2026.html</loc>
+    <loc>https://postsignal.co/blog/best-linkedin-content-tools-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/taplio-alternatives-2026.html</loc>
+    <loc>https://postsignal.co/blog/taplio-alternatives-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/supergrow-alternatives-2026.html</loc>
+    <loc>https://postsignal.co/blog/supergrow-alternatives-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/authoredup-vs-signal.html</loc>
+    <loc>https://postsignal.co/blog/authoredup-vs-signal/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/best-linkedin-content-tools-consultants.html</loc>
+    <loc>https://postsignal.co/blog/best-linkedin-content-tools-consultants/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/magicpost-alternatives-2026.html</loc>
+    <loc>https://postsignal.co/blog/magicpost-alternatives-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/blog/scripe-alternatives-2026.html</loc>
+    <loc>https://postsignal.co/blog/scripe-alternatives-2026/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://postsignal.co/blog/kleo-alternatives-2026/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 
   <!-- Phases 1-3b: FAQ, Who it's for, Compare -->
   <url>
-    <loc>https://postsignal.co/faq.html</loc>
+    <loc>https://postsignal.co/faq/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/who-its-for.html</loc>
+    <loc>https://postsignal.co/who-its-for/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/for/consultants.html</loc>
+    <loc>https://postsignal.co/for/consultants/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/for/fractional-executives.html</loc>
+    <loc>https://postsignal.co/for/fractional-executives/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/for/founders.html</loc>
+    <loc>https://postsignal.co/for/founders/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/compare/index.html</loc>
+    <loc>https://postsignal.co/compare/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/compare/taplio.html</loc>
+    <loc>https://postsignal.co/compare/taplio/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/compare/authoredup.html</loc>
+    <loc>https://postsignal.co/compare/authoredup/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/compare/supergrow.html</loc>
+    <loc>https://postsignal.co/compare/supergrow/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/compare/scripe.html</loc>
+    <loc>https://postsignal.co/compare/scripe/</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://postsignal.co/compare/magicpost.html</loc>
+    <loc>https://postsignal.co/compare/magicpost/</loc>
     <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://postsignal.co/compare/kleo/</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
