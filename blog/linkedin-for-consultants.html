@@ -60,7 +60,11 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .breadcrumb .sep{color:#ccc}
 
 /* ARTICLE LAYOUT */
-.article-wrap{max-width:1060px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+.article-wrap{max-width:1060px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:200px 1fr 240px;gap:2.5rem;align-items:start}
+.toc{position:sticky;top:80px}
+.toc-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--warmgrey);display:block;margin-bottom:.75rem}
+.toc a{display:block;font-size:13px;color:#777;text-decoration:none;padding:.35rem 0 .35rem .75rem;border-left:2px solid var(--card-border);line-height:1.4;transition:color .15s,border-color .15s;margin-bottom:2px}
+.toc a:hover{color:var(--blue);border-left-color:var(--blue)}
 .article-body{}
 
 /* ARTICLE HEADER */
@@ -73,7 +77,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 /* ARTICLE PROSE */
 .prose{max-width:680px}
 .prose p{font-size:16px;line-height:1.75;color:#333;margin-bottom:1.4rem}
-.prose h2{font-size:1.35rem;font-weight:700;color:var(--ink);margin:2.5rem 0 .75rem;line-height:1.25;letter-spacing:-.01em}
+.prose h2{font-size:1.35rem;font-weight:700;color:var(--ink);margin:2.5rem 0 .75rem;line-height:1.25;letter-spacing:-.01em;scroll-margin-top:80px}
 .prose h3{font-size:1.1rem;font-weight:600;color:var(--ink);margin:2rem 0 .6rem;line-height:1.3}
 .prose ul,.prose ol{margin:0 0 1.4rem 1.5rem}
 .prose li{font-size:16px;line-height:1.7;color:#333;margin-bottom:.6rem}
@@ -132,6 +136,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 .footer-bottom{padding-top:1.5rem;text-align:center}
 .footer-copy{font-size:13px;color:rgba(255,255,255,.3)}
 @media(max-width:768px){.footer-cols{grid-template-columns:1fr 1fr;gap:2rem 1.5rem;text-align:left}.footer-brand{grid-column:1/-1}}
+
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr}.toc{display:none}.article-sidebar{position:static}}
 
 @media(max-width:768px){
   .nav-links,.nav-signin{display:none}
@@ -202,6 +208,46 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should consultants post on LinkedIn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The benchmark is three posts a week, on working days, with a minimum one-day gap between posts. The 2026 algorithm rewards dwell time and saves far more than raw posting volume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Story Arc framework?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A five-part post structure built for consultants: Hook, Tension, Turn, Insight, Landing. Unlike copywriting frameworks like PAS or AIDA, it's designed for the personal brand context, where the goal is building trust that leads to a sale over time rather than selling within the post itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do research-backed content prompts work better than generic content ideas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generic content ideas are disconnected from what a market is actually thinking about right now. Research-backed prompts are pulled from live signals, what buyers are searching for and debating this week, so the content is timely and connected to the moment rather than templated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three content pillars for consultants on LinkedIn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Market and industry (positioning you as someone who reads the landscape accurately), personal journey (the highest-performing and most avoided pillar, covering lessons and turning points), and product and service (showing outcomes and real client situations rather than capability statements)."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -235,6 +281,18 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 </nav>
 
 <div class="article-wrap">
+<nav class="toc" aria-label="Contents">
+  <span class="toc-label">Contents</span>
+<a href="#why-linkedin">Why LinkedIn is the highest-ROI channel</a>
+<a href="#blank-page">The blank page problem</a>
+<a href="#three-pillars">The three content pillars</a>
+<a href="#content-ideas">Content ideas that work</a>
+<a href="#posting-frequency">How often to post</a>
+<a href="#story-arc">The Story Arc framework</a>
+<a href="#research-backed">Research-backed prompts</a>
+<a href="#action-plan">Your action plan</a>
+<a href="#faq">FAQ</a>
+</nav>
   <main class="article-body">
     <nav class="breadcrumb"><a href="/">Signal</a> › <a href="/blog/">Blog</a> › <a href="/blog/">Consultant &amp; Fractional Guides</a> › <span>LinkedIn for Consultants</span></nav>
     <div class="article-hero-media">
@@ -244,7 +302,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
     <span class="article-cat">Consultant &amp; Fractional Guides</span>
     <h1>LinkedIn for Consultants: The Complete Guide to Building a Personal Brand and Attracting Clients (2026)</h1>
     <div class="article-meta">
-      <span>Signal Team</span>
+      <span>Josh Huggins</span>
       <span>·</span>
       <span>June 2026</span>
       <span>·</span>
@@ -324,7 +382,21 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <p>This matters for consultants because your buyers are not a static audience. Their concerns shift with market conditions, regulatory changes, competitive moves, and economic pressures. A post that would have been irrelevant three months ago can be the most timely thing someone reads today, if you know what is on their minds right now. Market-informed content generates more saves and more engagement not because it is better written, but because it is more connected to the moment.</p>
       <p>Tools like Signal are built on this principle. Rather than asking consultants to generate their own content ideas, Signal pulls three research-backed questions every morning from live market data: what your buyers are Googling, discussing on Reddit, and searching for in your industry. The result is content that feels timely and credible rather than generic. For consultants who want their LinkedIn presence to reflect genuine expertise rather than templated advice, this is the difference that makes consistency sustainable rather than draining. If you're weighing whether Signal fits your practice, our <a href="/for/consultants/">page for consultants</a> covers pricing and what to expect.</p>
 
-      <div class="inline-cta">
+      <h2 id="faq">Frequently asked questions</h2>
+
+<h3>How often should consultants post on LinkedIn?</h3>
+<p>The benchmark is three posts a week, on working days, with a minimum one-day gap between posts. The 2026 algorithm rewards dwell time and saves far more than raw posting volume.</p>
+
+<h3>What is the Story Arc framework?</h3>
+<p>A five-part post structure built for consultants: Hook, Tension, Turn, Insight, Landing. Unlike copywriting frameworks like PAS or AIDA, it's designed for the personal brand context, where the goal is building trust that leads to a sale over time rather than selling within the post itself.</p>
+
+<h3>Why do research-backed content prompts work better than generic content ideas?</h3>
+<p>Generic content ideas are disconnected from what a market is actually thinking about right now. Research-backed prompts are pulled from live signals, what buyers are searching for and debating this week, so the content is timely and connected to the moment rather than templated.</p>
+
+<h3>What are the three content pillars for consultants on LinkedIn?</h3>
+<p>Market and industry (positioning you as someone who reads the landscape accurately), personal journey (the highest-performing and most avoided pillar, covering lessons and turning points), and product and service (showing outcomes and real client situations rather than capability statements).</p>
+
+<div class="inline-cta">
         <p>Signal gives consultants three research-backed LinkedIn questions every morning, based on what your market is actually searching for. Answer one. Build a post. Stay consistent.</p>
         <a href="https://app.postsignal.co/auth?signup=true">Start posting free →</a>
         <small>No credit card required.</small>
@@ -370,19 +442,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <a href="https://app.postsignal.co/auth?signup=true" class="sc-btn">Start free →</a>
       <span class="sc-note">No credit card required.</span>
     </div>
-    <div class="toc-box">
-      <span class="toc-label">In this guide</span>
-      <ol>
-        <li><a href="#why-linkedin">Why LinkedIn is the highest-ROI channel</a></li>
-        <li><a href="#blank-page">The blank page problem</a></li>
-        <li><a href="#three-pillars">The three content pillars</a></li>
-        <li><a href="#content-ideas">Content ideas that work</a></li>
-        <li><a href="#posting-frequency">How often to post</a></li>
-        <li><a href="#story-arc">The Story Arc framework</a></li>
-        <li><a href="#research-backed">Research-backed prompts</a></li>
-        <li><a href="#action-plan">Your action plan</a></li>
-      </ol>
-    </div>
+    
     <div class="series-box">
       <span class="sb-label">In this series</span>
       <a href="/blog/linkedin-for-consultants/" class="series-link active">LinkedIn for consultants: the complete guide</a>

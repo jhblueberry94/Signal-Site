@@ -59,7 +59,11 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .breadcrumb .sep{color:#ccc}
 
 /* ARTICLE LAYOUT */
-.article-wrap{max-width:1060px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+.article-wrap{max-width:1060px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:200px 1fr 240px;gap:2.5rem;align-items:start}
+.toc{position:sticky;top:80px}
+.toc-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--warmgrey);display:block;margin-bottom:.75rem}
+.toc a{display:block;font-size:13px;color:#777;text-decoration:none;padding:.35rem 0 .35rem .75rem;border-left:2px solid var(--card-border);line-height:1.4;transition:color .15s,border-color .15s;margin-bottom:2px}
+.toc a:hover{color:var(--blue);border-left-color:var(--blue)}
 .article-body{}
 
 /* ARTICLE HEADER */
@@ -74,7 +78,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 /* ARTICLE PROSE */
 .prose{max-width:680px}
 .prose p{font-size:16px;line-height:1.75;color:#333;margin-bottom:1.4rem}
-.prose h2{font-size:1.35rem;font-weight:700;color:var(--ink);margin:2.5rem 0 .75rem;line-height:1.25;letter-spacing:-.01em}
+.prose h2{font-size:1.35rem;font-weight:700;color:var(--ink);margin:2.5rem 0 .75rem;line-height:1.25;letter-spacing:-.01em;scroll-margin-top:80px}
 .prose h3{font-size:1.1rem;font-weight:600;color:var(--ink);margin:2rem 0 .6rem;line-height:1.3}
 .prose ul,.prose ol{margin:0 0 1.4rem 1.5rem}
 .prose li{font-size:16px;line-height:1.7;color:#333;margin-bottom:.6rem}
@@ -133,6 +137,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 .footer-bottom{padding-top:1.5rem;text-align:center}
 .footer-copy{font-size:13px;color:rgba(255,255,255,.3)}
 @media(max-width:768px){.footer-cols{grid-template-columns:1fr 1fr;gap:2rem 1.5rem;text-align:left}.footer-brand{grid-column:1/-1}}
+
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr}.toc{display:none}.article-sidebar{position:static}}
 
 @media(max-width:768px){
   .nav-links,.nav-signin{display:none}
@@ -201,6 +207,46 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does an agency founder's personal LinkedIn matter more than the agency's company page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Personal profiles generate roughly eight times the engagement of company pages, and buyers of agency services trust people, not brands. A prospective client will almost always check the founder's profile before a pitch, and a dormant or generic one quietly raises doubts about whether that person can build an audience for anyone, including the client."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three content pillars for agency owners on LinkedIn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Market and industry (translating trends into what they mean for the agency's specific clients), personal journey (the founder's own decisions, mistakes and judgement calls), and product and service (real projects framed around the problem solved, not the deliverable produced)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should agency owners post on LinkedIn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The benchmark is three posts per week on working days, with at least one day between posts, run as part of the agency's own marketing operation rather than an afterthought."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where should agency owners find content ideas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From the work already happening inside the agency: a decision made on a client project, a pattern noticed across several accounts, a contrarian take on a popular tactic, or a lesson from a project that didn't go to plan."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -234,6 +280,19 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
 </nav>
 
 <div class="article-wrap">
+<nav class="toc" aria-label="Contents">
+  <span class="toc-label">Contents</span>
+<a href="#why-linkedin">Why LinkedIn matters for agencies</a>
+<a href="#credibility-problem">The agency credibility problem</a>
+<a href="#three-pillars">The three content pillars</a>
+<a href="#content-ideas">Content ideas that work</a>
+<a href="#posting-frequency">How often to post</a>
+<a href="#story-arc">The Story Arc framework</a>
+<a href="#research-backed">Research-backed prompts</a>
+<a href="#standing-out">Standing out from other agencies</a>
+<a href="#action-plan">Your action plan</a>
+<a href="#faq">FAQ</a>
+</nav>
   <main class="article-body">
     <nav class="breadcrumb"><a href="/">Signal</a> › <a href="/blog/">Blog</a> › <a href="/blog/">Agency Guides</a> › <span>LinkedIn for Agency Owners</span></nav>
     <div class="article-hero-media">
@@ -318,7 +377,21 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <h3>Landing</h3>
       <p>The landing should close without a hard pitch. A reflective line, a question inviting others to share similar experiences, or simply letting the insight stand on its own all work better than "if this sounds like your business, get in touch". The trust built by the story is the asset. Pushing too hard at the end spends that trust rather than compounding it.</p>
 
-      <div class="inline-cta">
+      <h2 id="faq">Frequently asked questions</h2>
+
+<h3>Why does an agency founder's personal LinkedIn matter more than the agency's company page?</h3>
+<p>Personal profiles generate roughly eight times the engagement of company pages, and buyers of agency services trust people, not brands. A prospective client will almost always check the founder's profile before a pitch, and a dormant or generic one quietly raises doubts about whether that person can build an audience for anyone, including the client.</p>
+
+<h3>What are the three content pillars for agency owners on LinkedIn?</h3>
+<p>Market and industry (translating trends into what they mean for the agency's specific clients), personal journey (the founder's own decisions, mistakes and judgement calls), and product and service (real projects framed around the problem solved, not the deliverable produced).</p>
+
+<h3>How often should agency owners post on LinkedIn?</h3>
+<p>The benchmark is three posts per week on working days, with at least one day between posts, run as part of the agency's own marketing operation rather than an afterthought.</p>
+
+<h3>Where should agency owners find content ideas?</h3>
+<p>From the work already happening inside the agency: a decision made on a client project, a pattern noticed across several accounts, a contrarian take on a popular tactic, or a lesson from a project that didn't go to plan.</p>
+
+<div class="inline-cta">
         <p>Signal gives agency owners three research-backed LinkedIn questions every morning, drawn from what your market is actually searching for and discussing. Answer one. Build a post. Stay consistent.</p>
         <a href="https://app.postsignal.co/auth?signup=true">Start posting free →</a>
         <small>No credit card required.</small>
@@ -375,20 +448,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 2rem 2rem;
       <a href="https://app.postsignal.co/auth?signup=true" class="sc-btn">Start free →</a>
       <span class="sc-note">No credit card required.</span>
     </div>
-    <div class="toc-box">
-      <span class="toc-label">In this guide</span>
-      <ol>
-        <li><a href="#why-linkedin">Why LinkedIn matters for agencies</a></li>
-        <li><a href="#credibility-problem">The agency credibility problem</a></li>
-        <li><a href="#three-pillars">The three content pillars</a></li>
-        <li><a href="#content-ideas">Content ideas that work</a></li>
-        <li><a href="#posting-frequency">How often to post</a></li>
-        <li><a href="#story-arc">The Story Arc framework</a></li>
-        <li><a href="#research-backed">Research-backed prompts</a></li>
-        <li><a href="#standing-out">Standing out from other agencies</a></li>
-        <li><a href="#action-plan">Your action plan</a></li>
-      </ol>
-    </div>
+    
     <div class="series-box">
       <span class="sb-label">In this series</span>
       <a href="/blog/linkedin-for-consultants/" class="series-link">LinkedIn for consultants: the complete guide</a>

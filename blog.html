@@ -92,12 +92,11 @@ nav{position:sticky;top:0;z-index:200;background:rgba(245,244,241,.97);backdrop-
 .post-read{color:var(--blue);font-weight:500}
 
 /* HERO CARD, spans full grid width */
-.post-card.is-hero{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.post-card.is-hero{grid-column:1/-1;display:block}
 .post-card.is-hero .post-media{aspect-ratio:1200/630}
-.post-card.is-hero .post-body{padding:2rem;display:flex;flex-direction:column;justify-content:center}
+.post-card.is-hero .post-body{padding:1.75rem 2rem}
 .post-card.is-hero .post-body h3{font-size:22px;line-height:1.3}
 .post-card.is-hero .post-body p{font-size:15px}
-@media(max-width:768px){.post-card.is-hero{grid-template-columns:1fr}}
 
 /* SIDEBAR */
 .blog-sidebar{position:sticky;top:76px;display:flex;flex-direction:column;gap:1.5rem}
