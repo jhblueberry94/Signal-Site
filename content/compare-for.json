@@ -1,0 +1,1327 @@
+{
+  "compare__authoredup": {
+    "title": "Signal vs AuthoredUp: what to write vs how to format it",
+    "description": "Signal vs AuthoredUp compared honestly: features, pricing and who each tool fits. AuthoredUp formats what you write. Signal helps you decide what to say.",
+    "faqs": [
+      {
+        "q": "Can Signal and AuthoredUp be used together?",
+        "a": "Yes, and many professionals do exactly that. Signal solves the ideation stage each morning; you then paste the structured draft into LinkedIn's composer and use AuthoredUp to format, preview and refine it before publishing."
+      },
+      {
+        "q": "Do I need both tools, or just one?",
+        "a": "Most people only need one at a time. If the blank page is the problem, start with Signal. If you already know what to write and want sharper formatting and hook scoring, start with AuthoredUp, then add the second tool once the first bottleneck is solved."
+      },
+      {
+        "q": "Is AuthoredUp's free plan enough to get started?",
+        "a": "AuthoredUp's free plan covers limited post saves and basic formatting, which is enough to test the editor properly. Full access to analytics, hook scoring and unlimited drafts starts at around $12/month."
+      },
+      {
+        "q": "Will AuthoredUp help me figure out what to write about?",
+        "a": "No, AuthoredUp is a post editor and analytics tool: it improves posts you've already drafted rather than generating topic ideas. For the ideation stage, a tool like Signal is built specifically for that gap."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "AuthoredUp polishes the post. Signal finds it."
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp helps you format and refine a post you've already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Feature comparison"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Feature",
+            "AuthoredUp",
+            "Signal"
+          ],
+          [
+            "Core mechanic",
+            "Post editor and formatter",
+            "Daily research-backed question"
+          ],
+          [
+            "Ideation help",
+            "Not included",
+            "Three questions a day across three pillars"
+          ],
+          [
+            "Post drafting",
+            "You write; it formats",
+            "You answer; it structures using Story Arc"
+          ],
+          [
+            "Formatting tools",
+            "Full editor, preview, emoji, spacing control",
+            "Story Arc structure applied automatically"
+          ],
+          [
+            "Scheduling",
+            "Not included",
+            "Not included"
+          ],
+          [
+            "Analytics",
+            "Post history, hook scoring, performance data",
+            "Not a core feature"
+          ],
+          [
+            "AI writing layer",
+            "Not included",
+            "Structures your answer; does not write for you"
+          ],
+          [
+            "Price",
+            "Free tier; paid from ~$12/month",
+            "£35/month, 7-day free trial"
+          ],
+          [
+            "Best for",
+            "Writers who know what to say and want better craft tools",
+            "Professionals stuck on what to say each day"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Why professionals reach for Signal first"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ AuthoredUp sharpens a post you have already written. Signal removes the blank page that comes before it.",
+          "✓ Three research-backed questions each morning mean formatting is never the first hurdle of the day.",
+          "✓ Plenty of people run both: Signal for the idea, AuthoredUp for the polish. They solve different stages, not the same one."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where AuthoredUp does well"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp is a well-built editor, and it solves a real problem once you already know what you want to say."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A genuinely strong editor: character counts, formatting controls, emoji tools, and a live preview that closes a real gap in LinkedIn's native composer.",
+          "Hook scoring and post history give writers specific, evidence-based feedback on what is and isn't working.",
+          "The free tier is functional enough to properly test the tool before paying anything."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "h2",
+        "text": "Other comparisons"
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Taplio"
+      },
+      {
+        "type": "p",
+        "text": "Taplio adds a viral post library and lead database. Signal starts with a research-backed question instead."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Supergrow"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow drafts from AI templates. Signal starts with a research-backed question, so the post carries your point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Scripe"
+      },
+      {
+        "type": "p",
+        "text": "Scripe turns spoken thoughts into posts for teams. Signal is built for solo credibility."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs MagicPost"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost is a full marketing suite. Signal is one focused question a day."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Kleo"
+      },
+      {
+        "type": "p",
+        "text": "Kleo's free extension was shut down and Kleo 3.0 now costs $99 a month. Signal keeps your own voice at £35 with a free trial."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "compare__index": {
+    "title": "Compare Signal to Other LinkedIn Tools | Signal",
+    "description": "See how Signal compares to Taplio, AuthoredUp and other LinkedIn content tools. Honest, feature-by-feature comparisons for B2B professionals.",
+    "faqs": [],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Compare Signal to other LinkedIn tools"
+      },
+      {
+        "type": "p",
+        "text": "Signal solves ideation. Other tools solve drafting, formatting or scheduling instead."
+      },
+      {
+        "type": "p",
+        "text": "Here's how Signal stacks up against the tools B2B professionals ask about most."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Taplio"
+      },
+      {
+        "type": "p",
+        "text": "Taplio drafts posts from a prompt and adds a viral post library and lead database. Signal starts with a research-backed question instead, so the blank page never wins."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs AuthoredUp"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp formats and refines posts you've already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Supergrow"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow drafts posts fast from AI templates. Signal starts with a research-backed question, so what you post carries your own point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Scripe"
+      },
+      {
+        "type": "p",
+        "text": "Scripe turns your spoken thoughts into a post for teams running coordinated campaigns. Signal is built for solo credibility, not team reach."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs MagicPost"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost is a full LinkedIn marketing suite backed by original research. Signal is one focused question a day for a specific market."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Kleo"
+      },
+      {
+        "type": "p",
+        "text": "Kleo's free extension was shut down and Kleo 3.0 now costs $99 a month. Signal keeps your own voice at £35 with a free trial."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "compare__kleo": {
+    "title": "Signal vs Kleo: what to use after the shutdown | Signal",
+    "description": "Signal vs Kleo compared honestly: pricing, the extension shutdown and who each tool fits. Kleo 3.0 is $99 a month; Signal is £35 with a free trial.",
+    "faqs": [
+      {
+        "q": "Is Signal a good Kleo alternative?",
+        "a": "Yes, especially for professionals who want to write in their own voice rather than have AI draft for them. Signal starts with a research-backed question, you answer it, and it structures your answer into a post. It costs £35 a month with a 7-day free trial, against Kleo 3.0's $99 a month with no trial."
+      },
+      {
+        "q": "Why did Kleo's extension shut down, and does that affect me?",
+        "a": "LinkedIn issued a cease-and-desist over the original extension, which overlaid and read LinkedIn's interface. Kleo complied and rebuilt as the Kleo 3.0 web app, so the current product no longer carries that account risk. It does mean you now draft in Kleo's app and switch to LinkedIn to publish."
+      },
+      {
+        "q": "How much does Kleo cost compared to Signal?",
+        "a": "Kleo 3.0 runs on a single plan at $99 a month, or $999 a year, with no free trial and a 30-day money-back guarantee. Signal is £35 a month with a 7-day free trial."
+      },
+      {
+        "q": "Which is better for a consultant or founder?",
+        "a": "Signal is built for consultants, founders and fractional executives who sell on credibility. It starts from your own expertise rather than a swipe file or template, so posts sound like you. Kleo suits prolific solo creators who want AI to draft at volume."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Kleo drafts for you. Signal keeps the words yours."
+      },
+      {
+        "type": "p",
+        "text": "Kleo 3.0 is a $99 a month AI writing app. Signal starts with a research-backed question and turns your own answer into the post, so it still sounds like you."
+      },
+      {
+        "type": "h2",
+        "text": "Feature comparison"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Feature",
+            "Kleo",
+            "Signal"
+          ],
+          [
+            "Core mechanic",
+            "AI drafts from your knowledge base",
+            "Daily research-backed question"
+          ],
+          [
+            "Ideation help",
+            "Content discovery and saved swipe files",
+            "Three questions a day across three pillars"
+          ],
+          [
+            "Post drafting",
+            "AI generates the post for you",
+            "You answer; it structures using Story Arc"
+          ],
+          [
+            "Keeps your voice",
+            "AI trained on your writing style",
+            "Your own words are the post"
+          ],
+          [
+            "Free option",
+            "No free tier, no free trial",
+            "7-day free trial"
+          ],
+          [
+            "Scheduling",
+            "✓ in the web app",
+            "✓"
+          ],
+          [
+            "Price",
+            "$99/month, or $999/year",
+            "£35/month"
+          ],
+          [
+            "LinkedIn account safety",
+            "Original extension shut down by LinkedIn; now a web app",
+            "Question to post, no automation or scraping"
+          ],
+          [
+            "Best for",
+            "Prolific solo creators with budget",
+            "Consultants and founders building credibility"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Why professionals pick Signal over Kleo"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Kleo 3.0 costs $99 a month with no free trial. Signal is £35 a month with a 7-day free trial, so you can test it before you pay.",
+          "✓ Kleo's AI drafts for you from a knowledge base. Signal turns your own answer into the post, so it reads as your thinking rather than generated text the 2026 algorithm can down-rank by up to 47%.",
+          "✓ Signal is built for consultants, founders and fractional executives who sell on credibility, not for producing high volume."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where Kleo does well"
+      },
+      {
+        "type": "p",
+        "text": "Kleo has a loyal following for good reason, and for one kind of creator the 3.0 web app is a strong fit."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Its knowledge base and style training suit prolific solo creators who want AI to draft in a consistent voice across many posts a week.",
+          "The coaching community around Kleo 3.0 adds accountability for people who want structure alongside the software.",
+          "For creators comfortable at the $99 price who post daily, the all-in-one drafting workflow is convenient."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "h2",
+        "text": "Other comparisons"
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Taplio"
+      },
+      {
+        "type": "p",
+        "text": "Taplio drafts from a prompt and adds a viral post library and lead database. Signal starts with a research-backed question instead."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs AuthoredUp"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp formats posts you have already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Supergrow"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow drafts from AI templates. Signal starts with a research-backed question, so the post carries your point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Scripe"
+      },
+      {
+        "type": "p",
+        "text": "Scripe turns spoken thoughts into posts for teams. Signal is built for solo credibility, not team reach."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs MagicPost"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost is a full LinkedIn marketing suite. Signal is one focused question a day for a specific market."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "compare__magicpost": {
+    "title": "Signal vs MagicPost: one focused tool vs a full suite",
+    "description": "Signal vs MagicPost compared honestly: features, pricing and who each tool actually fits. See where MagicPost's data wins and where Signal builds credibility.",
+    "faqs": [
+      {
+        "q": "Do I need MagicPost's analytics if I use Signal?",
+        "a": "Not to get started. Signal focuses on the ideation stage, before a post exists, so analytics on past performance solve a different problem than knowing what to write next."
+      },
+      {
+        "q": "Is Signal a smaller version of MagicPost?",
+        "a": "No, they're built for different jobs. MagicPost is a broad marketing suite; Signal is a focused tool for one specific bottleneck, deciding what to post, with scheduling included as a workflow feature."
+      },
+      {
+        "q": "How much does Signal cost compared to MagicPost?",
+        "a": "Signal is £35/month with a 7-day free trial. MagicPost starts at $27/month with a free trial rather than a permanent free plan."
+      },
+      {
+        "q": "Will Signal's questions apply to my specific industry?",
+        "a": "Yes, that's the core design. Each question is grounded in what your own market is actively discussing, not generic advice written for every LinkedIn user."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "MagicPost does everything. Signal does the one thing that stops you posting."
+      },
+      {
+        "type": "p",
+        "text": "Where MagicPost gives you a full LinkedIn marketing suite, Signal gives you one research-backed question a day, so the only decision left is what to say."
+      },
+      {
+        "type": "h2",
+        "text": "Feature comparison"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Feature",
+            "MagicPost",
+            "Signal"
+          ],
+          [
+            "Core mechanic",
+            "Full suite: AI writing, scheduling, analytics",
+            "Daily research-backed question"
+          ],
+          [
+            "Ideation help",
+            "General prompts, not persona-specific",
+            "Three questions a day across three pillars"
+          ],
+          [
+            "Post drafting",
+            "AI generates from prompts",
+            "You answer; it structures using Story Arc"
+          ],
+          [
+            "Original research data",
+            "✓ 1.2M+ posts analysed",
+            "Not a core feature"
+          ],
+          [
+            "Scheduling",
+            "✓",
+            "✓ native scheduling included"
+          ],
+          [
+            "AI writing layer",
+            "Full AI drafting",
+            "Structures your answer; does not write for you"
+          ],
+          [
+            "Price",
+            "$27/month",
+            "£35/month, 7-day free trial"
+          ],
+          [
+            "Best for",
+            "Professionals who want one tool for everything LinkedIn",
+            "Professionals who want to be seen as credible experts"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Why focused professionals choose Signal"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ MagicPost gives you fifty features. Signal gives you the one that matters when you are stuck, which is deciding what to say.",
+          "✓ Questions are grounded in your specific market rather than generic LinkedIn advice written for everyone.",
+          "✓ Native scheduling is included, without paying for a marketing suite you will not fully use."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where MagicPost does well"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost has built one of the best data libraries in the category, and that scale is a genuine strength."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Original research spanning over a million posts produces genuinely useful benchmarks on engagement rates, formats and algorithm behaviour.",
+          "The all-in-one feature set is a legitimate fit for anyone who wants a single tool covering writing, scheduling and analytics.",
+          "Its scale and research investment are hard for a smaller, focused tool to match."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "h2",
+        "text": "Other comparisons"
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Taplio"
+      },
+      {
+        "type": "p",
+        "text": "Taplio adds a viral post library and lead database. Signal starts with a research-backed question instead."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs AuthoredUp"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp formats posts you have already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Supergrow"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow drafts from AI templates. Signal starts with a research-backed question, so the post carries your point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Scripe"
+      },
+      {
+        "type": "p",
+        "text": "Scripe turns spoken thoughts into posts for teams. Signal is built for solo credibility."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Kleo"
+      },
+      {
+        "type": "p",
+        "text": "Kleo's free extension was shut down and Kleo 3.0 now costs $99 a month. Signal keeps your own voice at £35 with a free trial."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "compare__scripe": {
+    "title": "Signal vs Scripe: solo credibility vs team campaigns",
+    "description": "Signal vs Scripe compared honestly: features, pricing and who each tool fits. See where Scripe wins for teams and Signal builds solo credibility instead.",
+    "faqs": [
+      {
+        "q": "Do I need to talk out loud for Signal to work, like with Scripe?",
+        "a": "No. Signal's question arrives as text and you answer in writing, in your own time, rather than recording your thoughts out loud."
+      },
+      {
+        "q": "Is Signal only useful once I already know what I think?",
+        "a": "No, that's the opposite of how it works. The daily question is designed to prompt your thinking, not wait for it, which is the main difference from a voice-to-post tool."
+      },
+      {
+        "q": "How much does Signal cost compared to Scripe?",
+        "a": "Signal is £35/month with a 7-day free trial. Scripe starts at €29/month with a 10-day trial, and its pricing tiers are built around team deployments."
+      },
+      {
+        "q": "Will Signal help me run coordinated LinkedIn campaigns like a team using Scripe?",
+        "a": "That's not the goal. Signal is built for credibility with a specific market, not coordinated team campaigns or reach at scale, and it's honest about that trade-off."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Scripe is built for teams. Signal is built for you."
+      },
+      {
+        "type": "p",
+        "text": "Where Scripe turns your spoken thoughts into a post, Signal starts with a research-backed question, so you always have a point of view worth sharing."
+      },
+      {
+        "type": "h2",
+        "text": "Feature comparison"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Feature",
+            "Scripe",
+            "Signal"
+          ],
+          [
+            "Core mechanic",
+            "Voice-to-post transcription",
+            "Daily research-backed question"
+          ],
+          [
+            "Ideation help",
+            "You supply the topic",
+            "Three questions a day across three pillars"
+          ],
+          [
+            "Post drafting",
+            "Speak; AI transcribes and structures",
+            "You answer; it structures using Story Arc"
+          ],
+          [
+            "Team collaboration",
+            "✓ content buddy system",
+            "Not a core feature"
+          ],
+          [
+            "Scheduling",
+            "✓",
+            "✓ native scheduling included"
+          ],
+          [
+            "AI writing layer",
+            "Transcribes and templates your voice",
+            "Structures your answer; does not write for you"
+          ],
+          [
+            "Price",
+            "€29/month, 10-day trial",
+            "£35/month, 7-day free trial"
+          ],
+          [
+            "Best for",
+            "Sales and marketing teams running coordinated campaigns",
+            "Professionals who want to be seen as credible experts"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Why solo professionals choose Signal"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Signal prompts your thinking with a question rather than waiting for you to already know what to say into a microphone.",
+          "✓ No team dashboards or collaboration seats to pay for when you are one person building your own credibility.",
+          "✓ Native scheduling is included, so the idea and the publish button live in the same place."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where Scripe does well"
+      },
+      {
+        "type": "p",
+        "text": "Scripe has built a strong product for the audience it targets, and that audience is coordinated go-to-market teams."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Voice-to-post is a fast, natural way to get a draft out once you already know what you want to say.",
+          "The content buddy system and team dashboards are a real asset for coordinated GTM teams running LinkedIn as a channel.",
+          "Scripe's own case studies show real pipeline results for teams using it at scale."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "h2",
+        "text": "Other comparisons"
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Taplio"
+      },
+      {
+        "type": "p",
+        "text": "Taplio adds a viral post library and lead database. Signal starts with a research-backed question instead."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs AuthoredUp"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp formats posts you have already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Supergrow"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow drafts from AI templates. Signal starts with a research-backed question, so the post carries your point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs MagicPost"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost is a full marketing suite. Signal is one focused question a day."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Kleo"
+      },
+      {
+        "type": "p",
+        "text": "Kleo's free extension was shut down and Kleo 3.0 now costs $99 a month. Signal keeps your own voice at £35 with a free trial."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "compare__supergrow": {
+    "title": "Signal vs Supergrow: a point of view vs a template | Signal",
+    "description": "Signal vs Supergrow compared honestly: features, pricing and who each tool fits. See where Supergrow wins on speed and Signal builds credibility instead.",
+    "faqs": [
+      {
+        "q": "Does Signal do everything Supergrow does?",
+        "a": "No, and it's not trying to. Supergrow is built for fast AI drafting and templates. Signal is built for ideation and credibility, with scheduling included as a workflow feature rather than the core product."
+      },
+      {
+        "q": "Will switching to Signal mean fewer posts per week?",
+        "a": "Not necessarily, though the aim is different. Signal is designed around three well-crafted posts a week rather than daily volume, because the goal is credibility with a specific audience, not maximum output."
+      },
+      {
+        "q": "How much does Signal cost compared to Supergrow?",
+        "a": "Signal is £35/month with a 7-day free trial. Supergrow's pricing runs from around $19 to $39/month depending on the tier, so the two sit in a similar range."
+      },
+      {
+        "q": "Is Signal better for someone who wants to grow followers fast?",
+        "a": "Probably not, and it's worth being upfront about that. Signal is built for professionals who want to be seen as credible experts in their field, not for follower growth or virality."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Supergrow drafts fast. Signal gives you something worth drafting."
+      },
+      {
+        "type": "p",
+        "text": "Where Supergrow drafts posts from AI templates, Signal starts with a research-backed question, so what you post carries your own point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Feature comparison"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Feature",
+            "Supergrow",
+            "Signal"
+          ],
+          [
+            "Core mechanic",
+            "AI drafts & post templates",
+            "Daily research-backed question"
+          ],
+          [
+            "Ideation help",
+            "You supply the topic",
+            "Three questions a day across three pillars"
+          ],
+          [
+            "Post drafting",
+            "AI generates from templates",
+            "You answer; it structures using Story Arc"
+          ],
+          [
+            "Template library",
+            "✓",
+            "Not a core feature"
+          ],
+          [
+            "Scheduling",
+            "✓",
+            "✓ native scheduling included"
+          ],
+          [
+            "AI writing layer",
+            "Full AI drafting from templates",
+            "Structures your answer; does not write for you"
+          ],
+          [
+            "Price",
+            "$19–$39/month",
+            "£35/month, 7-day free trial"
+          ],
+          [
+            "Best for",
+            "Marketers producing high volumes of content",
+            "Professionals who want to be seen as credible experts"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Why credibility-focused professionals pick Signal"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Supergrow fills a template. Signal starts from a research-backed question, so the post carries your actual point of view.",
+          "✓ The goal is credibility with a specific market, not raw volume across many accounts.",
+          "✓ Scheduling is built in, so ideation and publishing sit in one workflow rather than two tools."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where Supergrow does well"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow is a capable drafting tool, and for high-volume marketers it is often the faster option."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Its template library and AI drafting produce a finished-looking post in seconds, which is hard to beat on raw drafting speed.",
+          "It's a strong fit for marketers producing high volumes of content across multiple accounts.",
+          "The lower price point ($19–$39/month) undercuts most all-in-one platforms for teams that just need drafting and scheduling."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "h2",
+        "text": "Other comparisons"
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Taplio"
+      },
+      {
+        "type": "p",
+        "text": "Taplio adds a viral post library and lead database. Signal starts with a research-backed question instead."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs AuthoredUp"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp formats posts you have already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Scripe"
+      },
+      {
+        "type": "p",
+        "text": "Scripe turns spoken thoughts into posts for teams. Signal is built for solo credibility."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs MagicPost"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost is a full marketing suite. Signal is one focused question a day."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Kleo"
+      },
+      {
+        "type": "p",
+        "text": "Kleo's free extension was shut down and Kleo 3.0 now costs $99 a month. Signal keeps your own voice at £35 with a free trial."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "compare__taplio": {
+    "title": "Signal vs Taplio: ideation tool vs drafting tool | Signal",
+    "description": "Signal vs Taplio compared honestly: features, pricing and who each tool actually fits. See where Taplio wins and where Signal solves ideation instead.",
+    "faqs": [
+      {
+        "q": "Is Signal a direct replacement for Taplio?",
+        "a": "Not exactly, because the two tools solve different problems for different audiences. Taplio is a content-generation tool built for high-volume drafting and sales teams, while Signal is a thinking tool built for ideation. If your bottleneck is knowing what to post, Signal solves that; if you need a viral post library, scheduling and a lead database, Taplio's feature set is built for exactly that."
+      },
+      {
+        "q": "Why does Taplio's AI-generated content sometimes get flagged as templated?",
+        "a": "LinkedIn's 2026 algorithm identifies formulaic, AI-generated content and reduces its reach by up to 47%. Taplio drafts from a short prompt, which can produce posts that read as generic unless they're heavily edited afterwards."
+      },
+      {
+        "q": "Is Taplio worth it for a solo consultant?",
+        "a": "It depends on where your actual bottleneck sits. Taplio's AI features that matter most sit at the $65/month tier, which is a significant cost for someone posting three times a week. Solo consultants whose real blocker is ideation rather than drafting speed are often better served by a cheaper, ideation-first tool."
+      },
+      {
+        "q": "Can I switch from Taplio to Signal without losing my content history?",
+        "a": "Yes. Signal doesn't import your Taplio drafts, but it doesn't need to. Each morning it gives you a new research-backed question to answer in your own words, so you start fresh with content grounded in what your market is discussing that day."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Taplio drafts. Signal decides what to draft."
+      },
+      {
+        "type": "p",
+        "text": "Where Taplio drafts posts from a prompt you write, Signal starts with a research-backed question, so the blank page never wins."
+      },
+      {
+        "type": "h2",
+        "text": "Feature comparison"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Feature",
+            "Taplio",
+            "Signal"
+          ],
+          [
+            "Core mechanic",
+            "AI drafts from a prompt you write",
+            "Daily research-backed question"
+          ],
+          [
+            "Ideation help",
+            "You supply the topic",
+            "Three questions a day across three pillars"
+          ],
+          [
+            "Post drafting",
+            "AI generates from your prompt",
+            "You answer; it structures using Story Arc"
+          ],
+          [
+            "Viral post library",
+            "✓",
+            "Not a core feature"
+          ],
+          [
+            "Lead database",
+            "✓",
+            "Not a core feature"
+          ],
+          [
+            "Scheduling",
+            "✓",
+            "Not included"
+          ],
+          [
+            "AI writing layer",
+            "Full AI drafting",
+            "Structures your answer; does not write for you"
+          ],
+          [
+            "Price",
+            "AI features from $65/month",
+            "£35/month, 7-day free trial"
+          ],
+          [
+            "Best for",
+            "High-volume content ops and sales teams",
+            "Professionals stuck on what to say each day"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Why professionals pick Signal over Taplio"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Taplio waits for your prompt. Signal hands you three research-backed questions each morning, so ideation is solved before drafting even starts.",
+          "✓ Your own answer becomes the post, so it reads like you rather than a viral-library template that the 2026 algorithm can down-rank by up to 47%.",
+          "✓ One flat price of £35/month, with no lead database or sales-suite tiers bolted on top."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Where Taplio does well"
+      },
+      {
+        "type": "p",
+        "text": "Taplio earns its reputation. For a specific kind of user it is the stronger choice, and here is where."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A large viral post library gives creators a fast-start swipe file that Signal doesn't offer.",
+          "Built-in scheduling and a lead database make it a strong fit for sales teams running LinkedIn as a pipeline channel.",
+          "It handles high posting volume well for agencies or teams producing content at scale."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "h2",
+        "text": "Other comparisons"
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs AuthoredUp"
+      },
+      {
+        "type": "p",
+        "text": "AuthoredUp formats posts you have already written. Signal helps you decide what to write in the first place."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Supergrow"
+      },
+      {
+        "type": "p",
+        "text": "Supergrow drafts from AI templates. Signal starts with a research-backed question, so the post carries your point of view."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Scripe"
+      },
+      {
+        "type": "p",
+        "text": "Scripe turns spoken thoughts into posts for teams. Signal is built for solo credibility."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs MagicPost"
+      },
+      {
+        "type": "p",
+        "text": "MagicPost is a full marketing suite. Signal is one focused question a day."
+      },
+      {
+        "type": "h2",
+        "text": "Signal vs Kleo"
+      },
+      {
+        "type": "p",
+        "text": "Kleo's free extension was shut down and Kleo 3.0 now costs $99 a month. Signal keeps your own voice at £35 with a free trial."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "for__consultants": {
+    "title": "LinkedIn for Consultants | Start Free",
+    "description": "Signal gives consultants a research-backed LinkedIn question every morning, so building a personal brand stops depending on inspiration. Free 7-day trial.",
+    "faqs": [
+      {
+        "q": "Is Signal only for LinkedIn experts?",
+        "a": "No, Signal is built for consultants who know their subject but do not always know what to post. Each morning you get a research-backed question in your area, you answer it in your own words, and Signal structures that answer into a post."
+      },
+      {
+        "q": "How is this different from hiring a ghostwriter?",
+        "a": "A ghostwriter writes in your voice from a brief, then hands the draft back for approval. Signal starts with a question grounded in what your market is discussing, so the thinking and the voice stay yours throughout, with no handoff and no waiting on someone else's schedule."
+      },
+      {
+        "q": "How much does Signal cost?",
+        "a": "Signal is £35/month with a 7-day free trial, no credit card required to start."
+      },
+      {
+        "q": "How long before I see results from posting consistently?",
+        "a": "There's no fixed timeline, but consultants who post consistently often see profile visits and inbound messages within the first few weeks. Enquiries that convert into calls tend to build over months, as trust compounds with repeated exposure."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "LinkedIn for Consultants"
+      },
+      {
+        "type": "p",
+        "text": "A research-backed LinkedIn question every morning, so your personal brand stops depending on inspiration."
+      },
+      {
+        "type": "p",
+        "text": "7-day free trial. No credit card required."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Solves the blank page: a fresh, market-grounded question each morning, not an empty compose box.",
+          "✓ Sounds like you: your own answer becomes the post, so it reads as genuine expertise, not a template.",
+          "✓ Built for the sales cycle consultants actually run: content that builds trust weeks before a discovery call."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "for__founders": {
+    "title": "LinkedIn for Founders | Start Free",
+    "description": "Signal gives founders a research-backed LinkedIn question every morning, building a personal brand around the company you already run. Free 7-day trial.",
+    "faqs": [
+      {
+        "q": "Will this take time away from running my company?",
+        "a": "No, the system is built for founders with no spare time. Answer one question a day in your own words, and Signal structures it into a post, usually in a few minutes rather than a full content-planning session."
+      },
+      {
+        "q": "Does this help with hiring and fundraising, or just sales?",
+        "a": "All three. A consistent founder presence builds pipeline, gives candidates a reason to apply, and signals the kind of domain credibility investors look for during diligence."
+      },
+      {
+        "q": "How much does Signal cost?",
+        "a": "Signal is £35/month with a 7-day free trial, no credit card required to start."
+      },
+      {
+        "q": "Should I post about product updates and funding news?",
+        "a": "Sparingly. Posts that only announce company news serve the company, not the audience. Signal's questions are designed to draw out your thinking instead, which is what actually builds a founder's personal brand."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "LinkedIn for Founders"
+      },
+      {
+        "type": "p",
+        "text": "A research-backed LinkedIn question every morning, so your personal brand builds around the company you're already running."
+      },
+      {
+        "type": "p",
+        "text": "7-day free trial. No credit card required."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Builds three assets at once: pipeline, talent brand and investor credibility.",
+          "✓ Takes minutes, not a content calendar: one question, one answer, one structured post.",
+          "✓ Outperforms the company page: personal profiles get five times the organic reach."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "for__fractional-executives": {
+    "title": "LinkedIn for Fractional Executives | Start Free",
+    "description": "Signal gives fractional leaders a research-backed LinkedIn question every morning, so staying visible never looks like job hunting. Free 7-day trial.",
+    "faqs": [
+      {
+        "q": "Will posting on LinkedIn make me look like I'm job hunting?",
+        "a": "No, that's the exact problem Signal is built to avoid. Each question focuses on your expertise and point of view rather than your availability, so your presence reads as active practice, not a search for work."
+      },
+      {
+        "q": "Is this only for fractional CMOs?",
+        "a": "No, Signal works for any fractional role, including CFO, COO, CTO and CHRO. The questions are grounded in your market and industry, not a fixed job title."
+      },
+      {
+        "q": "How much does Signal cost?",
+        "a": "Signal is £35/month with a 7-day free trial, no credit card required to start."
+      },
+      {
+        "q": "Do I need to post every day?",
+        "a": "No, three well-crafted posts a week consistently outperforms daily posting without a clear angle. It's also a realistic pace alongside an active engagement."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "LinkedIn for Fractional Executives"
+      },
+      {
+        "type": "p",
+        "text": "A research-backed LinkedIn question every morning, so staying visible never looks like job hunting."
+      },
+      {
+        "type": "p",
+        "text": "7-day free trial. No credit card required."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "✓ Stays visible without signalling availability: questions focus on expertise, not job status.",
+          "✓ Fits around live engagements: three posts a week, not a daily content job.",
+          "✓ Reaches the exact audience that hires fractional leaders: CEOs, founders and boards."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  },
+  "for__index": {
+    "title": "Who It's For | Signal",
+    "description": "Signal is built for consultants, fractional executives and founders who want a consistent LinkedIn presence without the blank page. See which page fits you.",
+    "faqs": [],
+    "blocks": [
+      {
+        "type": "h1",
+        "text": "Who Signal is built for"
+      },
+      {
+        "type": "p",
+        "text": "Signal is built for B2B professionals who need a consistent LinkedIn presence but don't have time to sit and think about what to post."
+      },
+      {
+        "type": "h2",
+        "text": "Consultants"
+      },
+      {
+        "type": "p",
+        "text": "Turn LinkedIn into a warm pipeline of inbound enquiries, without guessing what to post each week."
+      },
+      {
+        "type": "h2",
+        "text": "Fractional executives"
+      },
+      {
+        "type": "p",
+        "text": "Stay visible to the CEOs, founders and boards who hire fractional leaders, without looking like you're job hunting."
+      },
+      {
+        "type": "h2",
+        "text": "Founders"
+      },
+      {
+        "type": "p",
+        "text": "Build a personal brand that makes sales warmer, hiring easier and fundraising more credible, in minutes a day."
+      },
+      {
+        "type": "p",
+        "text": "Signal gives you three research-backed LinkedIn questions every morning."
+      },
+      {
+        "type": "p",
+        "text": "Answer one. Build a post in your own voice."
+      }
+    ]
+  }
+}
