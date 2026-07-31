@@ -74,6 +74,10 @@
       "destination": "/blog/linkedin-post-ideas-for-consultants.html"
     },
     {
+      "source": "/blog/linkedin-thought-leadership/",
+      "destination": "/blog/linkedin-thought-leadership.html"
+    },
+    {
       "source": "/blog/magicpost-alternatives-2026/",
       "destination": "/blog/magicpost-alternatives-2026.html"
     },
@@ -243,6 +247,11 @@
     {
       "source": "/blog/linkedin-post-ideas-for-consultants.html",
       "destination": "/blog/linkedin-post-ideas-for-consultants/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/linkedin-thought-leadership.html",
+      "destination": "/blog/linkedin-thought-leadership/",
       "permanent": true
     },
     {
