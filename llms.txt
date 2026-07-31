@@ -13,6 +13,7 @@
 - [For consultants](https://postsignal.co/for/consultants/): consultants building authority and generating leads through content
 - [For founders](https://postsignal.co/for/founders/): founders who need to show up consistently without hiring a content team
 - [For fractional executives](https://postsignal.co/for/fractional-executives/): fractional execs building a personal brand across multiple clients
+- [LinkedIn by role](https://postsignal.co/linkedin-by-role/): a full breakdown of Signal's fit by persona
 
 ## Pricing
 
@@ -21,13 +22,43 @@
 
 ## Comparisons
 
-- [Compare pages](https://postsignal.co/compare/): how Signal stacks up against alternative tools
+- [Compare pages](https://postsignal.co/compare/): how Signal stacks up against alternative tools (Taplio, AuthoredUp, Supergrow, Scripe, MagicPost, Kleo)
 
-## Content
+## Blog
 
-- [Blog](https://postsignal.co/blog/): articles on content strategy, personal branding, and using Signal effectively
+Persona and thought-leadership guides:
+- [LinkedIn for consultants](https://postsignal.co/blog/linkedin-for-consultants/)
+- [LinkedIn for fractional executives](https://postsignal.co/blog/linkedin-fractional-executives/)
+- [LinkedIn for founders](https://postsignal.co/blog/linkedin-for-founders/)
+- [LinkedIn for executive coaches](https://postsignal.co/blog/linkedin-executive-coaches/)
+- [LinkedIn for agency owners](https://postsignal.co/blog/linkedin-agency-owners/)
+- [LinkedIn for leadership advisors](https://postsignal.co/blog/linkedin-leadership-advisors/)
+- [How to get consulting clients on LinkedIn](https://postsignal.co/blog/how-to-get-consulting-clients-linkedin/)
+- [LinkedIn post ideas for consultants](https://postsignal.co/blog/linkedin-post-ideas-for-consultants/)
+- [B2B personal brand on LinkedIn](https://postsignal.co/blog/b2b-personal-brand-linkedin/)
+
+LinkedIn strategy and algorithm:
+- [LinkedIn content strategy: the complete 2026 guide](https://postsignal.co/blog/linkedin-content-strategy-2026/)
+- [The LinkedIn algorithm in 2026 explained](https://postsignal.co/blog/linkedin-algorithm-2026/)
+- [Best time to post on LinkedIn in 2026](https://postsignal.co/blog/best-time-to-post-linkedin-2026/)
+- [Why most LinkedIn content fails](https://postsignal.co/blog/why-linkedin-content-fails/)
+- [How to write LinkedIn posts](https://postsignal.co/blog/how-to-write-linkedin-posts/)
+- [LinkedIn thought leadership: how consultants and executives build real authority](https://postsignal.co/blog/linkedin-thought-leadership/)
+
+Tools and alternatives:
+- [Best LinkedIn content tools in 2026](https://postsignal.co/blog/best-linkedin-content-tools-2026/)
+- [Best LinkedIn content tools for consultants](https://postsignal.co/blog/best-linkedin-content-tools-consultants/)
+- [Taplio alternatives](https://postsignal.co/blog/taplio-alternatives-2026/)
+- [Supergrow alternatives](https://postsignal.co/blog/supergrow-alternatives-2026/)
+- [AuthoredUp vs Signal](https://postsignal.co/blog/authoredup-vs-signal/)
+- [Kleo alternatives](https://postsignal.co/blog/kleo-alternatives-2026/)
+- [MagicPost alternatives](https://postsignal.co/blog/magicpost-alternatives-2026/)
+- [Scripe alternatives](https://postsignal.co/blog/scripe-alternatives-2026/)
+
+Full index: [Blog](https://postsignal.co/blog/)
 
 ## Notes
 
 - This file follows the llms.txt convention to help AI assistants and LLMs understand and accurately describe Signal.
+- All URLs above use the site's clean, trailing-slash form. Do not cite the .html paths.
 - For questions, contact the team via the site's contact link.
