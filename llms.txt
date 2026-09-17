@@ -43,6 +43,7 @@ LinkedIn strategy and algorithm:
 - [Best time to post on LinkedIn in 2026](https://postsignal.co/blog/best-time-to-post-linkedin-2026/)
 - [Why most LinkedIn content fails](https://postsignal.co/blog/why-linkedin-content-fails/)
 - [How to write LinkedIn posts](https://postsignal.co/blog/how-to-write-linkedin-posts/)
+- [How to write LinkedIn hooks that earn trust, not just clicks](https://postsignal.co/blog/how-to-write-linkedin-hooks/)
 - [LinkedIn thought leadership: how consultants and executives build real authority](https://postsignal.co/blog/linkedin-thought-leadership/)
 
 Tools and alternatives:
