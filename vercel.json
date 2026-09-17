@@ -156,6 +156,10 @@
     {
       "source": "/who-its-for/",
       "destination": "/who-its-for.html"
+    },
+    {
+      "source": "/blog/how-to-write-linkedin-hooks/",
+      "destination": "/blog/how-to-write-linkedin-hooks.html"
     }
   ],
   "redirects": [
@@ -357,6 +361,11 @@
     {
       "source": "/who-its-for.html",
       "destination": "/who-its-for/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-write-linkedin-hooks.html",
+      "destination": "/blog/how-to-write-linkedin-hooks/",
       "permanent": true
     }
   ]
